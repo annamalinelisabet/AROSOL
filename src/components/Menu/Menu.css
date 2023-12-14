@@ -1,0 +1,53 @@
+.Menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: var(--black-clr);
+    width: min(100%, 500px);
+    height: 100vh;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.Menu ul li {
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    cursor: pointer;
+
+    transition: all 250ms;
+}
+
+.Menu ul li:hover {
+    background: var(--blue-clr);
+}
+
+/* .Menu ul li.active {
+    font-weight: bold;
+} */
+
+.Menu ul li:active {
+    color: var(--blue-clr);
+}
+
+.Menu .home {
+    margin-right: 0.5rem;
+}
+
+.Menu .line {
+    width: 50%;
+    height: 1px;
+    background: var(--orange-clr);
+    margin-block: 1rem;
+}
