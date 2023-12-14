@@ -8,18 +8,6 @@ import { BiLogoInstagramAlt } from 'react-icons/bi'
 
 
 const Footer = () => {
-  document.addEventListener("DOMContentLoaded", function() {
-    const serviceColumns = document.querySelectorAll('.service-columns');
-  
-    serviceColumns.forEach(column => {
-      const heading = column.querySelector('h3');
-      
-      heading.addEventListener('click', function() {
-        column.classList.toggle('active');
-      });
-    });
-  });
-  
   return (
     <div className='Footer'>
       <div className='container'>
