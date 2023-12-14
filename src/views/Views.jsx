@@ -3,11 +3,9 @@ import HomeView from './Home/HomeView'
 
 const Views = () => {
   return (
-    <div className='Views'>
-      <Routes>
-          <Route path='/' element={ <HomeView/> }/>
-      </Routes>
-    </div>
+    <Routes>
+        <Route path='/' element={ <HomeView/> }/>
+    </Routes>
   )
 }
 
