@@ -18,7 +18,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: min(90%, 1260px);
+    width: min(90%, 1500px);
 }
 
 .App {
@@ -29,4 +29,8 @@ body {
 
 .Views {
     flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
 }
