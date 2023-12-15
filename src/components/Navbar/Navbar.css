@@ -1,3 +1,8 @@
+.Navbar {
+    position: absolute;
+    width: 100%;
+}
+
 .Navbar .wrapper {
     position: relative;
     align-items: center;
@@ -16,7 +21,7 @@
 }
 
 .Navbar .burger {
-    z-index: 5;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

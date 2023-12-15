@@ -15,16 +15,16 @@ const Menu = ({ setShowMenu }) => {
     <div className='Menu animate__animated animate__fadeInRight animate__faster' onClick={closeMenu}>
         <ul>
             <NavLink to='/'><li><FaHouse className='home' />HEM</li></NavLink>
-            <NavLink to='/'><li>SOLEL</li></NavLink>
-            <NavLink to='/'><li>TAKENTREPENAD</li></NavLink>
-            <NavLink to='/'><li className='active'>TAKSÄKERHET</li></NavLink>
-            <NavLink to='/'><li>PLÅTSLAGERI</li></NavLink>
+            <NavLink to='/solel'><li>SOLEL</li></NavLink>
+            <NavLink to='/takentrepenad'><li>TAKENTREPENAD</li></NavLink>
+            <NavLink to='/taksakerhet'><li>TAKSÄKERHET</li></NavLink>
+            <NavLink to='/platslageri'><li>PLÅTSLAGERI</li></NavLink>
         </ul>
         <div className='line'></div>
         <ul>
-            <NavLink to='/'><li>KONTAKT</li></NavLink>
-            <NavLink to='/'><li>OM OSS</li></NavLink>
-            <NavLink to='/'><li>FRÅGOR & SVAR</li></NavLink>
+            <NavLink to='/contact'><li>KONTAKT</li></NavLink>
+            <NavLink to='/about'><li>OM OSS</li></NavLink>
+            <NavLink to='/FAQ'><li>FRÅGOR & SVAR</li></NavLink>
         </ul>
     </div>
   )
