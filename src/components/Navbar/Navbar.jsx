@@ -6,7 +6,7 @@ import Menu from '../Menu/Menu'
 
 const Navbar = () => {
 
-    const [showMenu, setShowMenu] = useState(false)
+    const [showMenu, setShowMenu] = useState(false)    
 
   return (
     <div className='Navbar'>
