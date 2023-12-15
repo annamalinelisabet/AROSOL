@@ -1,0 +1,58 @@
+.HomeHero.bg-img {
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/solelbild.png');
+    background-size: cover;
+    border-bottom: 2px solid var(--orange-clr);
+    background-position: bottom;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.HomeHero .wrapper {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.HomeHero .hero-text h1 {
+    font-size: 50px;
+}
+
+.HomeHero .cta-section {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.HomeHero .cta-section a {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+.HomeHero .cta-section a::after {
+    content: '';
+    background-color: var(--blue-clr);
+    bottom: -2px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+
+    .HomeHero .hero-text h1 {
+        font-size: 70px;
+    }
+
+    .HomeHero .cta-section {
+        align-items: center;
+        flex-direction: row;
+        gap: 0;
+    }
+}
