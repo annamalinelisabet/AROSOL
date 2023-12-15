@@ -7,7 +7,7 @@
 }
 
 .Navbar .logo-box {
-    z-index: 1;
+    z-index: 0;
     height: 25px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .Navbar .burger {
-    z-index: 1;
+    z-index: 5;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

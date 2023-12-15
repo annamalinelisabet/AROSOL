@@ -132,6 +132,7 @@
         top: 50%;
         transform: translateY(-50%);
         margin-right: 8px; 
+        z-index: 0;
     }
 
     .Footer .contact-info{
