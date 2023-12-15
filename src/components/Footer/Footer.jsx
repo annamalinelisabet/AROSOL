@@ -23,16 +23,16 @@ const Footer = () => {
         <div className='service-wrapper'>
           <ul className='service-columns'>
             <h3>Tjänster</h3>
-            <NavLink to='/'><li>Solel</li></NavLink>
-            <NavLink to='/'><li>Taksäkerhet</li></NavLink>
-            <NavLink to='/'><li>Takentreprenad</li></NavLink>
-            <NavLink to='/'><li>Plåtslageri</li></NavLink>
+            <NavLink to='/solel'><li>Solel</li></NavLink>
+            <NavLink to='/taksakerhet'><li>Taksäkerhet</li></NavLink>
+            <NavLink to='/takentrepenad'><li>Takentreprenad</li></NavLink>
+            <NavLink to='/platslageri'><li>Plåtslageri</li></NavLink>
           </ul>
           <ul className='service-columns'>
             <h3>Information</h3>
-            <NavLink to='/'><li>Om oss</li></NavLink>
-            <NavLink to='/'><li>Kontakt</li></NavLink>
-            <NavLink to='/'><li>FAQ</li></NavLink>
+            <NavLink to='/about'><li>Om oss</li></NavLink>
+            <NavLink to='/contact'><li>Kontakt</li></NavLink>
+            <NavLink to='/FAQ'><li>FAQ</li></NavLink>
           </ul>
           <div className='service-columns'>
             <h3>Följ oss</h3>
