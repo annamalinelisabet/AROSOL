@@ -1,5 +1,9 @@
+.PageHero {
+    border-bottom: 2px solid var(--orange-clr);
+}
+
 .PageHero .img-wrapper {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
 }
@@ -33,5 +37,23 @@
 }
 
 .PageHero .arrow {
-    font-size: clamp(1rem, 5vw, 8rem);
+    font-size: clamp(3rem, 5vw, 8rem);
+    
+    animation: bounce 1.5s; 
+    animation-delay: .8s;
+    animation-iteration-count: 3;
 }
+
+@keyframes bounce {
+    0% { 
+        transform: translateY(0); 
+    } 
+    50% { 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        transform: translateY(0); 
+    } 
+}
+
+

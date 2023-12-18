@@ -8,12 +8,12 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding-block: .5rem;
+    padding-block: 1rem;
 }
 
 .Navbar .logo-box {
     z-index: 1;
-    height: 25px;
+    height: 30px;
 }
 
 .Navbar .logo-box img {
