@@ -5,7 +5,7 @@ import FAQView from './FAQ/FAQView'
 import HomeView from './Home/HomeView'
 import PlatslageriView from './Platslageri/PlatslageriView'
 import SolelView from './Solel/SolelView'
-import TakentrepenadView from './Takentrepenad/TakentrepenadView'
+import TakentreprenadView from './Takentreprenad/TakentreprenadView'
 import TaksakerhetView from './Taksakerhet/TaksakerhetView'
 
 const Views = () => {
@@ -18,7 +18,7 @@ const Views = () => {
           <Route path='/FAQ' element={ <FAQView /> }/>
           <Route path='/platslageri' element={ <PlatslageriView/> }/>
           <Route path='/solel' element={ <SolelView/> }/>
-          <Route path='/takentrepenad' element={ <TakentrepenadView/> }/>
+          <Route path='/takentreprenad' element={ <TakentreprenadView /> }/>
           <Route path='/taksakerhet' element={ <TaksakerhetView/> }/>
       </Routes>
     </div>
