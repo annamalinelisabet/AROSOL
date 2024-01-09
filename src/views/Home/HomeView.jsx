@@ -30,6 +30,7 @@ const HomeView = () => {
   return (
     <div className='HomeView'>
       <HomeHero/>
+      <div className='orange-line'></div>
       <div className='serviceCard-Wrapper'>
           <div className='relative'>
             <ServiceCard title='Solel' text='Monterar, installerar och underhåller solcellspaneler' imgSrc={solel} linkTo='/solel'/>
@@ -39,7 +40,7 @@ const HomeView = () => {
         <ServiceCard title='Taksäkerhet' text='Underhåll och förebggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
         <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och instalattion av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri'/>
       </div>
-
+      <div className='orange-line'></div>
       <div className='container'>
 
         <div className='solar-section'>
@@ -63,7 +64,7 @@ const HomeView = () => {
               <div className='dropdown-container'>
                 <button className='dropdown-btn'  onClick={() => toggleDropdown('investering')}><FaCheckCircle className='check' />Ökar värdet på din bostad</button>
                 {showDropdown === 'investering' && (
-                  <p className='dropdown-content  animate__animated animate__fadeInDown'>Investeringen i solenergi kan öka värdet på din bostad och göra den mer attraktiv på marknaden.</p> 
+                  <p className='dropdown-content dots animate__animated animate__fadeInDown'>Investeringen i solenergi kan öka värdet på din bostad och göra den mer attraktiv på marknaden.</p> 
                 )}
               </div>
             </div>
@@ -78,9 +79,9 @@ const HomeView = () => {
         </div>
 
       </div>
+      <div className='orange-line'></div>
 
         <div className='CEO-wrapper'>
-
           <div className='CEO-section container'>
             <div className='CEO-img'><img src={CEO} alt="Picture of CEO Pontus Bergman" /></div>
             <div className='CEO-text-wrapper'>
@@ -97,7 +98,8 @@ const HomeView = () => {
             </div>
           </div>
         </div>
-
+      
+        <div className='orange-line'></div>
 
     </div>
   )
