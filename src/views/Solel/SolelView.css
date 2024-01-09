@@ -30,7 +30,7 @@
 }
 
 .Solel .img-wrapper {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
 }
 
@@ -38,6 +38,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: 20% 20%;
 }
 
 .Solel .info-box-wrapper {
@@ -55,6 +56,32 @@
 
 .Solel .icon {
     font-size: 1.5rem;
+}
+
+.Solel .winter-info-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Solel .winter-img-wrapper {
+    height: 80vh;
+    flex: 1;
+}
+
+.Solel .winter-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Solel .winter-info {
+    background: var(--blue-clr);
+    color: white;
+    flex: 1;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media(min-width: 768px) {
@@ -80,6 +107,14 @@
 
     .Solel .info-box .container {
         width: 100%;
+    }
+
+    .Solel .winter-info-wrapper {
+        flex-direction: row;
+    }
+
+    .Solel .winter-info {
+        padding-block: 0;
     }
 }
 

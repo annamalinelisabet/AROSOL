@@ -35,3 +35,8 @@ body {
 a {
     text-decoration: none;
 }
+
+.line-break {
+    display: block;
+    margin-top: 1rem;
+}
