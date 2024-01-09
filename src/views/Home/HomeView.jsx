@@ -72,7 +72,7 @@ const HomeView = () => {
             </div>
           </div>
           <div className='solar-img'>
-            <img src={solelhome} alt="" />
+            <img src={solelhome} alt='Two individuals assembling solar panels' />
           </div>
         </div>
 
