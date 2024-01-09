@@ -31,10 +31,10 @@ const HomeView = () => {
     <div className='HomeView'>
       <HomeHero/>
       <div className='serviceCard-Wrapper'>
-          {/* <div className='relative'> */}
+          <div className='relative'>
             <ServiceCard title='Solel' text='Monterar, installerar och underhåller solcellspaneler' imgSrc={solel} linkTo='/solel'/>
-            {/* <h4 className='service-title'>Våra tjänster</h4> */}
-          {/* </div> */}
+            <h4 className='service-title'>Våra tjänster</h4>
+          </div>
         <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad'/>
         <ServiceCard title='Taksäkerhet' text='Underhåll och förebggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
         <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och instalattion av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri'/>
