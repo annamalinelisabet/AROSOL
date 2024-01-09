@@ -87,11 +87,11 @@ const HomeView = () => {
                 <p>Vi på arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på vårt arbete och vår service, och vi strävar alltid efter att överträffa våra kunders förväntingar</p> 
                 <BiSolidQuoteAltRight className='left' />
               </div>
-              <Link to='/about' className='link-to-about'><FaArrowAltCircleRight/>Läs mer om oss</Link>
               <div>
                 <h4>Pontus Bergman</h4> 
                 <p>VD AROSOL AB</p>
               </div>
+              <Link to='/about' className='link-to-about'><FaArrowAltCircleRight/>Läs mer om oss</Link>
             </div>
           </div>
         </div>

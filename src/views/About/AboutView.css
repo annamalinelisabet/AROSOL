@@ -20,26 +20,19 @@
 }
 
 .About .info-section {
-    background: var(--blue-clr);
-    color: var(--black-clr);
+    background: var(--black-clr);
+    color: #fff;
     padding-block: 2.5rem 3.5rem;
 }
 
 .About .about-header {
     /* ÄNDRA STORLEK SAMMA SOM KONTAKT ? */
     font-size: clamp(2rem, 4vw, 6rem); 
-    color: var(--black-clr);
+    padding-bottom: 1rem;
 }
 
 .About .card-section {
     padding-block: 4rem;
-}
-
-.About .team-text {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .About .card-wrapper {

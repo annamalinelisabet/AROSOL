@@ -28,10 +28,7 @@ const AboutView = () => {
           </div>
         </div>
         <div className='card-section container'>
-          <div className='team-text'>
             <h2 className='sub-header'>Träffa teamet</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quam dolore eveniet voluptates! Aliquid, quod voluptatem? Consequatur possimus provident ipsum?</p>
-          </div>
           <div className='card-wrapper'>
             <StaffCard image={Image} name='pontus' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis a veniam, ab impedit optio.' />
             <StaffCard image={Image} name='stefan' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.' />
