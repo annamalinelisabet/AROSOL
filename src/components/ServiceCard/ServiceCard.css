@@ -1,0 +1,61 @@
+.ServiceCard {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+.ServiceCard .img-container {
+    height: 500px;
+    overflow: hidden; 
+    position: relative;
+  }
+  
+.ServiceCard .background-img {
+    height: 100%;
+    object-fit: cover; 
+    width: 100%;
+}
+
+.ServiceCard .text-content {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    left: 50%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    text-align: start;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.ServiceCard .text-content h1 {
+    font-size: clamp(30px, 10vw, 60px); 
+    text-transform: uppercase;
+}
+
+.ServiceCard .link-Wrapper {
+    margin-top: .5rem;
+}
+
+.ServiceCard .link {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+.ServiceCard .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+

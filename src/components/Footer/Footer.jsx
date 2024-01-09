@@ -25,7 +25,7 @@ const Footer = () => {
             <h3>Tjänster</h3>
             <NavLink to='/solel'><li>Solel</li></NavLink>
             <NavLink to='/taksakerhet'><li>Taksäkerhet</li></NavLink>
-            <NavLink to='/takentrepenad'><li>Takentreprenad</li></NavLink>
+            <NavLink to='/takentreprenad'><li>Takentreprenad</li></NavLink>
             <NavLink to='/platslageri'><li>Plåtslageri</li></NavLink>
           </ul>
           <ul className='service-columns'>

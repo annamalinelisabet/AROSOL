@@ -1,3 +1,215 @@
+.HomeView {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* --- SERVICE CARD --- */
+
+.HomeView .serviceCard-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .1rem;
+}
+
+.HomeView .service-title {
+    background-color: var(--blue-clr);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #fff;
+    left: 20px;
+    position: absolute;
+    padding: .7rem 3rem .7rem 3rem;
+    top: -20px;
+    text-transform: uppercase;
+}
+
+.HomeView .relative {
+    position: relative;
+}
+
+/* --- SOLAR-SECTION --- */
+
+.HomeView .solar-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.HomeView .solar-img {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+
+.HomeView .solar-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HomeView .solar-text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.HomeView .solar-title {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.HomeView .solar-title::after {
+    background-color: var(--orange-clr);
+    bottom: -2px;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.HomeView .solar-CTA-section {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* -- DROP DOWNS --- */
+
+.HomeView .dropdowns {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+.HomeView .dropdown-btn {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+}
+
+.HomeView .dropdown-btn .check {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.HomeView .dropdown-content {
+    color: #707070;
+    padding: 0 0 0 56px;
+}
+
+.HomeView .dots {
+    padding-left: 35px;
+    border-left: dotted;
+    border-color: var(--black-clr);
+    margin-left: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* --- CEO SECTION --- */
+
+.HomeView .CEO-wrapper {
+    background-color: var(--black-clr);
+}
+
+.HomeView .CEO-img {
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.HomeView .CEO-img img {
+    width: 100%;
+}
+
+.HomeView .CEO-section {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.HomeView .CEO-text-wrapper {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.HomeView .CEO-text {
+    position: relative;
+}
+
+.HomeView .right {
+    position: absolute;
+    content: '';
+    top: -2.5rem;
+    left: -2rem;
+    width: 40px;
+    height: 40px;
+}
+
+.HomeView .left {
+    position: absolute;
+    content: '';
+    bottom: -2.5rem;
+    right: -1rem;
+    width: 40px;
+    height: 40px;
+}
+
+.HomeView .link-to-about {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    gap: .5rem;
+}
 
 
+@media(min-width: 768px) {
 
+    .HomeView .serviceCard-Wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        width: min(90%, 1500px);
+   }
+
+   .HomeView .solar-CTA-section {
+        flex-direction: row;
+   }
+
+    .HomeView .solar-img {
+        width: 100%;
+        display: inline-block;
+   }
+
+    .HomeView .CEO-section {
+        flex-direction: row;
+    }
+
+    .HomeView .CEO-img {
+        padding: 0;
+    }
+}
