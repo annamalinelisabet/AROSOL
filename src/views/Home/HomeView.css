@@ -95,7 +95,7 @@
     position: relative;
 }
 
-.HomeView .dropdown-btn .check {
+.HomeView .check {
     background-color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 100%;
@@ -162,7 +162,7 @@
 }
 
 .HomeView .left {
-    bottom: -2.5rem;
+    bottom: -2rem;
     content: '';
     height: 40px;
     position: absolute;
