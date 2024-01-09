@@ -30,7 +30,6 @@ const HomeView = () => {
   return (
     <div className='HomeView'>
       <HomeHero/>
-      <div className='orange-line'></div>
       <div className='serviceCard-Wrapper'>
           <div className='relative'>
             <ServiceCard title='Solel' text='Monterar, installerar och underhåller solcellspaneler' imgSrc={solel} linkTo='/solel'/>
@@ -40,17 +39,16 @@ const HomeView = () => {
         <ServiceCard title='Taksäkerhet' text='Underhåll och förebggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
         <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och instalattion av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri'/>
       </div>
-      <div className='orange-line'></div>
       <div className='container'>
 
         <div className='solar-section'>
           <div className='solar-text-info'>
             <h1 className='solar-title'>Fördelar med solpaneler</h1>
             <div className='dropdowns'>
-              <div className='dropdown-container'>
+              <div className='dropdown-container' data-aos='fade-down' data-aos-easing="linear" data-aos-duration="700">
                 <button className='dropdown-btn' onClick={() => toggleDropdown('energikostnader')}><FaCheckCircle className='check' />Minska dina energikostnader</button>
                 {showDropdown === 'energikostnader' && (
-                  <p className='dropdown-content dots animate__animated animate__fadeInDown '>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser. Överskottselen kan du dessutom sälja.</p>
+                  <p className='dropdown-content dots animate__animated animate__fadeInDown'>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser. Överskottselen kan du dessutom sälja.</p>
                 )}   
               </div>
 
@@ -79,7 +77,6 @@ const HomeView = () => {
         </div>
 
       </div>
-      <div className='orange-line'></div>
 
         <div className='CEO-wrapper'>
           <div className='CEO-section container'>
@@ -98,9 +95,7 @@ const HomeView = () => {
             </div>
           </div>
         </div>
-      
-        <div className='orange-line'></div>
-
+    
     </div>
   )
 }
