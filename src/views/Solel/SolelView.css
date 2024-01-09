@@ -1,12 +1,126 @@
 .Solel .info-wrapper {
     width: 100%;
     background: var(--black-clr);
+    padding-block: 3rem;
 }
 
 .Solel .subtitle {
     color: white;
 }
 
-.Solel .text {
+.Solel .info-wrapper .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Solel .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Solel .text, 
+.Solel .mobile-text {
     color: white;
+}
+
+.Solel .text {
+    display: none;
+}
+
+.Solel .img-wrapper {
+    height: 70vh;
+    width: 100%;
+}
+
+.Solel .img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 20%;
+}
+
+.Solel .info-box-wrapper {
+    padding-bottom: 3rem;
+}
+
+.Solel h2 {
+    padding-block: 1.5rem;
+}
+
+.Solel .info-box {
+    border-block: 2px solid var(--orange-clr);
+    padding-block: 1rem;
+}
+
+.Solel .icon {
+    font-size: 1.5rem;
+}
+
+.Solel .winter-info-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Solel .winter-img-wrapper {
+    height: 80vh;
+    flex: 1;
+}
+
+.Solel .winter-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Solel .winter-info {
+    background: var(--blue-clr);
+    color: white;
+    flex: 1;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .Solel .text-box {
+        flex: 1;
+    }
+
+    .Solel .text {
+        display: inline;
+        flex: 1;
+    }
+
+    .Solel .mobile-text {
+        display: none;
+    }
+
+    .Solel .info-box-wrapper {
+        display: flex;
+        gap: 2rem;
+        margin: 0 auto;
+        width: min(90%, 1500px);
+    }
+
+    .Solel .info-box .container {
+        width: 100%;
+    }
+
+    .Solel .winter-info-wrapper {
+        flex-direction: row;
+    }
+
+    .Solel .winter-info {
+        padding-block: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .Solel .info-box:nth-child(2),
+    .Solel .info-box:nth-child(3){
+        border-top: none;
+    }
 }

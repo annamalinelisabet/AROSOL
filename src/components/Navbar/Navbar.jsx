@@ -1,12 +1,18 @@
 import './Navbar.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/lglogo.png'
 import Menu from '../Menu/Menu'
 
 const Navbar = () => {
 
-    const [showMenu, setShowMenu] = useState(false)    
+    const [showMenu, setShowMenu] = useState(false)   
+    
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.document) {
+          document.body.style.overflow = showMenu ? 'hidden' : 'unset';
+        }
+      }, [showMenu])
 
   return (
     <div className='Navbar'>

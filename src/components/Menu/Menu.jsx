@@ -12,18 +12,18 @@ const Menu = ({ setShowMenu }) => {
   }
 
   return (
-    <div className='Menu animate__animated animate__fadeInRight animate__faster' onClick={closeMenu}>
+    <div className='Menu animate__animated animate__fadeIn animate__faster' onClick={closeMenu}>
         <ul>
             <NavLink to='/'><li><FaHouse className='home' />HEM</li></NavLink>
             <NavLink to='/solel'><li>SOLEL</li></NavLink>
-            <NavLink to='/takentreprenad'><li>TAKENTREPENAD</li></NavLink>
             <NavLink to='/taksakerhet'><li>TAKSÄKERHET</li></NavLink>
+            <NavLink to='/takentreprenad'><li>TAKENTREPRENAD</li></NavLink>
             <NavLink to='/platslageri'><li>PLÅTSLAGERI</li></NavLink>
         </ul>
         <div className='line'></div>
         <ul>
-            <NavLink to='/contact'><li>KONTAKT</li></NavLink>
             <NavLink to='/about'><li>OM OSS</li></NavLink>
+            <NavLink to='/contact'><li>KONTAKT</li></NavLink>
             <NavLink to='/FAQ'><li>FRÅGOR & SVAR</li></NavLink>
         </ul>
     </div>

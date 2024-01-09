@@ -1,0 +1,8 @@
+.StaffCard img {
+    width: 100%;
+    /* border-radius: 100%; */
+}
+
+.StaffCard .name {
+    text-transform: uppercase;
+}

@@ -1,0 +1,17 @@
+.ContactSection .container {
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: min(90%, 680px);
+}
+
+.ContactSection .contact-text {
+    text-align: center;
+}
+
+.ContactSection.dark {
+    background: var(--black-clr);
+    color: white;
+}

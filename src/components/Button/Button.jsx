@@ -13,7 +13,7 @@ const Button = ({
         <button
         onClick={(data) => onClick(data)}
         className={`${btn} ${
-            variant === "light"
+            variant === 'light'
             ? 'btnLight'
             : 'btnDark'
         }`}>
