@@ -17,7 +17,7 @@
 .PageHero .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.603);
+    background: rgba(0, 0, 0, 0.458);
     display: flex;
     justify-content: center;
     align-items: center;
