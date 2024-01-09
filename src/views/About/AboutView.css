@@ -19,11 +19,6 @@
     align-items: center;
 }
 
-.About .info-header {
-    color: white;
-    font-size: clamp(3rem, 5vw, 8rem);
-}
-
 .About .info-section {
     background: var(--blue-clr);
     color: white;
@@ -31,7 +26,8 @@
 }
 
 .About .about-header {
-    font-size: clamp(2rem, 4vw, 6rem);
+    /* ÄNDRA STORLEK SAMMA SOM KONTAKT ? */
+    font-size: clamp(2rem, 4vw, 6rem); 
 }
 
 .About .card-section {

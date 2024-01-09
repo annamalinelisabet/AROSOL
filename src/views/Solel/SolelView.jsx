@@ -22,17 +22,17 @@ const SolelView = () => {
   return (
     <div className='Solel'>
 
-      <PageHero alt='Solceller' image={HeroImage} title='Solel' />
+      <PageHero alt='Solceller' image={HeroImage} title='SOLEL' />
 
       <div className='info-wrapper'>
         <div className='container'>
           <div className='text-box'>
-            <h1 className='subtitle'>EN SMART INVESTERING</h1>
-            <p className='mobile-text'>{infoText1}<span className='line-break'>{infoText2}</span></p>
+            <h1 className='sub-header'>EN SMART INVESTERING</h1>
+            <p className='mobile-text'>{infoText1}<span className='new-paragraph'>{infoText2}</span></p>
             <p className='text'>Arosol installerar högkvalitativa solcellspaneler för optimal avkastning.</p>
             <Button text='Få offert' />
           </div>
-          <p className='text'>{infoText1}<span className='line-break'>{infoText2}</span></p>
+          <p className='text'>{infoText1}<span className='new-paragraph'>{infoText2}</span></p>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const SolelView = () => {
         <img src={Image} alt='Bild' />
       </div>
 
-      <h2 className='container'>MONTERING AV SOLPANELER</h2>
+      <h2 className='container sub-header'>MONTERING AV SOLPANELER</h2>
       <div className='info-box-wrapper'>
         <div className='info-box'>
           <div className='container'>
@@ -67,10 +67,9 @@ const SolelView = () => {
           <img src={WinterImage} alt='Pekar på snöiga bergstoppar' />
         </div>
         <div className='winter-info'>
-          <h2 className='container'>Året runt energi: Solpanelernas beständighet i vinterkylan</h2>
-          <p className='container'>Trots kortare dagar och kallt väder under vintern fortsätter solpanelerna att generera värdefull energi. Det är faktiskt så att solcellerna producerar elektricitet även under en molnig vinterdag och fungerar utmärkt i vårt nordliga klimat. Solcellerna vi på Arosol använder oss av är designade för att enkelt släppa ifrån sig snö, vilket gör dem robusta och anpassningsbara till olika väderförhållanden. Detta säkerställer en konstant och pålitlig energiproduktion året runt.</p>
-          <br />
-          <p className='container'>Under sommartid ökar solpanelernas energiproduktion vilket kan resultera i överskottsel. Denna överskottsel kan användas för att minska eller helt eliminera elkostnaderna under sommaren. Besparingarna från soliga månader kan agera som en ekonomisk buffert och användas för att täcka de högre elkostnaderna som vanligtvis uppstår under vintermånaderna</p>
+          <h2 className='container sub-header'>Året runt energi: Solpanelernas beständighet i vinterkylan</h2>
+          <p className='container'>Trots kortare dagar och kallt väder under vintern fortsätter solpanelerna att generera värdefull energi. Det är faktiskt så att solcellerna producerar elektricitet även under en molnig vinterdag och fungerar utmärkt i vårt nordliga klimat. Solcellerna vi på Arosol använder oss av är designade för att enkelt släppa ifrån sig snö, vilket gör dem robusta och anpassningsbara till olika väderförhållanden. Detta säkerställer en konstant och pålitlig energiproduktion året runt.
+          <span className='new-paragraph'>Under sommartid ökar solpanelernas energiproduktion vilket kan resultera i överskottsel. Denna överskottsel kan användas för att minska eller helt eliminera elkostnaderna under sommaren. Besparingarna från soliga månader kan agera som en ekonomisk buffert och användas för att täcka de högre elkostnaderna som vanligtvis uppstår under vintermånaderna</span></p>
         </div>
       </div>
       

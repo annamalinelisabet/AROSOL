@@ -15,20 +15,21 @@ const AboutView = () => {
     <div className='About'>
         <div className='img-wrapper'>
           <div className='overlay'>
-            <h1 className='info-header'>OM OSS</h1>
+            <h1 className='header'>OM OSS</h1>
           </div>
           <img src={Hero} alt='Grupppfoto' />
         </div>
         <div className='line'></div>
         <div className='info-section'>
           <div className='container'>
-            <h1 className='about-header'>Vi är Arosol</h1>
-            <p>Arosol är din dedikerade partner för hållbara lösningar. Vi erbjuder en mångsidig tjänstepalett inom solel, plåtslageri, taksäkerhet och takentreprenad. Specialiserade inom områdena solel, taksäkerhet, takentreprenad och plåtslageri, strävar vi efter att erbjuda skräddarsydda och högkvalitativa tjänster. Med vår dedikerade och kunniga personal arbetar vi nära våra kunder för att leverera energieffektiva solenergilösningar, säkra takkonstruktioner och läckra plåtarbeten. <span className='line-break'> Vårt fokus på kvalitet och professionalism gör Arosol till det självklara valet för alla dina takrelaterade behov, inklusive specialkompetens inom plåtarbeten. Oavsett om det gäller solpaneler, plåtarbeten eller takprojekt kan du lita på Arosol för professionell och pålitlig service.</span></p>
+            {/* ÄNDRA STORLEK SAMMA SOM KONTAKT ?  */}
+            <h1 className='about-header'>Vi är Arosol</h1> 
+            <p>Arosol är din dedikerade partner för hållbara lösningar. Vi erbjuder en mångsidig tjänstepalett inom solel, plåtslageri, taksäkerhet och takentreprenad. Specialiserade inom områdena solel, taksäkerhet, takentreprenad och plåtslageri, strävar vi efter att erbjuda skräddarsydda och högkvalitativa tjänster. Med vår dedikerade och kunniga personal arbetar vi nära våra kunder för att leverera energieffektiva solenergilösningar, säkra takkonstruktioner och läckra plåtarbeten. <span className='new-paragraph'> Vårt fokus på kvalitet och professionalism gör Arosol till det självklara valet för alla dina takrelaterade behov, inklusive specialkompetens inom plåtarbeten. Oavsett om det gäller solpaneler, plåtarbeten eller takprojekt kan du lita på Arosol för professionell och pålitlig service.</span></p>
           </div>
         </div>
         <div className='card-section container'>
           <div className='team-text'>
-            <h2>Träffa teamet</h2>
+            <h2 className='sub-header'>Träffa teamet</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quam dolore eveniet voluptates! Aliquid, quod voluptatem? Consequatur possimus provident ipsum?</p>
           </div>
           <div className='card-wrapper'>

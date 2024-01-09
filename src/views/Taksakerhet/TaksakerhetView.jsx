@@ -10,7 +10,7 @@ const TaksakerhetView = () => {
 
   return (
     <div className='Taksakerhet'>
-      <PageHero title='taksäkerhet' />
+      <PageHero title='TAKSÄKERHET' />
     </div>
   )
 }

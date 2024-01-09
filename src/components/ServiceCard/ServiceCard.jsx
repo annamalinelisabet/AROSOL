@@ -17,6 +17,7 @@ const ServiceCard = ({
          <img className='background-img' src={imgSrc} alt={altTxt}></img>
         </div>
         <div className='text-content container'>
+          {/* ÄNDRA TILL SAMMA SOM ABOUT & KONTAKT */}
             <h1>{title}</h1>
             <p>{text}</p>
             <div className='link-Wrapper'>

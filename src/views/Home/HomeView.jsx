@@ -43,9 +43,9 @@ const HomeView = () => {
 
         <div className='solar-section'>
           <div className='solar-text-info'>
-            <h1 className='solar-title'>Fördelar med solpaneler</h1>
+            <h1 className='solar-title sub-header'>Fördelar med solpaneler</h1>
             <div className='dropdowns'>
-              <div className='dropdown-container' data-aos='fade-down' data-aos-easing="linear" data-aos-duration="700">
+              <div className='dropdown-container' data-aos='fade-down' data-aos-easing="linear" data-aos-duration="500">
                 <button className='dropdown-btn' onClick={() => toggleDropdown('energikostnader')}><FaCheckCircle className='check' />Minska dina energikostnader</button>
                 {showDropdown === 'energikostnader' && (
                   <p className='dropdown-content dots animate__animated animate__fadeInDown'>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser. Överskottselen kan du dessutom sälja.</p>

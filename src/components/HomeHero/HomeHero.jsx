@@ -7,7 +7,7 @@ const HomeHero = () => {
     <div className='HomeHero bg-img'>
         <div className='container wrapper'>
             <div className='hero-text'>
-                <h1>Tillverka el <br/> med solcellspanel</h1>
+                <h1 className='header'>Tillverka el <span className='line-break'> med solcellspanel</span></h1>
                 <p>Vi monterar solpaneler och säkrar taket på samma gång</p>
             </div>
             <div className='cta-section'>
