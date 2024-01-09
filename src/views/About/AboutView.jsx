@@ -37,7 +37,6 @@ const AboutView = () => {
             <StaffCard image={Image} name='stefan' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.' />
             <StaffCard image={Image} name='albin' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet consectetur adipisicing elit.' />
             <StaffCard image={Image} name='michael' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis a veniam, ab impedit optio.' />
-            <StaffCard image={Image} name='samuel' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis a veniam, ab impedit optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis a veniam, ab impedit optio.' />
           </div>
         </div>
 

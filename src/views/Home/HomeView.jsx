@@ -36,8 +36,8 @@ const HomeView = () => {
             <h4 className='service-title'>Våra tjänster</h4>
           </div>
         <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad'/>
-        <ServiceCard title='Taksäkerhet' text='Underhåll och förebggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
-        <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och instalattion av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri'/>
+        <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
+        <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och installation av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri'/>
       </div>
       <div className='container'>
 

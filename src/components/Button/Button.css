@@ -21,9 +21,9 @@
 }
 
 .Button .btnDark:hover {
-    background-color: #e05a0d;
-    border: 2px solid #e05a0d;
-    transition: background-color .5s;
+    background-color: #C15415;
+    border: 2px solid #C15415;
+    transition: background-color .3s;
 }
 
 .Button .btnLight:hover {

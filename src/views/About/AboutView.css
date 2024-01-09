@@ -21,13 +21,14 @@
 
 .About .info-section {
     background: var(--blue-clr);
-    color: white;
+    color: var(--black-clr);
     padding-block: 2.5rem 3.5rem;
 }
 
 .About .about-header {
     /* ÄNDRA STORLEK SAMMA SOM KONTAKT ? */
     font-size: clamp(2rem, 4vw, 6rem); 
+    color: var(--black-clr);
 }
 
 .About .card-section {
