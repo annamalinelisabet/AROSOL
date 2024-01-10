@@ -2,8 +2,8 @@ import ContactSection from '../../components/ContactSection/ContactSection'
 import StaffCard from '../../components/StaffCard/StaffCard'
 import './AboutView.css'
 import { useEffect } from 'react'
-import Image from '../../assets/solelbild.png'
-import Hero from '../../assets/gruppbild.jpg'
+import Image from '../../assets/pontus.png'
+import Hero from '../../assets/group.png'
 
 const AboutView = () => {
 
