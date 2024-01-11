@@ -13,7 +13,7 @@
 }
 
 .HomeView .service-title {
-    background-color: var(--black-clr);
+    background-color: var(--dark-blue-clr);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     color: #fff;
     left: 20px;
