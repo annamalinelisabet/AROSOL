@@ -13,9 +13,7 @@ const PageHero = ({ alt, image, title }) => {
               </div>
                 <div className='arrow-wrapper'>
                   <span>scrolla ner</span>
-                  <div>
-                    <div className='long-arrow-down'></div>
-                  </div>
+                  <div className='long-arrow-down'></div>
                   {/* <TiArrowDownOutline className='arrow' /> */}
                 </div>
             </div>
