@@ -13,14 +13,13 @@
 }
 
 .HomeView .service-title {
-    background-color: var(--blue-clr);
+    background-color: var(--dark-blue-clr);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     color: #fff;
     left: 20px;
     position: absolute;
     padding: .7rem 3rem .7rem 3rem;
     top: -20px;
-    text-transform: uppercase;
 }
 
 .HomeView .relative {
@@ -60,7 +59,6 @@
 }
 
 .HomeView .solar-title {
-    text-transform: uppercase;
     border-bottom: 3px solid var(--orange-clr);
     padding-bottom: .2rem;
 }
@@ -98,7 +96,6 @@
 
 .HomeView .check {
     background-color: #fff;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 100%;
     height: 40px;
     width: 40px;
@@ -178,31 +175,41 @@
     flex-direction: row;
     font-weight: bold;
     gap: .5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.HomeView .link-to-about:hover {
+    transform: translateX(5px);
 }
 
 
 @media(min-width: 768px) {
 
+    
+    .HomeView .solar-CTA-section {
+        flex-direction: row;
+    }
+    
+    
+    .HomeView .CEO-section {
+        flex-direction: row;
+    }
+    
+    .HomeView .CEO-img {
+        padding: 0;
+    }
+}
+
+@media(min-width: 992px) {
+    
+    .HomeView .solar-img {
+        display: inline-block;
+        width: 100%;
+    }  
+
     .HomeView .serviceCard-Wrapper {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
         width: min(90%, 1500px);
-   }
-
-   .HomeView .solar-CTA-section {
-        flex-direction: row;
-   }
-
-    .HomeView .solar-img {
-        display: inline-block;
-        width: 100%;
-   }
-
-    .HomeView .CEO-section {
-        flex-direction: row;
-    }
-
-    .HomeView .CEO-img {
-        padding: 0;
     }
 }

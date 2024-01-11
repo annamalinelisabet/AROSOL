@@ -12,6 +12,8 @@
     align-items: center;
     z-index: 1;
     box-shadow: -32px 0px 35px -27px rgba(0,0,0,0.45);
+    text-transform: uppercase;
+    /* SKA VI HA SMÅ I FOTTER OCH NAVBAR */
 }
 
 .Menu ul {

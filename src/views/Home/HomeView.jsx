@@ -67,8 +67,12 @@ const HomeView = () => {
               </div>
             </div>
             <div className='solar-CTA-section'>
-              <Button text='Få offert' />
-              <Button text='Läs mer om solel' variant='light' />
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSem3FDhb0zid2Htz_VQ8obsBP0zJZyj3TZXG4T5tGB0gmA18w/viewform'  target='_blank' aria-label='Länk till offert'>
+                <Button text='Få offert' />
+              </a>
+              <a href='/solel' aria-label='Länk till solel-sidan'>
+                <Button text='Läs mer om solel' variant='light'/>
+              </a>
             </div>
           </div>
           <div className='solar-img'>

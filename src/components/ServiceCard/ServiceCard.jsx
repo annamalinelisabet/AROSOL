@@ -20,7 +20,7 @@ const ServiceCard = ({
           {/* ÄNDRA TILL SAMMA SOM ABOUT & KONTAKT */}
             <h1>{title}</h1>
             <p>{text}</p>
-            <div className='link-Wrapper'>
+            <div className='link-wrapper'>
               <p className='link'>Läs mer</p>
             </div>
         </div>
