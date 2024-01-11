@@ -1,6 +1,6 @@
 import './SolelView.css'
 import { useEffect } from 'react';
-import HeroImage from '../../assets/solelhero.png'
+import HeroImage from '../../assets/solelheader.png'
 import Image from '../../assets/montering.png'
 import WinterImage from '../../assets/alperna.png'
 import PageHero from '../../components/PageHero/PageHero';
