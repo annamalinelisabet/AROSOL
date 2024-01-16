@@ -116,7 +116,7 @@ const HomeView = () => {
           coverflow-effect-depth='100'
           coverflow-effect-modifier='2' 
         >
-          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Maria Persson' text='          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem laudantium ratione quam. Maiores porro ullam fugiat magnam, voluptas earum recusandae?' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Maria Persson' text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem laudantium ratione quam. Maiores porro ullam fugiat magnam, voluptas earum recusandae?' /></swiper-slide>
           <swiper-slide><ReviewCard company='VD Hallstahem' img={Review1} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
           <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
           <swiper-slide><ReviewCard company='Ett företag AB' img={Review1} name='Maximillian Ettlångtefternamn' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>

@@ -12,6 +12,7 @@
 .ReviewCard .quote-icon {
     font-size: 2.5rem;
     color: #4494C7;
+    display: none;
 }
 
 .ReviewCard .person-wrapper {
@@ -42,4 +43,11 @@
 
 .ReviewCard .name {
     font-weight: bold;
+}
+
+
+@media(min-width: 768px) {
+    .ReviewCard .quote-icon {
+        display: inline;
+    }
 }
