@@ -57,7 +57,7 @@
 }
 
 .Solel .winter-info {
-    background: var(--black-clr);
+    background: var(--dark-blue-clr);
     color: white;
     flex: 1;
     padding-block: 3rem;
