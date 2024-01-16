@@ -1,0 +1,21 @@
+.InfoBox {
+    border-block: 2px solid var(--orange-clr);
+    padding-block: 1rem;
+}
+
+.InfoBox .icon {
+    font-size: 1.5rem;
+}
+
+@media(min-width: 768px) {
+    .InfoBox .container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .InfoBox:nth-child(2),
+    .InfoBox:nth-child(3){
+        border-top: none;
+    }
+}

@@ -30,7 +30,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 20% 20%;
+    object-position: 75% 20%;
 }
 
 .Solel .info-box-wrapper {
@@ -41,22 +41,12 @@
     padding-block: 1.5rem;
 }
 
-.Solel .info-box {
-    border-block: 2px solid var(--orange-clr);
-    padding-block: 1rem;
-}
-
-.Solel .icon {
-    font-size: 1.5rem;
-}
-
 .Solel .winter-info-wrapper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .Solel .winter-img-wrapper {
-    height: 80vh;
     flex: 1;
 }
 
@@ -70,7 +60,7 @@
     background: var(--dark-blue-clr);
     color: white;
     flex: 1;
-    padding-block: 2rem;
+    padding-block: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,22 +87,7 @@
         width: min(90%, 1500px);
     }
 
-    .Solel .info-box .container {
-        width: 100%;
-    }
-
     .Solel .winter-info-wrapper {
-        flex-direction: row;
-    }
-
-    .Solel .winter-info {
-        padding-block: 0;
-    }
-}
-
-@media(max-width: 768px) {
-    .Solel .info-box:nth-child(2),
-    .Solel .info-box:nth-child(3){
-        border-top: none;
+        flex-direction: row-reverse;
     }
 }

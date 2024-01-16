@@ -16,8 +16,8 @@ import { FaCheckCircle, FaArrowAltCircleRight } from "react-icons/fa";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import solelhome from '../../assets/solelhome.png'
 import CEO from '../../assets/pontus.png'
-
-
+import ReviewCard from '../../components/ReviewCard/ReviewCard';
+import Review1 from '../../assets/review.jpg'
 
 const HomeView = () => {
   const [showDropdown, setShowDropdwon] = useState('energikostnader')
@@ -25,7 +25,6 @@ const HomeView = () => {
   function toggleDropdown(identifier) {
     setShowDropdwon(showDropdown === identifier ? null : identifier)
   }  
-
 
   return (
     <div className='HomeView'>
@@ -80,25 +79,48 @@ const HomeView = () => {
           </div>
         </div>
 
-      </div>
+      </div>          
 
-        <div className='CEO-wrapper'>
-          <div className='CEO-section container'>
-            <div className='CEO-img'><img src={CEO} alt="Picture of CEO Pontus Bergman" /></div>
-            <div className='CEO-text-wrapper'>
-              <div className='CEO-text'>
-                <BiSolidQuoteAltLeft className='right' />
-                <p>Vi på arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på vårt arbete och vår service, och vi strävar alltid efter att överträffa våra kunders förväntingar</p> 
-                <BiSolidQuoteAltRight className='left' />
-              </div>
-              <div>
-                <h4>Pontus Bergman</h4> 
-                <p>VD AROSOL AB</p>
-              </div>
-              <Link to='/about' className='link-to-about'><FaArrowAltCircleRight/>Läs mer om oss</Link>
+      <div className='CEO-wrapper'>
+        <div className='CEO-section container'>
+          <div className='CEO-img'><img src={CEO} alt="Picture of CEO Pontus Bergman" /></div>
+          <div className='CEO-text-wrapper'>
+            <div className='CEO-text'>
+              <BiSolidQuoteAltLeft className='right' />
+              <p>Vi på arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på vårt arbete och vår service, och vi strävar alltid efter att överträffa våra kunders förväntingar</p> 
+              <BiSolidQuoteAltRight className='left' />
             </div>
+            <div>
+              <h4>Pontus Bergman</h4> 
+              <p>VD AROSOL AB</p>
+            </div>
+            <Link to='/about' className='link-to-about'><FaArrowAltCircleRight/>Läs mer om oss</Link>
           </div>
         </div>
+      </div>
+
+      <div className='review-section'>
+        <h2 className='sub-header'>Vad tycker våra kunder?</h2>
+        <swiper-container 
+          class='mySwiper' 
+          effect='coverflow' 
+          loop='true'
+          navigation='true'
+          grab-cursor='true' 
+          centered-slides='true'
+          slides-per-view='2' 
+          coverflow-effect-rotate='0' 
+          coverflow-effect-stretch='0' 
+          coverflow-effect-depth='100'
+          coverflow-effect-modifier='2' 
+        >
+          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Maria Persson' text='          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem laudantium ratione quam. Maiores porro ullam fugiat magnam, voluptas earum recusandae?' /></swiper-slide>
+          <swiper-slide><ReviewCard company='VD Hallstahem' img={Review1} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Ett företag AB' img={Review1} name='Maximillian Ettlångtefternamn' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
+        </swiper-container>       
+      </div> 
+       
     
     </div>
   )

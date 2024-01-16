@@ -1,5 +1,6 @@
 .PageHero {
     border-bottom: 2px solid var(--orange-clr);
+    margin-bottom: 3rem;
 }
 
 .PageHero .img-wrapper {

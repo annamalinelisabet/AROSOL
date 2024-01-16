@@ -1,0 +1,45 @@
+.ReviewCard {
+    text-align: center;
+    padding-block: 2rem;
+    width: min(90%, 500px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.ReviewCard .quote-icon {
+    font-size: 2.5rem;
+    color: #74c1e5;
+}
+
+.ReviewCard .person-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+}
+
+.ReviewCard .quote-img-wrapper {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #74c1e5;
+}
+
+.ReviewCard .quote-img-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.ReviewCard .name,
+.ReviewCard .company {
+    font-size: .8rem;
+}
+
+.ReviewCard .name {
+    font-weight: bold;
+}

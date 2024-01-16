@@ -5,8 +5,11 @@ import Navbar from './components/Navbar/Navbar'
 import Views from './views/Views'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { register } from 'swiper/element/bundle'
 
 function App() {
+
+  register()
 
   useEffect(() => {
     AOS.init({ once: true })
