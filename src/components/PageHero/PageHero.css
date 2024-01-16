@@ -1,5 +1,5 @@
 .PageHero {
-    border-bottom: 2px solid var(--orange-clr);
+    border-bottom: 4px solid var(--blue-clr);
     margin-bottom: 3rem;
 }
 
@@ -31,19 +31,10 @@
     color: white;
 }
 
-/* .PageHero .arrow {
-    font-size: clamp(3rem, 5vw, 8rem);
-    font-size: 1.5rem;
-    animation: bounce 1.5s; 
-    animation-delay: .8s;
-    animation-iteration-count: 3;
-} */
-
-
 .long-arrow-down{
-    background-color: #fff;
+    background-color: #F5F4F0;
     display: block;
-    height: 100px;
+    height: 140px;
     left: 0;
     top: 0;
     width: 2px;

@@ -1,6 +1,5 @@
 import './PageHero.css'
 import 'animate.css'
-// import { TiArrowDownOutline } from "react-icons/ti";
 
 
 const PageHero = ({ alt, image, title }) => {
@@ -14,7 +13,6 @@ const PageHero = ({ alt, image, title }) => {
                 <div className='arrow-wrapper'>
                   <span>scrolla ner</span>
                   <div className='long-arrow-down'></div>
-                  {/* <TiArrowDownOutline className='arrow' /> */}
                 </div>
             </div>
             <img src={image} alt={alt} />

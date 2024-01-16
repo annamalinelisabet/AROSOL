@@ -2,7 +2,7 @@
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/solelbild.png');
     background-size: cover;
-    border-bottom: 2px solid var(--orange-clr);
+    border-bottom: 4px solid var(--blue-clr);
     background-position: bottom;
     display: flex;
     height: 100vh;

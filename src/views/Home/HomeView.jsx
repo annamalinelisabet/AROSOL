@@ -13,7 +13,8 @@ import plåtslageri from '../../assets/plåt.png'
 import Button from '../../components/Button/Button'
 
 import { FaCheckCircle, FaArrowAltCircleRight } from "react-icons/fa";
-import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+
 import solelhome from '../../assets/solelhome.png'
 import CEO from '../../assets/pontus.png'
 import ReviewCard from '../../components/ReviewCard/ReviewCard';
@@ -86,9 +87,9 @@ const HomeView = () => {
           <div className='CEO-img'><img src={CEO} alt="Picture of CEO Pontus Bergman" /></div>
           <div className='CEO-text-wrapper'>
             <div className='CEO-text'>
-              <BiSolidQuoteAltLeft className='right' />
+              <FaQuoteLeft className='right-quote' />
               <p>Vi på arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på vårt arbete och vår service, och vi strävar alltid efter att överträffa våra kunders förväntingar</p> 
-              <BiSolidQuoteAltRight className='left' />
+              <FaQuoteRight className='left-quote' />
             </div>
             <div>
               <h4>Pontus Bergman</h4> 

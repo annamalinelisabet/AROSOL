@@ -123,10 +123,14 @@
 .HomeView .CEO-img {
     padding-top: 1.5rem;
     width: 100%;
+    height: 100vh;
+    /* height: 100%; */
 }
 
 .HomeView .CEO-img img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .HomeView .CEO-section {
@@ -150,22 +154,22 @@
     position: relative;
 }
 
-.HomeView .right {
+.HomeView .right-quote {
     content: '';
     height: 40px;
     left: -2rem;
     position: absolute;
     top: -2.5rem;
-    width: 40px;
+    width: 30px;
 }
 
-.HomeView .left {
+.HomeView .left-quote {
     bottom: -2rem;
     content: '';
     height: 40px;
     position: absolute;
     right: -1rem;
-    width: 40px;
+    width: 30px;
 }
 
 .HomeView .link-to-about {
