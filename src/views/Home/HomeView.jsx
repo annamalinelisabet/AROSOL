@@ -105,6 +105,7 @@ const HomeView = () => {
           class='mySwiper' 
           effect='coverflow' 
           loop='true'
+          speed='500'
           navigation='true'
           grab-cursor='true' 
           centered-slides='true'

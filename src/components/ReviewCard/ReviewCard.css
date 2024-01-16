@@ -11,7 +11,7 @@
 
 .ReviewCard .quote-icon {
     font-size: 2.5rem;
-    color: #74c1e5;
+    color: var(--blue-clr)
 }
 
 .ReviewCard .person-wrapper {
@@ -25,7 +25,7 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 5px solid #74c1e5;
+    border: 5px solid var(--blue-clr);
 }
 
 .ReviewCard .quote-img-wrapper img{

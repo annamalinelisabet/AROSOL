@@ -15,7 +15,7 @@ const AboutView = () => {
     <div className='About'>
         <div className='img-wrapper'>
           <div className='overlay'>
-            <h1 className='header'>OM OSS</h1>
+            {/* <h1 className='header'>OM OSS</h1> */}
           </div>
           <img src={Hero} alt='Grupppfoto' />
         </div>

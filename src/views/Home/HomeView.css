@@ -212,7 +212,7 @@ swiper-container .swiper-slide-shadow-right {
 swiper-slide.swiper-slide-active {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     filter: none;
-    background: var(--blue-clr);
+    background: var(--dark-blue-clr);
     color: white;
 }
 
