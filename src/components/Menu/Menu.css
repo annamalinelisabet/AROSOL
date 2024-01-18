@@ -38,16 +38,16 @@
 }
 
 .Menu ul li:hover {
-    background: var(--blue-clr);
+    background: var(--orange-clr);
 }
 
 .Menu ul li:active {
-    color: var(--blue-clr);
+    color: var(--orange-clr);
 }
 
 .Menu .line {
     width: min(100%, 250px);
     height: 1px;
-    background: var(--orange-clr);
+    background: var(--blue-clr);
     margin-block: 1rem;
 }
