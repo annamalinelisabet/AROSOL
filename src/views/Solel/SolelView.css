@@ -1,26 +1,3 @@
-.Solel .info-wrapper {
-    color: #fff;
-    width: 100%;
-    background: var(--black-clr);
-    padding-block: 3rem;
-}
-
-.Solel .info-wrapper .container {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.Solel .text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.Solel .text {
-    display: none;
-}
-
 .Solel .img-wrapper {
     height: 70vh;
     width: 100%;
@@ -67,19 +44,6 @@
 }
 
 @media(min-width: 768px) {
-    .Solel .text-box {
-        flex: 1;
-    }
-
-    .Solel .text {
-        display: inline;
-        flex: 1;
-    }
-
-    .Solel .mobile-text {
-        display: none;
-    }
-
     .Solel .info-box-wrapper {
         display: flex;
         gap: 2rem;
