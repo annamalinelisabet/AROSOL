@@ -1,7 +1,7 @@
 import './HomeView.css'
 import 'animate.css';
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import HomeHero from '../../components/HomeHero/HomeHero'
@@ -21,6 +21,40 @@ import ReviewCard from '../../components/ReviewCard/ReviewCard';
 import Review1 from '../../assets/review.jpg'
 
 const HomeView = () => {
+
+  const swiperRef = useRef(null)
+
+  useEffect(() => {
+    const swiperContainer = swiperRef.current
+    const params = {
+      navigation: true,
+      effect: 'coverflow',
+      loop: true,
+      speed: 500,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 2,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2
+      },
+      injectStyles: [
+        `
+          .swiper-button-next,
+          .swiper-button-prev {
+            color: var(--orange-clr);
+            padding: 1rem;
+          }
+      `,
+      ],
+    }
+
+    Object.assign(swiperContainer, params)
+    swiperContainer.initialize()
+  }, [])
+
   const [showDropdown, setShowDropdwon] = useState('energikostnader')
 
   function toggleDropdown(identifier) {
@@ -102,28 +136,14 @@ const HomeView = () => {
 
       <div className='review-section'>
         <h2 className='sub-header'>Vad tycker våra kunder?</h2>
-        <swiper-container 
-          class='mySwiper' 
-          effect='coverflow' 
-          loop='true'
-          speed='500'
-          navigation='true'
-          grab-cursor='true' 
-          centered-slides='true'
-          slides-per-view='2' 
-          coverflow-effect-rotate='0' 
-          coverflow-effect-stretch='0' 
-          coverflow-effect-depth='100'
-          coverflow-effect-modifier='2' 
-        >
+        <swiper-container ref={swiperRef} init='false'>
           <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Maria Persson' text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem laudantium ratione quam. Maiores porro ullam fugiat magnam, voluptas earum recusandae?' /></swiper-slide>
           <swiper-slide><ReviewCard company='VD Hallstahem' img={Review1} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
           <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
           <swiper-slide><ReviewCard company='Ett företag AB' img={Review1} name='Maximillian Ettlångtefternamn' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
         </swiper-container>       
       </div> 
-       
-    
+      
     </div>
   )
 }

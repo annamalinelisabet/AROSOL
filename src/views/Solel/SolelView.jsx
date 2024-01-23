@@ -4,9 +4,9 @@ import HeroImage from '../../assets/solelheader.png'
 import Image from '../../assets/montering.png'
 import WinterImage from '../../assets/alperna.png'
 import PageHero from '../../components/PageHero/PageHero';
-import Button from '../../components/Button/Button';
 import ContactSection from '../../components/ContactSection/ContactSection';
 import InfoBox from '../../components/InfoBox/InfoBox';
+import ServiceInfoSection from '../../components/ServiceInfoSection/ServiceInfoSection';
 
 const SolelView = () => {
 
@@ -14,31 +14,23 @@ const SolelView = () => {
     window.scrollTo(0, 0)
   }, [])
 
-  const infoText1 = 'Att investera i solel med Arosol är inte bara ett miljövänligt val, det är även ekonomiskt smart och strategiskt. Genom att använda våra solpaneler blir ditt hem eller företag inte bara mer värdefullt, utan du sticker också ut från konkurrenterna genom tydligt miljöengagemang.'
-  const infoText2 = 'Dessutom öppnar investeringen i våra solenergilösningar upp möjligheter till skatteförmåner och deltagande i olika incitamentprogram. Detta innebär att utöver de omedelbara ekonomiska fördelarna kan du också dra nytta av ytterligare stöd och incitament som kan göra din övergång till solenergi ännu mer fördelaktig. Ta det första steget mot en hållbar framtid med Arosol.'
-
   return (
     <div className='Solel'>
 
       <PageHero alt='Solceller' image={HeroImage} title='SOLEL' />
-
-      <div className='info-wrapper'>
-        <div className='container'>
-          <div className='text-box'>
-            <h1 className='sub-header'>En smart investering</h1>
-            <p className='mobile-text'>{infoText1}<span className='new-paragraph'>{infoText2}</span></p>
-            <p className='text'>Arosol installerar högkvalitativa solcellspaneler för optimal avkastning.</p>
-            <Button text='Få offert' />
-          </div>
-          <p className='text'>{infoText1}<span className='new-paragraph'>{infoText2}</span></p>
-        </div>
-      </div>
+      
+      <ServiceInfoSection 
+        header='En smart investering' 
+        text='Arosol installerar högkvalitativa solcellspaneler för optimal avkastning.'
+        infoText1='Att investera i solel med Arosol är inte bara ett miljövänligt val, det är även ekonomiskt smart och strategiskt. Genom att använda våra solpaneler blir ditt hem eller företag inte bara mer värdefullt, utan du sticker också ut från konkurrenterna genom tydligt miljöengagemang.' 
+        infoText2='Dessutom öppnar investeringen i våra solenergilösningar upp möjligheter till skatteförmåner och deltagande i olika incitamentprogram. Detta innebär att utöver de omedelbara ekonomiska fördelarna kan du också dra nytta av ytterligare stöd och incitament som kan göra din övergång till solenergi ännu mer fördelaktig. Ta det första steget mot en hållbar framtid med Arosol.' 
+      />
 
       <div className='img-wrapper'>
         <img src={Image} alt='Bild' />
       </div>
 
-      <h2 className='container sub-header'>Montering av solpaneler</h2>
+      <h2 className='container sub-header pb-2'>Montering av solpaneler</h2>
       <div className='info-box-wrapper'>
         <InfoBox sun text='Solcellinstallationen genomgår flera steg för att säkerställa effektiv energiproduktion. Det börjar med en platsutvärdering för optimal solljusexponering, sedan design och installationsplan.' />
         <InfoBox lightning text='Ett robust monteringssystem installeras för att säkra solcellerna på plats. Elektriska kablar ansluts till växelriktaren för att omvandla elektriciteten, och tester genomförs för överensstämmelse med standarder.' />

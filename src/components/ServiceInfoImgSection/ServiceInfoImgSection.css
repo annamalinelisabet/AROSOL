@@ -1,0 +1,44 @@
+.ServiceInfoImgSection {
+    background: var(--black-clr);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ServiceInfoImgSection .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-block: 3rem;
+}
+
+.ServiceInfoImgSection .img-wrapper {
+    height: 70vh;
+    width: 100%;
+}
+
+.ServiceInfoImgSection .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(min-width: 768px) {
+    .ServiceInfoImgSection {
+        flex-direction: row;
+    }
+
+    /* ! BLIR INTE RÄTT MED CONTAINERN!! */
+    .ServiceInfoImgSection .text-section {
+        flex: 1;
+        padding-inline: 2rem;
+    }
+
+    .ServiceInfoImgSection .img-wrapper {
+        flex: 1;
+        height: inherit;
+        width: inherit;
+    }
+}
