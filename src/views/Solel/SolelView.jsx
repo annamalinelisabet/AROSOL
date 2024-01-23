@@ -30,7 +30,7 @@ const SolelView = () => {
         <img src={Image} alt='Bild' />
       </div>
 
-      <h2 className='container sub-header'>Montering av solpaneler</h2>
+      <h2 className='container sub-header pb-2'>Montering av solpaneler</h2>
       <div className='info-box-wrapper'>
         <InfoBox sun text='Solcellinstallationen genomgår flera steg för att säkerställa effektiv energiproduktion. Det börjar med en platsutvärdering för optimal solljusexponering, sedan design och installationsplan.' />
         <InfoBox lightning text='Ett robust monteringssystem installeras för att säkra solcellerna på plats. Elektriska kablar ansluts till växelriktaren för att omvandla elektriciteten, och tester genomförs för överensstämmelse med standarder.' />
