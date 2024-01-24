@@ -21,14 +21,14 @@
 }
 
 .Button .btnDark:hover {
-    background-color: #DB4300;
-    border: 2px solid #DB4300;
+    background-color: #B72D00;
+    border: 2px solid #B72D00;
     transition: background-color .4s;
 }
 
 .Button .btnLight:hover {
-    border: 2px solid #DB4300;
-    background-color: #DB4300;
+    border: 2px solid #B72D00;
+    background-color: #B72D00;
     transition: background-color .4s;
     color: #fff;
 }
