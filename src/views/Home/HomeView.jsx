@@ -3,22 +3,23 @@ import 'animate.css';
 
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-
-import HomeHero from '../../components/HomeHero/HomeHero'
-import ServiceCard from '../../components/ServiceCard/ServiceCard'
-import solel from '../../assets/takpanelerhus.png'
-import takentreprenad from '../../assets/takentreprenadhome.png'
-import taksäkerhet from '../../assets/taksäkerhet.png'
-import plåtslageri from '../../assets/plåt.png'
-import Button from '../../components/Button/Button'
-
 import { FaCheckCircle, FaArrowAltCircleRight } from "react-icons/fa";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
+import HomeHero from '../../components/HomeHero/HomeHero'
+import ServiceCard from '../../components/ServiceCard/ServiceCard'
+import takentreprenad from '../../assets/takentreprenadhome.png'
+import taksäkerhet from '../../assets/snöras.png'
+import plåtslageri from '../../assets/plåt.png'
 import solelhome from '../../assets/solelhome.png'
 import CEO from '../../assets/pontus.png'
-import ReviewCard from '../../components/ReviewCard/ReviewCard';
 import Review1 from '../../assets/review.jpg'
+import solel from '../../assets/plåtsolel.png'
+
+import Button from '../../components/Button/Button'
+import ReviewCard from '../../components/ReviewCard/ReviewCard';
+
+
 
 const HomeView = () => {
 
@@ -66,12 +67,12 @@ const HomeView = () => {
       <HomeHero/>
       <div className='serviceCard-Wrapper'>
           <div className='relative'>
-            <ServiceCard title='Solel' text='Monterar, installerar och underhåller solcellspaneler' imgSrc={solel} linkTo='/solel'/>
+        <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad'/>
             <h4 className='service-title'>Våra tjänster</h4>
           </div>
-        <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad'/>
-        <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
         <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och installation av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri'/>
+        <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
+            <ServiceCard title='Solel' text='Monterar, installerar och underhåller solcellspaneler' imgSrc={solel} linkTo='/solel'/>
       </div>
       <div className='container'>
 

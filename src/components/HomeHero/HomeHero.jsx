@@ -15,7 +15,7 @@ const HomeHero = () => {
         <div className='container wrapper'>
             <div className='hero-text'>
                 <h1 className='header'>Tillverka el <span className='line-break'> med solcellspanel</span></h1>
-                <p>Vi monterar solpaneler och säkrar taket på samma gång</p>
+                <p>Solpaneler, taktrygghet och skräddarsytt plåtslageri i en komplett lösning för ditt tak</p>
             </div>
             <div className='cta-section'>
                 <Button text='Våra tjänster' onClick={handleButtonClick}/>
