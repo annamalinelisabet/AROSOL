@@ -88,9 +88,10 @@ const HomeView = () => {
               </div>
 
               <div className='dropdown-container'>
-                <button className='dropdown-btn' onClick={() => toggleDropdown('miljö')}><FaCheckCircle className='check' />Miljövänligt alternativ</button>
+                <button className='dropdown-btn' onClick={() => toggleDropdown('miljö')}><FaCheckCircle className='check' />Hållbar energilösning</button>
                 {showDropdown === 'miljö' && (
-                    <p className='dropdown-content dots animate__animated animate__fadeInDown'>Din egenproducerade el är ett miljövänligt alternativ och minskar din klimatpåverkan.</p>
+                    // <p className='dropdown-content dots animate__animated animate__fadeInDown'>Din självproducerade el är ett hållbart alternativ som reducerar din klimatpåverkan</p>
+                    <p className='dropdown-content dots animate__animated animate__fadeInDown'>Din självproducerade el är ett hållbart alternativ eftersom den utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer hållbar och resurseffektiv energiproduktion.</p>
                 )} 
               </div>
 
@@ -120,17 +121,17 @@ const HomeView = () => {
       <div className='CEO-wrapper'>
         <div className='CEO-section container'>
           <div className='CEO-img'><img src={CEO} alt="Picture of CEO Pontus Bergman" /></div>
-          <div className='CEO-text-wrapper'>
-            <div className='CEO-text'>
+          <div className='CEO-text-wrapper container'>
+            <div className='CEO-text container'>
               <FaQuoteLeft className='right-quote' />
               <p>Vi på arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på vårt arbete och vår service, och vi strävar alltid efter att överträffa våra kunders förväntingar</p> 
               <FaQuoteRight className='left-quote' />
             </div>
-            <div>
+            <div className='container'>
               <h4>Pontus Bergman</h4> 
               <p>VD AROSOL AB</p>
             </div>
-            <Link to='/about' className='link-to-about'><FaArrowAltCircleRight/>Läs mer om oss</Link>
+            <Link to='/about' className='link-to-about container'><FaArrowAltCircleRight/>Läs mer om oss</Link>
           </div>
         </div>
       </div>
