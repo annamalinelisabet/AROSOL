@@ -1,9 +1,12 @@
-.Platslageri .slider-text {
-    padding-block: 4rem 1rem;
+.Platslageri {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem
 }
 
 .Platslageri .slider-text p {
     max-width: 700px;
+    padding-bottom: 1rem;
 }
 
 .Platslageri .line-div {
