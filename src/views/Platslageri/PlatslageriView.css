@@ -1,0 +1,73 @@
+.Platslageri .slider-text {
+    padding-block: 4rem 1rem;
+}
+
+.Platslageri .slider-text p {
+    max-width: 700px;
+}
+
+.Platslageri .line-div {
+    margin: 0 auto;
+    width: min(90%, 1500px);
+}
+
+.Platslageri .line1 {
+    display: none;
+}
+
+.Platslageri .line1,
+.Platslageri .line2 {
+    background: var(--blue-clr);
+    height: 2px;
+    flex: 1;
+    margin-block: .2rem;
+}
+
+.Platslageri swiper-container {
+    width: 100%;
+    display: flex;
+}
+
+.Platslageri swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.Platslageri .slide-wrapper {
+    flex: 1;
+    height: 60vh;
+}
+
+.Platslageri .slide-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+@media(min-width: 768px) {
+    .Platslageri .slider-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Platslageri .slider-text p {
+        text-align: center;
+    }
+
+    .Platslageri .line1 {
+        display: inline-block;
+    }
+
+    .Platslageri .slider-text .sub-header {
+        text-align: center;
+    }
+
+    .Platslageri .line-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
