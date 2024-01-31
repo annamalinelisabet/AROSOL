@@ -196,11 +196,11 @@
     gap: 2rem;
 }
 
-swiper-container {
+.HomeView swiper-container {
     width: 100%;
 }
 
-swiper-slide {
+.HomeView swiper-slide {
     display: flex;
     justify-content: center;
     background: white;
