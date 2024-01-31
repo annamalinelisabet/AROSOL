@@ -4,11 +4,6 @@
     gap: 3rem;
 }
 
-.Taksakerhet .safety-video-section {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
 .Taksakerhet .safety-text {
     background-color: var(--dark-blue-clr);
     color: #fff;
@@ -22,8 +17,14 @@
     padding-block: 2rem;
 }
 
+.Taksakerhet .safety-video-section {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .Taksakerhet .video-wrapper {
     flex: 1;
+    display: none;
 }
 
 .Taksakerhet .safety-video {
@@ -76,6 +77,10 @@
     
     .Taksakerhet .safety-video-section {
        flex-direction: row;
+   }
+
+   .Taksakerhet .video-wrapper {
+        display: flex;
    }
 
    .Taksakerhet .safety-card-wrapper {
