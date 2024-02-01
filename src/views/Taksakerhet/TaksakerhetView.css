@@ -31,6 +31,7 @@
     height: 100vh;
     object-fit: cover;
     width: 100%;
+    display: none;
 }
 
 .Taksakerhet .safety-img {
@@ -81,6 +82,10 @@
 
    .Taksakerhet .video-wrapper {
         display: flex;
+   }
+
+   .Taksakerhet .safety-video {
+    display: inline;
    }
 
    .Taksakerhet .safety-card-wrapper {
