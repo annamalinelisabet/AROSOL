@@ -1,5 +1,5 @@
 import './TaksakerhetView.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import PageHero from '../../components/PageHero/PageHero'
 import ServiceInfoSection from '../../components/ServiceInfoSection/ServiceInfoSection'
 import ContactSection from '../../components/ContactSection/ContactSection'
@@ -9,9 +9,26 @@ import safetyVideo from '../../assets/removesnow.mp4'
 import { MdOutlineHandyman } from 'react-icons/md';
 import { IoSnowSharp } from 'react-icons/io5';
 import { BsLadder } from 'react-icons/bs';
-
+import mobileImage from '../../assets/snowfalling.png'
 
 const TaksakerhetView = () => {
+
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreenWidth = () => {
+      setIsMobile(window.innerWidth <= 767)
+    }
+
+    checkScreenWidth();
+
+    window.addEventListener('resize', checkScreenWidth)
+  
+    return () => {
+      window.removeEventListener('resize', checkScreenWidth)
+    }
+  }, [])
+  
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -31,7 +48,7 @@ const TaksakerhetView = () => {
 
     <div className='safety-wrapper'>
       <div className='safety-section container'>
-        <h2>Takskyddstjänster för varje säsong</h2>
+        <h2 className='sub-header'>Takskyddstjänster för varje säsong</h2>
         <div className='safety-card-wrapper'>
           <div className='safety-card'>
             <div><MdOutlineHandyman className='safety-icon' /></div>
@@ -53,11 +70,17 @@ const TaksakerhetView = () => {
     </div>
 
       <div className='safety-video-section'>
+      { isMobile ? (     
+          <div className='mobile-img'>
+            <img src={mobileImage} alt='Picture of snow falling from roof' />
+          </div>
+        ) : (
         <div className='video-wrapper'>
           <video autoPlay muted loop className='safety-video'>
             <source src={safetyVideo} type='video/mp4'/>
           </video>
         </div>
+        )}
         <div className='safety-text'>
           <h2 className='sub-header container'>Välj långsiktig trygghet med Arosol</h2>
           <p className='container'>Bristande taksäkerhet kan skada både taket och människor på marken. Stora mängder snö som faller obehindrat från ett högt tak kan få förödande konsekvenser och är ofta ett resultat av bristande taksäkerhet. Att säkra taket handlar om att bygga och underhålla det på ett sätt som minskar olycksriskerna och skyddar både byggnaden och dess invånare. <span className='new-paragraph'>Vi på Arosol strävar efter att inte bara tillgodose dina omedelbara behov, utan även att skapa en hållbar lösning som säkrar ditt tak och din trygghet långt in i framtiden. När du väljer Arosol får du mer än bara en pålitlig partner för taksäkerhet; du får en engagerad och professionell resurs som behandlar ditt tak som om det vore vårt eget.</span></p>

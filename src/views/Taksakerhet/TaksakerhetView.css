@@ -24,7 +24,14 @@
 
 .Taksakerhet .video-wrapper {
     flex: 1;
-    display: none;
+}
+
+.Taksakerhet .mobile-img {
+    flex: 1;
+}
+.Taksakerhet .mobile-img img {
+    width: 100%;
+    height: 100%;
 }
 
 .Taksakerhet .safety-video {
@@ -77,10 +84,6 @@
     
     .Taksakerhet .safety-video-section {
        flex-direction: row;
-   }
-
-   .Taksakerhet .video-wrapper {
-        display: flex;
    }
 
    .Taksakerhet .safety-card-wrapper {
