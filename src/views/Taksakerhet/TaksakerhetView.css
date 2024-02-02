@@ -37,11 +37,6 @@
     width: 100%;
 }
 
-.Taksakerhet .video-wrapper, .safety-video {
-    display: none;
-    visibility: hidden;
-}
-
 .Taksakerhet .safety-img {
     width: 100%;
     height: 100%;
