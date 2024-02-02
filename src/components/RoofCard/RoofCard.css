@@ -1,0 +1,10 @@
+.RoofCard .nr-circle {
+    align-items: center;
+    background-color: var(--black-clr);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}

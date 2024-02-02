@@ -1,0 +1,36 @@
+.Takentreprenad {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.Takentreprenad .blue-line {
+    padding-top: .5rem;
+    width: 100%;
+    border-bottom: 3px solid var(--blue-clr) ;
+}
+
+.Takentreprenad .roof-imges-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.Takentreprenad .roof-img {
+    height: 70vh;
+    width: 100%;
+}
+
+.Takentreprenad .roof-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+@media(min-width: 768px) {
+    
+    .Takentreprenad .roof-imges-wrapper {
+        flex-direction: row;
+    }
+}
