@@ -1,9 +1,10 @@
 .PageHero {
     border-bottom: 4px solid var(--blue-clr);
+    height: calc(100vh + 4px);
 }
 
 .PageHero .img-wrapper {
-    min-height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -12,8 +13,7 @@
 .PageHero .img-wrapper img {
     object-fit: cover;
     width: 100%;
-    height: 100vh;
-    /* -- DETTA ÄR ETT PROBLEM VI MÅSTE LÖSA, BILDERNA LÄGGER SIG INTE BRA OCH FÅR EN GRÅ KANT LÄNGST NER */
+    height: 100%;
 }
 
 .PageHero .overlay {
@@ -32,7 +32,7 @@
     color: white;
 }
 
-.long-arrow-down{
+.PageHero .long-arrow-down {
     background-color: #F5F4F0;
     display: block;
     height: 140px;

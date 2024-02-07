@@ -21,9 +21,9 @@
 .Platslageri .line1,
 .Platslageri .line2 {
     background: var(--blue-clr);
-    height: 2px;
+    height: 3px;
     flex: 1;
-    margin-block: .2rem;
+    margin-block: .5rem;
 }
 
 .Platslageri swiper-container {

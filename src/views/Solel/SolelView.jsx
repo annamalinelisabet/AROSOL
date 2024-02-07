@@ -29,7 +29,7 @@ const SolelView = () => {
         externalLink
       />
 
-      <div className='img-wrapper'>
+      <div className='montage-img-wrapper'>
         <img src={Image} alt='Bild' />
       </div>
 
