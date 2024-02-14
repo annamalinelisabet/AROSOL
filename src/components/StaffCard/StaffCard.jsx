@@ -3,9 +3,13 @@ import './StaffCard.css'
 const StaffCard = ({ image, name, text}) => {
   return (
     <div className='StaffCard'>
-      <img src={image} alt='Foto på anställd' />
-      <h3 className='name'>{name}</h3>
-      <p>{text}</p>
+      <div className='staff-imgwrapper'>
+        <img src={image} alt='Foto på anställd' />
+      </div>
+      {/* <div> */}
+        <h3>{name}</h3> 
+        <p>{text}</p>
+      {/* </div> */}
     </div>
   )
 }

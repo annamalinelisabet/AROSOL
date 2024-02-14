@@ -3,6 +3,10 @@ import StaffCard from '../../components/StaffCard/StaffCard'
 import './AboutView.css'
 import { useEffect } from 'react'
 import Image from '../../assets/pontus.png'
+import Michael from '../../assets/Michael.png'
+import Albin from '../../assets/Albin.png'
+import Mikael from '../../assets/mikael.png'
+import Stefan from '../../assets/stefan.png'
 import Hero from '../../assets/group.png'
 
 const AboutView = () => {
@@ -29,10 +33,11 @@ const AboutView = () => {
         <div className='card-section container'>
             <h2 className='sub-header'>Träffa teamet</h2>
           <div className='card-wrapper'>
-            <StaffCard image={Image} name='pontus' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis a veniam, ab impedit optio.' />
-            <StaffCard image={Image} name='stefan' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.' />
-            <StaffCard image={Image} name='albin' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet consectetur adipisicing elit.' />
-            <StaffCard image={Image} name='michael' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis a veniam, ab impedit optio.' />
+            <StaffCard image={Image} name='Pontus Bergman' text='Vår VD och grundare är expert inom plåt, solel, tak och säkerhet. Han kan det mesta och lär sig resten. Älskar att vara aktiv, oavsett om det är snowboard i fjällen eller mountainbike i skogen.' />
+            <StaffCard image={Stefan} name='Stefan Nilsson' text='Vår grundare och tekniska supportguru älskar sitt arbete. På fritiden njuter han av paragliding och utforskar teknikvärldens möjligheter - en sann appeltorsk!' />
+            <StaffCard image={Mikael} name='Mikael Syrén' text='Med över 20 års erfarenhet i plåtbranschen, kan man lugnt säga att Mikael är en trygg och pålitlig expert. Utöver att hantera plåtar älskar han att fiska och spendera tid med sina fyrbenta vänner.' />
+            <StaffCard image={Albin} name='Albin Sundnäs' text='Utbildade plåtslagare och solelsmontör. Han brinner för träning och hälsa. För att varva ner söker han sig gärna till vattnet för en dag med fiske.' />
+            <StaffCard image={Michael} name='Michael Karlsson' text='Vår hyllade plåtveteran har inte bara mästrat sitt yrke utan förvandlar även sitt sommarställe till en skönhet. På sommaren njuter han av båtturer och naturen.' />
           </div>
         </div>
 

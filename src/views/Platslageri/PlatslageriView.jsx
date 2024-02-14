@@ -67,7 +67,7 @@ const PlatslageriView = () => {
         <swiper-slide><div className='slide-wrapper'><img src={Slide3} alt='Photo of a door' /></div></swiper-slide>
       </swiper-container>       
       </div> 
-      <ContactSection header='Vill ni veta mer?' text='Är ni nyfikna på solpaneler och vill lära er mer om deras montering, funktion och andra aspekter? Tveka inte att kontakta oss! På Arosol är vi här för att svara på era frågor och erbjuda all information ni behöver för att fatta välgrundade beslut om solenergilösningar. Kontakta oss och låt oss guida er mot en mer hållbar energiframtid.' />
+      <ContactSection header='Vill ni veta mer?' text='Är du intresserad av plåtslageritjänster och vill lära dig mer om montering, funktion och andra aspekter? Tveka inte att kontakta oss! På Arosol är vi här för att svara på dina frågor och erbjuda all information du behöver för att fatta välgrundade beslut om plåtarbete. Kontakta oss och låt oss guida dig mot en mer hållbar framtid för ditt byggprojekt.' />
     </div>
   )
 }
