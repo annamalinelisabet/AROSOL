@@ -32,7 +32,6 @@ const Footer = () => {
             <h3>Information</h3>
             <NavLink to='/about'><li>Om oss</li></NavLink>
             <NavLink to='/contact'><li>Kontakt</li></NavLink>
-            <NavLink to='/FAQ'><li>FAQ</li></NavLink>
           </ul>
           <div className='service-columns'>
             <h3>Följ oss</h3>

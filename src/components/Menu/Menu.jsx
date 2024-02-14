@@ -24,7 +24,6 @@ const Menu = ({ setShowMenu }) => {
         <ul>
             <NavLink to='/about'><li>Om oss</li></NavLink>
             <NavLink to='/contact'><li>Kontakt</li></NavLink>
-            <NavLink to='/FAQ'><li>Frågor och svar</li></NavLink>
         </ul>
     </div>
   )
