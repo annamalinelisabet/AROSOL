@@ -48,3 +48,7 @@
     height: 5px;
     width: 100%;
 }
+
+.About .btn-container {
+    margin-top: 1.5rem;
+}
