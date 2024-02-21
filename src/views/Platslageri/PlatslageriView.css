@@ -26,24 +26,17 @@
     margin-block: .5rem;
 }
 
-.Platslageri swiper-container {
+.Platslageri .images-wrapper {
+    display: flex;
+    height: 70vh;
+    gap: 1rem;
     width: 100%;
-    display: flex;
+    overflow: hidden;
 }
 
-.Platslageri swiper-slide {
-    display: flex;
-    justify-content: center;
-}
-
-.Platslageri .slide-wrapper {
-    flex: 1;
-    height: 60vh;
-}
-
-.Platslageri .slide-wrapper img {
+.Platslageri .images-wrapper img {
     height: 100%;
-    width: 100%;
+    width: calc(100% / 3);
     object-fit: cover;
     object-position: bottom;
 }

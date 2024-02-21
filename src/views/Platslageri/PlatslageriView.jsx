@@ -1,54 +1,36 @@
 import './PlatslageriView.css'
-import { useEffect, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import PageHero from '../../components/PageHero/PageHero'
 import ServiceInfoImgSection from '../../components/ServiceInfoImgSection/ServiceInfoImgSection'
 import Image from '../../assets/platslag.png'
-import Slide1 from '../../assets/plåt.png'
-import Slide2 from '../../assets/plåtkruka.png'
-import Slide3 from '../../assets/plåtdörr.png'
+import slide1 from '../../assets/plåt.png'
+import slide2 from '../../assets/plåtkruka.png'
+import slide3 from '../../assets/plåtdörr.png'
 import plattak from '../../assets/plåttak.png'
 import ContactSection from '../../components/ContactSection/ContactSection'
+import ImageSlider from '../../components/ImageSlider/ImageSlider'
 
 const PlatslageriView = () => {
-
-  const swiperRef = useRef(null)
-
-  useEffect(() => {
-    const swiperContainer = swiperRef.current
-    const params = {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-        },
-        992: {
-          slidesPerView: 3,
-        }
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
-      injectStyles: [
-        `
-          .swiper-button-next,
-          .swiper-button-prev {
-            color: var(--orange-clr);
-            padding: 1rem;
-          }
-      `,
-      ],
-    }
-
-    Object.assign(swiperContainer, params)
-    swiperContainer.initialize()
-  }, [])
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const images = [slide1, slide2, slide3]
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  useEffect(() => {
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+        window.removeEventListener('resize', handleResize)
+    }
+}, [])
+
+const smallScreen = windowWidth <= 768
 
   return (
     <div className='Platslageri'>
@@ -61,11 +43,15 @@ const PlatslageriView = () => {
           <div className='line2'></div>
         </div>
         <p className='container'>Med expertis inom plåtarbeten täcker vi allt från tak till dörrkarmar, skapar dekorativa detaljer och speciallösningar. Utmana oss – vi är redo att överträffa dina förväntningar.</p>
-      <swiper-container ref={swiperRef} init='false'>
-        <swiper-slide><div className='slide-wrapper'><img src={Slide1} alt='Photo of a roof' /></div></swiper-slide>
-        <swiper-slide><div className='slide-wrapper'><img src={Slide2} alt='Photo of a house' /></div></swiper-slide>
-        <swiper-slide><div className='slide-wrapper'><img src={Slide3} alt='Photo of a door' /></div></swiper-slide>
-      </swiper-container>       
+        {smallScreen ? (
+          <ImageSlider images={images} />
+        ) : (
+          <div className='images-wrapper'>
+            {images.map((image, index) => (
+              <img src={image} key={index} />
+            ))}
+          </div>
+        )}
       </div> 
       <ContactSection header='Vill ni veta mer?' text='Är ni nyfikna på solpaneler och vill lära er mer om deras montering, funktion och andra aspekter? Tveka inte att kontakta oss! På Arosol är vi här för att svara på era frågor och erbjuda all information ni behöver för att fatta välgrundade beslut om solenergilösningar. Kontakta oss och låt oss guida er mot en mer hållbar energiframtid.' />
     </div>
