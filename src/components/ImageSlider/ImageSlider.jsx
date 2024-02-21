@@ -30,7 +30,7 @@ const ImageSlider = ({ images }) => {
       
     return (
         <div className='ImageSlider container'>
-            <img src={images[imgIndex]} className='animate__animated animate__fadeIn' key={imgIndex} />
+            <img src={images[imgIndex]} className='animate__animated animate__fadeIn animate__slower' key={imgIndex} />
         </div>
     )
 }
