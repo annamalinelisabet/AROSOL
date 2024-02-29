@@ -1,0 +1,49 @@
+.InputSuccess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 3rem;
+}
+
+.InputSuccess .emailCheck {
+    color: var(--blue-clr);
+    width: 70px;
+    height: 70px;
+}
+
+.InputSuccess .success-text {
+    text-align: center;
+}
+
+.InputSuccess .success-contact-icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.InputSuccess .location {
+    color: var(--black-clr);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.InputSuccess .contact-icon {
+    align-items: center;
+    color: var(--black-clr);
+    display: flex;
+    gap: .5rem;
+}
+
+.InputSuccess .contact-info-icon {
+    color: var(--blue-clr);
+    width: 20px;
+    height: 20px;
+}
+
+.InputSuccess .blue-line {
+    border-bottom: 2px solid var(--blue-clr);
+    width: 100%;
+    margin-top: 1rem;
+}

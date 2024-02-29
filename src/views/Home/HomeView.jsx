@@ -90,7 +90,6 @@ const HomeView = () => {
               <div className='dropdown-container'>
                 <button className='dropdown-btn' onClick={() => toggleDropdown('miljö')}><FaCheckCircle className='check' />Hållbar energilösning</button>
                 {showDropdown === 'miljö' && (
-                    // <p className='dropdown-content dots animate__animated animate__fadeInDown'>Din självproducerade el är ett hållbart alternativ som reducerar din klimatpåverkan</p>
                     <p className='dropdown-content dots animate__animated animate__fadeInDown'>Din självproducerade el är ett hållbart alternativ eftersom den utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer hållbar och resurseffektiv energiproduktion.</p>
                 )} 
               </div>

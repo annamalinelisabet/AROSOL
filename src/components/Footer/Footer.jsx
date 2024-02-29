@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
             <div className='contact-info'><FaClock className='brand-info-icon'/>Vardagar 08-17</div>
             <a href='tel:+46761834115' className='contact-info'><FaPhone className='brand-info-icon'/>076-183 41 15</a>
-            <a href='mailto:info@arosol.se' className='contact-info'><IoMdMail className='brand-info-icon'/>info@arosol.se</a>
+            <a href='mailto:ekonomi@arosol.se' className='contact-info'><IoMdMail className='brand-info-icon'/>ekonomi@arosol.se</a>
             <a  href='https://www.google.com/maps/search/?api=1&query=Häradsvägen%204%2C%20734%2032%20Hallstahammar' target='_blank' rel='noopener noreferrer' className='contact-info'><IoMdPin className='brand-info-icon'/>Hallstahammar</a>
           </div>
         <div className='service-wrapper'>
