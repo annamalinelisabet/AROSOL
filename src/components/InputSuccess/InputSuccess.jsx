@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './InputSuccess.css'
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaPhone, FaClock } from 'react-icons/fa6'
 import { IoMdMail } from 'react-icons/io'
 
 const InputSuccess = () => {
+  const inputSuccessRef = useRef(null);
+
+  useEffect(() => {
+    if(inputSuccessRef.current) {
+      inputSuccessRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [])
+  
   return (
-    <div className='InputSuccess'>
+    <div className='InputSuccess' ref={inputSuccessRef}>
       <div><MdMarkEmailRead className='emailCheck'/></div>
       <div className='success-text'> 
         <h2>Meddelande skickat</h2>
