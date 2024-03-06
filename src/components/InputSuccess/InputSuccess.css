@@ -16,11 +16,19 @@
     text-align: center;
 }
 
-.InputSuccess .success-contact-icons {
+.InputSuccess .success-contact-wrap {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 1rem;
+}
+
+.InputSuccess .success-contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .InputSuccess .location {
