@@ -35,7 +35,7 @@ const smallScreen = windowWidth <= 768
   return (
     <div className='Platslageri'>
       <PageHero title='PLÅTSLAGERI' image={plattak} />
-      <ServiceInfoImgSection header='Expertis och kvalitet inom plåtarbeten' image={Image} alt='Photo of plåtslageri' text='Arosol erbjuder omfattande plåttjänster för att möta dina behov på ett effektivt och professionellt sätt. Vårt erfarna team av plåtslagare är dedikerat till att leverera högkvalitativa lösningar för olika projekt, från takrenoveringar till anpassade plåtdetaljer. Vi strävar efter att överträffa dina förväntningar genom noggrannhet och skicklighet i varje plåtarbete vi utför. Oavsett om det gäller plåtbeklädnad, takarbeten eller specialdesignade plåtdetaljer, är vi redo att ta itu med dina projekt. Med Arosol får du inte bara pålitliga plåttjänster utan också en partner som förstår vikten av kvalitet och hållbarhet. Lita på oss för att leverera professionella plåtlösningar som håller över tid.' />
+      <ServiceInfoImgSection header='Expertis och kvalitet inom plåtarbeten' image={Image} alt='Photo of plåtslageri' text='Arosol erbjuder omfattande plåttjänster på ett professionellt sätt. Vårt erfarna team levererar högkvalitativa lösningar för olika projekt, från takrenoveringar till anpassade plåtdetaljer. Vi strävar efter noggrannhet och skicklighet i varje plåtarbete. Oavsett om det gäller plåtbeklädnad, takarbeten eller specialdesignade detaljer, är vi redo att ta itu med dina projekt. Med Arosol får du pålitliga plåttjänster och en partner som värdesätter kvalitet och hållbarhet. Lita på oss för professionella plåtlösningar.' />
       <div className='slider-text'>
         <div className='line-div'>
           <div className='line1'></div>

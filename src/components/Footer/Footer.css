@@ -95,6 +95,7 @@
 
 .Footer .service-columns h3 {
     color: var(--orange-clr);
+    font-weight: 500;
 }
 
 @media(min-width: 768px) {
