@@ -3,10 +3,12 @@ import './InputSide.css'
 import styled from 'styled-components'
 
 const InputSideWrapper = styled.form`
+    background-color: #fff;
     padding-bottom: 100px;
     position: relative;
     width: 100%;
-    // border-top: 10px solid var(--blue-clr);
+    padding-inline: 1.5rem;
+    border-radius: 5px;
 `;
 
 const InputWrapper = styled.div`
@@ -55,7 +57,7 @@ const MessageInput = styled.textarea`
 `;
 
 const SubMitButton = styled.input`
-    bottom: 20px;
+    bottom: 30px;
     background-color: var(--orange-clr);
     border-radius: 5px;
     border: none;
@@ -67,7 +69,7 @@ const SubMitButton = styled.input`
     position: absolute;
     padding-block: .7rem;
     padding-inline: 1rem;
-    right: 0px;
+    right: 1.5rem;
     text-transform: uppercase;
     &:hover {
         background-color: #B72D00;
@@ -101,7 +103,7 @@ const TextOne = styled.p`
   color: var(--black-clr);
   font-weight: 500;
   font-size: 20px;
-  padding-block: 10px; 
+  padding-block: 20px; 
 `;
 
 const InputSide = ({ onEmailSent }) => {
@@ -182,9 +184,9 @@ const InputSide = ({ onEmailSent }) => {
         <InputWrapper>
             <p className='input-title'>Telefonnummer</p>
             <Input
-            type="tel"
+            type='tel'
             required
-            placeholder="070-123 45 67"
+            placeholder='070-123 45 67'
             value={phone}
             onChange={phoneHandler}
             />
@@ -193,15 +195,15 @@ const InputSide = ({ onEmailSent }) => {
             <p className='input-title'>Ämne</p>
             <Input 
             type='text' 
-            placeholder='Byte av tak'
+            placeholder='Skriv ett ämne'
             value={subject}
             onChange={subjectHandler} 
             />
         </InputWrapper>
         <InputWrapper>
-            <p className='input-title'>Skriv ett meddelande</p>
+            <p className='input-title'>Hur kan vi hjälpa dig?</p>
             <MessageInput 
-            placeholder='Jag skulle vilja byta mitt tak, men är osäker på...'
+            placeholder='Skriv ett meddelande'
             value={message}
             required
             onChange={messageHandler} />
