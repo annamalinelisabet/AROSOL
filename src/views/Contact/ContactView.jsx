@@ -22,7 +22,8 @@ const PageWrapper = styled.div`
   padding: 3rem 0rem 3rem 0;
 
   @media (max-width: 768px) {
-    flex-direction: column; 
+    flex-direction: column;
+    gap: 2rem; 
   }
 `;
 
