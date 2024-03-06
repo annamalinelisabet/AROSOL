@@ -106,6 +106,14 @@ const TextOne = styled.p`
   padding-block: 20px; 
 `;
 
+const TextTwo = styled.p`
+  text-align: start;
+  color: var(--black-clr);
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 10px;
+`;
+
 const InputSide = ({ onEmailSent }) => {
 
   const [name, setName] = useState('');
@@ -163,7 +171,7 @@ const InputSide = ({ onEmailSent }) => {
     <InputSideWrapper onSubmit={handleSubmit}>
        <TextOne>Kontaktformulär</TextOne>
         <InputWrapper>
-            <p className='input-title'>Namn</p>
+            <p className='input-title'>Namn*</p>
             <Input 
             type='text' 
             required 
@@ -172,7 +180,7 @@ const InputSide = ({ onEmailSent }) => {
             onChange={nameHandler} />
         </InputWrapper>
         <InputWrapper>
-            <p className='input-title'>E-post</p>
+            <p className='input-title'>E-post*</p>
             <Input 
             type='email' 
             placeholder='anders@email.com'
@@ -185,7 +193,6 @@ const InputSide = ({ onEmailSent }) => {
             <p className='input-title'>Telefonnummer</p>
             <Input
             type='tel'
-            required
             placeholder='070-123 45 67'
             value={phone}
             onChange={phoneHandler}
@@ -195,19 +202,22 @@ const InputSide = ({ onEmailSent }) => {
             <p className='input-title'>Ämne</p>
             <Input 
             type='text' 
-            placeholder='Skriv ett ämne'
+            placeholder='Ex. Byte av tak'
             value={subject}
             onChange={subjectHandler} 
             />
         </InputWrapper>
         <InputWrapper>
-            <p className='input-title'>Hur kan vi hjälpa dig?</p>
+            <p className='input-title'>Meddelande*</p>
             <MessageInput 
-            placeholder='Skriv ett meddelande'
+            placeholder='Ex. Hej, vilket takmaterial är bäst för mitt hus?'
             value={message}
             required
             onChange={messageHandler} />
         </InputWrapper>
+        <TextTwo>
+          <p>* Obligatoriskt fält</p>
+        </TextTwo>
         {buttonLoading ? (
             <LoadingButton>Laddar...</LoadingButton>
         ) : (
