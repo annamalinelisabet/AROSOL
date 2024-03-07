@@ -39,9 +39,9 @@ const TaksakerhetView = () => {
       <PageHero title='TAKSÄKERHET' image={HeroImages} alt='Taksäkerhet'/>
       <ServiceInfoSection 
         header='Säkert tak med Arosol'
-        text='Din erfarna partner för taksäkerhet och långsiktig trygghet.'
+        text='Din erfarna partner för taksäkerhet och långsiktig trygghet'
         infoText1='Arosol är din pålitliga partner för taksäkerhet av en enkel anledning: vårt hängivna engagemang för att leverera skräddarsydda och tillförlitliga lösningar som säkrar och stärker ditt tak.'
-        infoText2='Arosol sätter en ny standard inom taksäkerhet genom att kombinera teknisk expertis med personlig service. Vi förstår att varje tak är unikt och anpassar våra lösningar efter dina specifika behov. Vår dedikerade personal går den extra milen för att säkerställa att varje detalj tas om hand med precision och omsorg.'
+        infoText2='Arosol sätter en ny standard inom taksäkerhet genom att kombinera teknisk expertis med personlig service. Vi förstår att varje tak är unikt och anpassar våra lösningar efter dina specifika behov. Vår dedikerade personal gör alltid det lilla extra för att säkerställa att varje detalj tas om hand med precision och omsorg.'
         btnText='Kontakta oss'
         link='/contact'
       />
@@ -53,7 +53,7 @@ const TaksakerhetView = () => {
           <div className='safety-card'>
             <div><MdOutlineHandyman className='safety-icon' /></div>
             <h3>Snörasskydd och dräneringssystem</h3>
-            <p>Installation av snörasskydd för att förhindra snöskador och isbildning samt smarta dräneringssystem för att leda bort vatten effektivt och minska risken för översvämningar.</p>
+            <p>Installation av snörasskydd för att förhindra snöskador och isbildning, samt smarta dräneringssystem för att leda bort vatten effektivt och minska risken för översvämningar.</p>
           </div>
           <div className='safety-card'>
             <div><BsLadder className='safety-icon' /></div>
@@ -87,7 +87,7 @@ const TaksakerhetView = () => {
         </div>
       </div>
 
-      <ContactSection header='Vill ni veta mer?' text='Är du nyfiken på våra erbjudanden inom takskydd och vill lära dig mer om installation, funktionalitet och andra relevanta aspekter? Tveka inte att kontakta oss. Arosol står till ditt förfogande för att besvara dina frågor och tillhandahålla all den information du behöver för att fatta välgrundade beslut gällande våra specialiserade tjänster för taksäkerhet.' />
+      <ContactSection header='Vill du veta mer?' text='Är du intresserad av att lära dig mer om takskydd och vill ha ytterligare information? Tveka inte att kontakta oss! Arosol finns här för att besvara dina frågor och tillhandahålla all den information du behöver för att fatta välgrundade beslut om din taksäkerhet.' />
     </div>
   )
 }

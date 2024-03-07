@@ -53,7 +53,7 @@ const smallScreen = windowWidth <= 768
           </div>
         )}
       </div> 
-      <ContactSection header='Vill ni veta mer?' text='Är du intresserad av plåtslageritjänster och vill lära dig mer om montering, funktion och andra aspekter? Tveka inte att kontakta oss! På Arosol är vi här för att svara på dina frågor och erbjuda all information du behöver för att fatta välgrundade beslut om plåtarbete. Kontakta oss och låt oss guida dig mot en mer hållbar framtid för ditt byggprojekt.' />
+      <ContactSection header='Vill du veta mer?' text='Kontakta oss så vägleder vi dig genom ditt nästa byggprojekt. Vi på Arosol finns här för att svara på alla dina frågor och ge dig den information du behöver för att fatta välgrundade beslut om plåtslageri.' />
     </div>
   )
 }

@@ -43,7 +43,7 @@ const TakentreprenadView = () => {
           <img src={after} alt='Picture of the roof after renovation' className='roof-img' />
         </div>
       </div>
-      <ContactSection header='Vill ni veta mer?' text='Är du intresserad av våra tjänster inom takentreprenad och vill få mer information om installation, funktionalitet och andra relevanta aspekter? Tveka inte att kontakta Arosol! Vi står till ditt förfogande för att besvara dina frågor och tillhandahålla all den information som behövs för att du ska kunna fatta välgrundade beslut angående våra specialiserade takprojekt. ' />
+      <ContactSection header='Vill ni veta mer?' text='Tveka inte att kontakta oss om ni är nyfikna på våra takentreprenadtjänster eller har några andra funderingar. Vi på Arosol står till ert förfogande att ge bästa möjliga service!' />
     </div>
   )
 }

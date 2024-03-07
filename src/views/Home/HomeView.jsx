@@ -123,7 +123,7 @@ const HomeView = () => {
           <div className='CEO-text-wrapper container'>
             <div className='CEO-text container'>
               <FaQuoteLeft className='right-quote' />
-              <p>Vi på arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på vårt arbete och vår service, och vi strävar alltid efter att överträffa våra kunders förväntingar</p> 
+              <p>Vi på Arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på vårt arbete och vår service, och vi strävar alltid efter att överträffa våra kunders förväntningar.</p> 
               <FaQuoteRight className='left-quote' />
             </div>
             <div className='container'>
