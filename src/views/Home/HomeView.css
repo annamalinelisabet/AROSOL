@@ -69,29 +69,35 @@
     gap: .5rem;
 }
 
-/* -- DROP DOWNS --- */
+/* -- BENEFIT --- */
 
-.HomeView .dropdowns {
+.HomeView .benefit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.HomeView .benefit-container p {
+    color: #707070;
+    padding: 0 0 0 56px;
+}
+
+.HomeView .benefits {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 2rem;
 }
 
-.HomeView .dropdown-btn {
+.HomeView .icon-title {
     align-items: center;
-    background-color: transparent;
-    border: none;
     color: var(--black-clr);
-    cursor: pointer;
     display: flex;
-    /* VET INTE OM JAG KAN ÄNDRA HÄR EFTERSOM DET BLIR TOKIGT I MOBIL */
     font-size: 20px; 
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     gap: 1rem;
     justify-content: center;
-    position: relative;
 }
 
 .HomeView .check {
@@ -99,19 +105,6 @@
     border-radius: 100%;
     height: 40px;
     width: 40px;
-}
-
-.HomeView .dropdown-content {
-    color: #707070;
-    padding: 0 0 0 56px;
-}
-
-.HomeView .dots {
-    border-color: var(--black-clr);
-    border-left: dotted;
-    margin-left: 1.1rem;
-    margin-top: 1rem;
-    padding-left: 35px;
 }
 
 /* --- CEO SECTION --- */

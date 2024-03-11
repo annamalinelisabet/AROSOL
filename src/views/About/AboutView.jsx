@@ -30,10 +30,6 @@ const AboutView = () => {
             {/* ÄNDRA STORLEK SAMMA SOM KONTAKT ?  */}
             <h1 className='about-header'>Vi är Arosol</h1> 
             <p>Arosol är din dedikerade partner för hållbara lösningar. Vi erbjuder en mångsidig tjänstepalett inom solel, plåtslageri, taksäkerhet och takentreprenad. Specialiserade inom områdena solel, taksäkerhet, takentreprenad och plåtslageri, strävar vi efter att erbjuda skräddarsydda och högkvalitativa tjänster. Med vår dedikerade och kunniga personal arbetar vi nära våra kunder för att leverera energieffektiva solenergilösningar, säkra takkonstruktioner och läckra plåtarbeten. <span className='new-paragraph'> Vårt fokus på kvalitet och professionalism gör Arosol till det självklara valet för alla dina takrelaterade behov, inklusive specialkompetens inom plåtarbeten. Oavsett om det gäller solpaneler, plåtarbeten eller takprojekt kan du lita på Arosol för professionell och pålitlig service.</span></p>
-            {/* SKA VI HA EN KNAPP HÄR OCH TA BORT KONTAKTA OSS-SEKTIONEN LÄNGST NER? */}
-            {/* <div className='btn-container'>
-              <Button text='Kontakta oss'/>
-            </div> */}
           </div>
         </div>
         
