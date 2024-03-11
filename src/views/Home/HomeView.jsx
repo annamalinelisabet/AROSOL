@@ -1,7 +1,7 @@
 import './HomeView.css'
 import 'animate.css';
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { FaCheckCircle, FaArrowAltCircleRight } from "react-icons/fa";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
@@ -56,12 +56,6 @@ const HomeView = () => {
     swiperContainer.initialize()
   }, [])
 
-  const [showDropdown, setShowDropdwon] = useState('energikostnader')
-
-  function toggleDropdown(identifier) {
-    setShowDropdwon(showDropdown === identifier ? null : identifier)
-  }  
-
   return (
     <div className='HomeView'>
       <HomeHero/>
@@ -79,28 +73,23 @@ const HomeView = () => {
         <div className='solar-section'>
           <div className='solar-text-info'>
             <h1 className='solar-title sub-header'>Fördelar med solpaneler</h1>
-            <div className='dropdowns'>
-              <div className='dropdown-container' data-aos='fade-down' data-aos-easing="linear" data-aos-duration="500">
-                <button className='dropdown-btn' onClick={() => toggleDropdown('energikostnader')}><FaCheckCircle className='check' />Minska dina energikostnader</button>
-                {showDropdown === 'energikostnader' && (
-                  <p className='dropdown-content dots animate__animated animate__fadeInDown'>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser. Överskottselen kan du dessutom sälja.</p>
-                )}   
+            <div className='benefits' data-aos='fade-right' data-aos-duration='1000'>
+              <div className='benefit-container'>
+                <div className='icon-title'><FaCheckCircle className='check' />Minska dina energikostnader</div>
+                  <p>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser samtidigt som du har möjlighet att sälja överskottselen.</p>
               </div>
 
-              <div className='dropdown-container'>
-                <button className='dropdown-btn' onClick={() => toggleDropdown('miljö')}><FaCheckCircle className='check' />Hållbar energilösning</button>
-                {showDropdown === 'miljö' && (
-                    <p className='dropdown-content dots animate__animated animate__fadeInDown'>Din självproducerade el är ett hållbart alternativ eftersom den utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer hållbar och resurseffektiv energiproduktion.</p>
-                )} 
+              <div className='benefit-container'>
+                <div className='icon-title'><FaCheckCircle className='check' />Hållbar energilösning</div>
+                <p>Självproducerad el är ett hållbart alternativ eftersom den utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer hållbar och resurseffektiv energiproduktion.</p>
               </div>
 
-              <div className='dropdown-container'>
-                <button className='dropdown-btn'  onClick={() => toggleDropdown('investering')}><FaCheckCircle className='check' />Ökar värdet på din bostad</button>
-                {showDropdown === 'investering' && (
-                  <p className='dropdown-content dots animate__animated animate__fadeInDown'>Investeringen i solenergi kan öka värdet på din bostad och göra den mer attraktiv på marknaden.</p> 
-                )}
+              <div className='benefit-container'>
+                <div className='icon-title'><FaCheckCircle className='check' />Ökar värdet på din bostad</div>
+                <p>Genom att investera i solenergi kan du öka din bostads attraktionsvärde. Med lägre elkostnader, miljövänlig image och förbättrad energieffektivitet kan din bostad bli ännu mer attraktiv på marknaden.</p> 
               </div>
             </div>
+
             <div className='solar-CTA-section'>
               <a href='https://docs.google.com/forms/d/e/1FAIpQLSem3FDhb0zid2Htz_VQ8obsBP0zJZyj3TZXG4T5tGB0gmA18w/viewform'  target='_blank' aria-label='Länk till offert'>
                 <Button text='Få offert' />

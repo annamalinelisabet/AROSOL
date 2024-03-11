@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='Footer'>
-      <div className='container'>
+      <div className='container footer-wrapper'>
         <div className='brand-info-wrapper'>
           <div className='img-wrapper'>
             <img className='logo' src={lglogo} alt="Arosol logo" />
