@@ -17,27 +17,27 @@ const SolelView = () => {
   return (
     <div className='Solel'>
 
-      <PageHero alt='Solceller' image={HeroImage} title='SOLEL' />
+      <PageHero alt='Två montörer monterar solpaneler på ett tak.' image={HeroImage} title='SOLEL' />
       
       <ServiceInfoSection 
         header='En smart investering' 
         text='Arosol installerar högkvalitativa solcellspaneler för optimal avkastning.'
-        infoText1='Att investera i solel med Arosol är inte bara ett miljövänligt val, det är även ekonomiskt smart och strategiskt. Genom att använda våra solpaneler blir ditt hem eller företag inte bara mer värdefullt, utan du sticker också ut från konkurrenterna genom tydligt miljöengagemang.' 
-        infoText2='Dessutom öppnar investeringen i våra solenergilösningar upp möjligheter till skatteförmåner och deltagande i olika incitamentprogram. Detta innebär att utöver de omedelbara ekonomiska fördelarna kan du också dra nytta av ytterligare stöd och incitament som kan göra din övergång till solenergi ännu mer fördelaktig. Ta det första steget mot en hållbar framtid med Arosol.' 
+        infoText1='Att välja solenergilösningar från Arosol innebär inte bara förnuftiga och strategiska ekonomiska beslut, utan också ett steg mot ansvarsfull energiproduktion. Genom att använda våra solpaneler kan du förbättra värdet på ditt hem eller företag och samtidigt visa upp ditt engagemang för ansvarsfull energiproduktion. Detta kan differentiera dig från konkurrenterna och stärka din position på marknaden.' 
+        infoText2='Vidare öppnar investeringen i våra solenergilösningar upp möjligheter till skatteförmåner och deltagande i olika incitamentprogram. Genom att dra nytta av dessa förmåner kan du göra din övergång till solenergi ännu mer gynnsam. Ta det första steget mot en effektivare energianvändning med Arosol.' 
         btnText='Få offert'
         link='https://docs.google.com/forms/d/e/1FAIpQLSem3FDhb0zid2Htz_VQ8obsBP0zJZyj3TZXG4T5tGB0gmA18w/viewform'
         externalLink
       />
 
       <div className='montage-img-wrapper'>
-        <img src={Image} alt='Bild' />
+        <img src={Image} alt='Pontus, företagets VD, står från sidan medan han håller på att koppla in en solpanel.' />
       </div>
 
       <h2 className='container sub-header pb-2'>Montering av solpaneler</h2>
       <div className='info-box-wrapper'>
         <InfoBox sun text='Solcellinstallationen genomgår flera steg för att säkerställa effektiv energiproduktion. Det börjar med en platsutvärdering för optimal solljusexponering, sedan design och installationsplan.' />
         <InfoBox lightning text='Ett robust monteringssystem installeras för att säkra solcellerna på plats. Elektriska kablar ansluts till växelriktaren för att omvandla elektriciteten, och tester genomförs för överensstämmelse med standarder.' />
-        <InfoBox coins text='Godkännande från myndigheter krävs om solcellerna är konfigurerade för anslutning av överskottsel. Regelbunden övervakning och underhåll är viktigt för långsiktig funktion.' />
+        <InfoBox coins text='Myndighetsgodkännande krävs om solcellssystemet är konfigurerat för att ansluta överskottsel. Regelbunden övervakning och underhåll är viktigt för långsiktig funktion.' />
       </div>
 
       <div className='winter-info-wrapper'>
@@ -47,7 +47,7 @@ const SolelView = () => {
           <span className='new-paragraph'>Under sommartid ökar solpanelernas energiproduktion vilket kan resultera i överskottsel. Denna överskottsel kan användas för att minska eller helt eliminera elkostnaderna under sommaren. Besparingarna från soliga månader kan agera som en ekonomisk buffert och användas för att täcka de högre elkostnaderna som vanligtvis uppstår under vintermånaderna</span></p>
         </div>
         <div className='winter-img-wrapper'>
-          <img src={WinterImage} alt='Pekar på snöiga bergstoppar' />
+          <img src={WinterImage} alt='Två anställda står med ryggen mot kameran och pekar mot solen, som skiner på en himmel ovanför snötäckta berg i Alperna.' />
         </div>
       </div>
       

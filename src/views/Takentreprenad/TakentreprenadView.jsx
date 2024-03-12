@@ -18,8 +18,8 @@ const TakentreprenadView = () => {
 
   return (
     <div className='Takentreprenad'>
-      <PageHero title='TAKENTREPRENAD' image={takentreprenad} />
-      <ServiceInfoImgSection header='Pålitlig partner för professionella taklösningar' image={Image} alt='Photo of a new roof' text='Arosol är din pålitliga partner för taklösningar. Vi erbjuder skräddarsydda lösningar, inklusive projektplanering, materialval, och professionell installation. Vårt dedikerade team säkerställer optimal isolering, effektiva dräneringssystem och regelbundet underhåll för långsiktig hållbarhet. Välj Arosol för pålitliga och professionella taklösningar.' />
+      <PageHero title='TAKENTREPRENAD' image={takentreprenad} alt='En glad man lägger isolering på ett tak mot en klarblå himmel.' />
+      <ServiceInfoImgSection header='Pålitlig partner för professionella taklösningar' image={Image} alt='Ett gult hus med oranger tegeltak.' text='Arosol är din pålitliga partner för taklösningar. Vi erbjuder skräddarsydda lösningar, inklusive projektplanering, materialval och professionell installation. Vårt dedikerade team säkerställer optimal isolering, effektiva dräneringssystem och en grundlig inspektion för långsiktig hållbarhet. Välj Arosol för pålitliga och professionella taklösningar.' />
 
       <div className='container'>
         <div>
@@ -37,10 +37,10 @@ const TakentreprenadView = () => {
 
       <div className='roof-imges-wrapper'>
         <div className='roof-img'>
-          <img src={before} alt='Picture of the roof before renovation' className='roof-img' />
+          <img src={before} alt='Före-bild: Ett rött hus med ett svart gammalt tak.' className='roof-img' />
         </div>
         <div className='roof-img'>
-          <img src={after} alt='Picture of the roof after renovation' className='roof-img' />
+          <img src={after} alt='Efter-bild: Samma hus, men med ett nytt oranger plåttak.' className='roof-img' />
         </div>
       </div>
       <ContactSection header='Vill ni veta mer?' text='Är du intresserad av våra tjänster inom takentreprenad och vill få mer information om installation, funktionalitet och andra relevanta aspekter? Tveka inte att kontakta Arosol! Vi står till ditt förfogande för att besvara dina frågor och tillhandahålla all den information som behövs för att du ska kunna fatta välgrundade beslut angående våra specialiserade takprojekt. ' />

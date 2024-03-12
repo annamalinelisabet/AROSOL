@@ -61,12 +61,12 @@ const HomeView = () => {
       <HomeHero/>
       <div className='serviceCard-Wrapper'>
           <div className='relative'>
-        <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad'/>
+        <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad' altTxt='En glad man lägger isolering på ett tak mot en klarblå himmel.'/>
             <h4 className='service-title'>Våra tjänster</h4>
           </div>
-        <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och installation av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri'/>
-        <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
-            <ServiceCard title='Solel' text='Monterar, installerar och underhåller solcellspaneler' imgSrc={solel} linkTo='/solel'/>
+        <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och installation av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri' altTxt='Ett svart plåttak.'/>
+        <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet' altTxt='Ett svart snörasskydd på ett tak täckt av snö.'/>
+            <ServiceCard title='Solel' text='Monterar och installerar solcellspaneler för en hållbar energiproduktion' imgSrc={solel} linkTo='/solel' altTxt='Solpaneler installerade på ett tak, solnedgång som speglar sig i solpanelerna.'/>
       </div>
       <div className='container'>
 
@@ -100,7 +100,7 @@ const HomeView = () => {
             </div>
           </div>
           <div className='solar-img'>
-            <img src={solelhome} alt='Two individuals assembling solar panels' />
+            <img src={solelhome} alt='Två glada anställda installerar solpaneler.' />
           </div>
         </div>
 
@@ -108,7 +108,7 @@ const HomeView = () => {
 
       <div className='CEO-wrapper'>
         <div className='CEO-section container'>
-          <div className='CEO-img'><img src={CEO} alt="Picture of CEO Pontus Bergman" /></div>
+          <div className='CEO-img'><img src={CEO} alt='Pontus, företagets VD, ler mot kameran iklädd arbetskläder och håller i ett taksäkerhetsrep.' /></div>
           <div className='CEO-text-wrapper container'>
             <div className='CEO-text container'>
               <FaQuoteLeft className='right-quote' />

@@ -21,7 +21,7 @@ const AboutView = () => {
         <div className='img-wrapper'>
           <div className='overlay'>
           </div>
-          <img src={Hero} alt='Grupppfoto' />
+          <img src={Hero} alt='Grupppfoto på anställda' />
         </div>
         <div className='line'></div>
 
@@ -37,8 +37,8 @@ const AboutView = () => {
             <h2 className='sub-header'>Träffa teamet</h2>
           <div className='card-wrapper'>
             <StaffCard image={Image} name='Pontus Bergman' text='Vår VD och grundare är expert inom plåt, solel, tak och säkerhet. Han kan det mesta och lär sig resten. Älskar att vara aktiv, oavsett om det är snowboard i fjällen eller mountainbike i skogen.' />
-            <StaffCard image={Stefan} name='Stefan Nilsson' text='Vår grundare och tekniska supportguru älskar sitt arbete. På fritiden njuter han av paragliding och utforskar teknikvärldens möjligheter - en sann Appletorsk!' />
-            <StaffCard image={Mikael} name='Mikael Syrén' text='Med över 20 års erfarenhet i plåtbranschen, kan man lugnt säga att Mikael är en trygg och pålitlig expert. Utöver att hantera plåtar älskar han att fiska och spendera tid med sina fyrbenta vänner.' />
+            <StaffCard image={Stefan} name='Stefan Nilsson' text='Vår grundare och tekniska supportguru älskar sitt arbete. På fritiden njuter han av paragliding och utforskar teknikvärldens möjligheter.' />
+            <StaffCard image={Mikael} name='Mikael Syrén' text='Med över 20 års erfarenhet i plåtbranschen, kan man lugnt säga att Mikael är en trygg och pålitlig expert. På fritiden älskar han att fiska och spendera tid med sina fyrbenta vänner.' />
             <StaffCard image={Albin} name='Albin Sundnäs' text='Utbildad plåtslagare och solelsmontör. Han brinner för träning och hälsa. För att varva ner söker han sig gärna till vattnet för en dag med fiske.' />
             <StaffCard image={Michael} name='Michael Karlsson' text='Vår hyllade plåtveteran har inte bara mästrat sitt yrke utan förvandlar även sitt sommarställe till en skönhet. På sommaren njuter han av båtturer och naturen.' />
           </div>
