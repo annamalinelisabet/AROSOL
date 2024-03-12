@@ -43,7 +43,6 @@ const AboutView = () => {
             <StaffCard image={Michael} name='Michael Karlsson' text='Vår hyllade plåtveteran har inte bara mästrat sitt yrke utan förvandlar även sitt sommarställe till en skönhet. På sommaren njuter han av båtturer och naturen.' />
           </div>
         </div>
-        {/* SKA VI HA KONTAKTA OSS HÄR BLIR LITE SAMMA SOM DEN OVANFÖR? */}
         <ContactSection dark header='Hur kan vi hjälpa dig?' text='Välkommen till Arosol! Vi erbjuder expertis inom solel, takentreprenad, plåtslageri och taksäkerhet. Från solenergilösningar till takrenoveringar och säkerhetstjänster – vi är din pålitliga partner för hållbara och kvalitativa resultat. Kontakta oss idag för skräddarsydda lösningar som passar dina behov och bidrar till en tryggare framtid.' />
         <div className='line'></div>
     </div>

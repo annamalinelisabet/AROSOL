@@ -3,17 +3,21 @@ import lglogo from '../../assets/lglogo.png'
 import { IoMdPin, IoMdMail } from 'react-icons/io'
 import { FaPhone, FaFacebookF, FaClock } from 'react-icons/fa6'
 import { BiLogoInstagramAlt } from 'react-icons/bi'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+   window.scrollTo(0, 0) 
+  }
   return (
     <div className='Footer'>
       <div className='container footer-wrapper'>
         <div className='brand-info-wrapper'>
           <div className='img-wrapper'>
-            <img className='logo' src={lglogo} alt="Arosol logo" />
+            <Link to='/' onClick={scrollToTop}><img className='logo' src={lglogo} alt='logga'/></Link>
           </div>
             <div className='contact-info'><FaClock className='brand-info-icon'/>Vardagar 08-17</div>
             <a href='tel:+46761834115' className='contact-info'><FaPhone className='brand-info-icon'/>076-183 41 15</a>
