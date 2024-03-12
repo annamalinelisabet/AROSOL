@@ -7,5 +7,11 @@
 
 .StaffCard .staff-imgwrapper {
     height: 400px;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.StaffCard .staffTxt {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
