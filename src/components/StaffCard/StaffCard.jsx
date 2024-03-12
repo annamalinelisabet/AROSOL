@@ -6,10 +6,8 @@ const StaffCard = ({ image, name, text}) => {
       <div className='staff-imgwrapper'>
         <img src={image} alt='Foto på anställd' />
       </div>
-      {/* <div> */}
         <h3>{name}</h3> 
         <p>{text}</p>
-      {/* </div> */}
     </div>
   )
 }
