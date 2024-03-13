@@ -13,8 +13,9 @@ import taksäkerhet from '../../assets/snöras.png'
 import plåtslageri from '../../assets/plåt.png'
 import solelhome from '../../assets/solelhome.png'
 import CEO from '../../assets/pontus.png'
-import Review1 from '../../assets/review.jpg'
+import Review2 from '../../assets/review.jpg'
 import solel from '../../assets/plåtsolel.png'
+import Review1 from '../../assets/lennart.png'
 
 import Button from '../../components/Button/Button'
 import ReviewCard from '../../components/ReviewCard/ReviewCard';
@@ -127,11 +128,10 @@ const HomeView = () => {
       <div className='review-section'>
         <h2 className='sub-header'>Vad tycker våra kunder?</h2>
         <swiper-container ref={swiperRef} init='false'>
-          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Maria Persson' text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem laudantium ratione quam. Maiores porro ullam fugiat magnam, voluptas earum recusandae?' /></swiper-slide>
-          <swiper-slide><ReviewCard company='VD Hallstahem' img={Review1} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
-          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
-          <swiper-slide><ReviewCard company='Ett företag AB' img={Review1} name='Maximillian Ettlångtefternamn' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
-        </swiper-container>       
+          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Lennart Pettersson' text='Jag upplevde enastående kvalitet och överlägsen professionalism med Arosol! Hos Arosol finns ingen kompromiss när det gäller kvalitet - deras fokus är att leverera utmärkta resultat. Jag är helt övertygad om att jag valde rätt när jag anlitade dem för ett komplett takbyte på altanen.' /></swiper-slide>
+          <swiper-slide><ReviewCard company='VD Hallstahem' img={Review2} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review2} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
+-        </swiper-container>       
       </div> 
       
     </div>
