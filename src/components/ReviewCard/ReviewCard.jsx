@@ -2,7 +2,7 @@ import './ReviewCard.css'
 import { FaQuoteLeft, FaRegImages } from 'react-icons/fa';
 
 
-const ReviewCard = ({ text, img, name, company, alt, instagramLink }) => {
+const ReviewCard = ({ text, img, name, company, alt }) => {
   return (
     <div className='ReviewCard'>
       <FaQuoteLeft className='quote-icon' />
