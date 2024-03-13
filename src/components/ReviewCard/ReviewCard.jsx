@@ -1,5 +1,5 @@
 import './ReviewCard.css'
-import { FaQuoteLeft, FaRegImages } from 'react-icons/fa';
+import { FaQuoteLeft } from 'react-icons/fa';
 
 
 const ReviewCard = ({ text, img, name, company, alt }) => {
