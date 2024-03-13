@@ -44,7 +44,7 @@ const ContactView = () => {
     <div className='Contact'>
       <div className='img-wrapper'>
         <div className='overlay'></div>
-        <img src={Cap} alt='Bild på en Arosol keps' />
+        <img src={Cap} alt='En svart keps med Arosols orange logga' />
       </div>
       <div className='line'></div>
       <div className='d-flex-column gap-3'>

@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className='Navbar'>
         <div className='container wrapper'>
             <div className='logo-box'>
-                <Link to='/' onClick={() => setShowMenu(false)}><img src={logo} alt='logo' /></Link>
+                <Link to='/' onClick={() => setShowMenu(false)}><img src={logo} alt='logga' /></Link>
             </div>
             <div className={`burger ${showMenu ? `open` : ``}`} onClick={() => setShowMenu(state => !state)}>
                 <span></span>

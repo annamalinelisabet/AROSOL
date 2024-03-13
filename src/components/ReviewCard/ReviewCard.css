@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 400px;
+    height: 450px;
 }
 
 .ReviewCard .quote-icon {
@@ -43,6 +43,16 @@
 
 .ReviewCard .name {
     font-weight: bold;
+}
+
+.ReviewCard .view-link {
+    color: #fff;
+    font-style: italic;
+}
+
+.ReviewCard .view-icon {
+    width: 20px;
+    height: 20px;
 }
 
 

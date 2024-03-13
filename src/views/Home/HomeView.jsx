@@ -1,7 +1,7 @@
 import './HomeView.css'
 import 'animate.css';
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { FaCheckCircle, FaArrowAltCircleRight } from "react-icons/fa";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
@@ -13,8 +13,9 @@ import taksäkerhet from '../../assets/snöras.png'
 import plåtslageri from '../../assets/plåt.png'
 import solelhome from '../../assets/solelhome.png'
 import CEO from '../../assets/pontus.png'
-import Review1 from '../../assets/review.jpg'
+import Review2 from '../../assets/review.jpg'
 import solel from '../../assets/plåtsolel.png'
+import Review1 from '../../assets/lennart.png'
 
 import Button from '../../components/Button/Button'
 import ReviewCard from '../../components/ReviewCard/ReviewCard';
@@ -56,51 +57,40 @@ const HomeView = () => {
     swiperContainer.initialize()
   }, [])
 
-  const [showDropdown, setShowDropdwon] = useState('energikostnader')
-
-  function toggleDropdown(identifier) {
-    setShowDropdwon(showDropdown === identifier ? null : identifier)
-  }  
-
   return (
     <div className='HomeView'>
       <HomeHero/>
       <div className='serviceCard-Wrapper'>
           <div className='relative'>
-        <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad'/>
+        <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad' altTxt='En glad man lägger isolering på ett tak mot en klarblå himmel.'/>
             <h4 className='service-title'>Våra tjänster</h4>
           </div>
-        <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och installation av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri'/>
-        <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet'/>
-            <ServiceCard title='Solel' text='Monterar, installerar och underhåller solcellspaneler' imgSrc={solel} linkTo='/solel'/>
+        <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och installation av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri' altTxt='Ett svart plåttak.'/>
+        <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet' altTxt='Ett svart snörasskydd på ett tak täckt av snö.'/>
+            <ServiceCard title='Solel' text='Monterar och installerar solcellspaneler för en hållbar energiproduktion' imgSrc={solel} linkTo='/solel' altTxt='Solpaneler installerade på ett tak, solnedgång som speglar sig i solpanelerna.'/>
       </div>
       <div className='container'>
 
         <div className='solar-section'>
           <div className='solar-text-info'>
             <h1 className='solar-title sub-header'>Fördelar med solpaneler</h1>
-            <div className='dropdowns'>
-              <div className='dropdown-container' data-aos='fade-down' data-aos-easing="linear" data-aos-duration="500">
-                <button className='dropdown-btn' onClick={() => toggleDropdown('energikostnader')}><FaCheckCircle className='check' />Minska dina energikostnader</button>
-                {showDropdown === 'energikostnader' && (
-                  <p className='dropdown-content dots animate__animated animate__fadeInDown'>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser. Överskottselen kan du dessutom sälja.</p>
-                )}   
+            <div className='benefits' data-aos='fade-right' data-aos-duration='1000'>
+              <div className='benefit-container'>
+                <div className='icon-title'><FaCheckCircle className='check' />Minska dina energikostnader</div>
+                  <p>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser samtidigt som du har möjlighet att sälja överskottselen.</p>
               </div>
 
-              <div className='dropdown-container'>
-                <button className='dropdown-btn' onClick={() => toggleDropdown('miljö')}><FaCheckCircle className='check' />Hållbar energilösning</button>
-                {showDropdown === 'miljö' && (
-                    <p className='dropdown-content dots animate__animated animate__fadeInDown'>Din självproducerade el är ett hållbart alternativ eftersom den utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer hållbar och resurseffektiv energiproduktion.</p>
-                )} 
+              <div className='benefit-container'>
+                <div className='icon-title'><FaCheckCircle className='check' />Hållbar energilösning</div>
+                <p>Självproducerad el är ett hållbart alternativ eftersom den utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer hållbar och resurseffektiv energiproduktion.</p>
               </div>
 
-              <div className='dropdown-container'>
-                <button className='dropdown-btn'  onClick={() => toggleDropdown('investering')}><FaCheckCircle className='check' />Ökar värdet på din bostad</button>
-                {showDropdown === 'investering' && (
-                  <p className='dropdown-content dots animate__animated animate__fadeInDown'>Investeringen i solenergi kan öka värdet på din bostad och göra den mer attraktiv på marknaden.</p> 
-                )}
+              <div className='benefit-container'>
+                <div className='icon-title'><FaCheckCircle className='check' />Ökar värdet på din bostad</div>
+                <p>Genom att investera i solenergi kan du öka din bostads attraktionsvärde. Med lägre elkostnader, miljövänlig image och förbättrad energieffektivitet kan din bostad bli ännu mer attraktiv på marknaden.</p> 
               </div>
             </div>
+
             <div className='solar-CTA-section'>
               <a href='https://docs.google.com/forms/d/e/1FAIpQLSem3FDhb0zid2Htz_VQ8obsBP0zJZyj3TZXG4T5tGB0gmA18w/viewform'  target='_blank' aria-label='Länk till offert'>
                 <Button text='Få offert' />
@@ -111,7 +101,7 @@ const HomeView = () => {
             </div>
           </div>
           <div className='solar-img'>
-            <img src={solelhome} alt='Two individuals assembling solar panels' />
+            <img src={solelhome} alt='Två glada anställda installerar solpaneler.' />
           </div>
         </div>
 
@@ -119,7 +109,7 @@ const HomeView = () => {
 
       <div className='CEO-wrapper'>
         <div className='CEO-section container'>
-          <div className='CEO-img'><img src={CEO} alt="Picture of CEO Pontus Bergman" /></div>
+          <div className='CEO-img'><img src={CEO} alt='Pontus, företagets VD, ler mot kameran iklädd arbetskläder och håller i ett taksäkerhetsrep.' /></div>
           <div className='CEO-text-wrapper container'>
             <div className='CEO-text container'>
               <FaQuoteLeft className='right-quote' />
@@ -138,11 +128,10 @@ const HomeView = () => {
       <div className='review-section'>
         <h2 className='sub-header'>Vad tycker våra kunder?</h2>
         <swiper-container ref={swiperRef} init='false'>
-          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Maria Persson' text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem laudantium ratione quam. Maiores porro ullam fugiat magnam, voluptas earum recusandae?' /></swiper-slide>
-          <swiper-slide><ReviewCard company='VD Hallstahem' img={Review1} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
-          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
-          <swiper-slide><ReviewCard company='Ett företag AB' img={Review1} name='Maximillian Ettlångtefternamn' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
-        </swiper-container>       
+          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Lennart Pettersson' text='Med Arosol fick jag toppkvalitet och professionalism utan kompromisser. Resultatet är fantastiskt. Jag har inga tvivel om att jag valde rätt när jag anlitade dem för ett komplett takbyte på altanen.'  instagramLink='https://www.instagram.com/p/CwBVifNNmkS/?img_index=1'/></swiper-slide>
+          <swiper-slide><ReviewCard company='VD Hallstahem' img={Review2} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review2} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
+-        </swiper-container>       
       </div> 
       
     </div>

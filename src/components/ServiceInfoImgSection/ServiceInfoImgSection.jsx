@@ -2,7 +2,7 @@ import './ServiceInfoImgSection.css'
 import Button from '../Button/Button'
 import { Link } from 'react-router-dom'
 
-const ServiceInfoImgSection = ({header, text, image, alt}) => {
+const ServiceInfoImgSection = ({header, text, image, altTxt}) => {
   return (
     <div className='ServiceInfoImgSection'>
         <div className='text-section container'>
@@ -11,7 +11,7 @@ const ServiceInfoImgSection = ({header, text, image, alt}) => {
             <Link to='/contact'><Button text='kontakta oss' /></Link>
         </div>
         <div className='img-wrapper'>
-          <img src={image} alt={alt} />
+          <img src={image} alt={altTxt} />
         </div>
     </div>
   )

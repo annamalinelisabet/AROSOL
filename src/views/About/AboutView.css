@@ -40,15 +40,6 @@
 .About .card-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-gap: 2rem;
-    margin-top: 1.5rem;
-}
-
-/* .About .line {
-    height: 5px;
-    width: 100%;
-} */
-
-.About .btn-container {
+    grid-gap: 3rem;
     margin-top: 1.5rem;
 }
