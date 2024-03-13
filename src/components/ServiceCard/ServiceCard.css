@@ -8,7 +8,7 @@
     height: 500px;
     overflow: hidden; 
     position: relative;
-  }
+}
   
 .ServiceCard .background-img {
     height: 100%;
@@ -31,6 +31,12 @@
     text-align: start;
     transform: translate(-50%, -50%);
     width: 100%;
+
+    transition: all ease-in-out 250ms;
+}
+
+.ServiceCard .text-content:hover {
+    background: rgba(0, 0, 0, 0.266);
 }
 
 .ServiceCard .text-content h1 {
