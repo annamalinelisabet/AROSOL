@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 
 import Pontus from '../../assets/pontus.png'
 import Michael from '../../assets/michaelk.png'
-import Albin from '../../assets/albins.png'
+import Albin from '../../assets/albinS.png'
 import Mikael from '../../assets/mikaels.png'
 import Stefan from '../../assets/stefann.png'
 import Hero from '../../assets/group.png'
