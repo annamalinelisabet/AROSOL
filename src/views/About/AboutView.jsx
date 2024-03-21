@@ -3,7 +3,7 @@ import StaffCard from '../../components/StaffCard/StaffCard'
 import './AboutView.css'
 import { useEffect } from 'react'
 import Image from '../../assets/pontus.png'
-import Michael from '../../assets/michael.png'
+// import Michael from '../../assets/michael.png'
 import Albin from '../../assets/albin.png'
 import Mikael from '../../assets/mikael.png'
 import Stefan from '../../assets/stefan.png'
@@ -43,7 +43,7 @@ const AboutView = () => {
             <StaffCard image={Stefan} name='Stefan Nilsson' text='Vår grundare och tekniska supportguru älskar sitt arbete. På fritiden njuter han av paragliding och utforskar teknikvärldens möjligheter.' />
             <StaffCard image={Mikael} name='Mikael Syrén' text='Med över 20 års erfarenhet i plåtbranschen, kan man lugnt säga att Mikael är en trygg och pålitlig expert. På fritiden älskar han att fiska och spendera tid med sina fyrbenta vänner.' />
             <StaffCard image={Albin} name='Albin Sundnäs' text='Utbildad plåtslagare och solelsmontör. Han brinner för träning och hälsa. För att varva ner söker han sig gärna till vattnet för en dag med fiske.' />
-            <StaffCard image={Michael} name='Michael Karlsson' text='Vår hyllade plåtveteran har inte bara bemästrat sitt yrke utan förvandlar även sitt sommarställe till en skönhet. På sommaren njuter han av båtturer och naturen.' />
+            {/* <StaffCard image={Michael} name='Michael Karlsson' text='Vår hyllade plåtveteran har inte bara bemästrat sitt yrke utan förvandlar även sitt sommarställe till en skönhet. På sommaren njuter han av båtturer och naturen.' /> */}
           </div>
         </div>
         {/* <ContactSection dark header='Hur kan vi hjälpa dig?' text='Välkommen till Arosol! Vi erbjuder expertis inom solel, takentreprenad, plåtslageri och taksäkerhet. Från solenergilösningar till takrenoveringar och säkerhetstjänster – vi är din pålitliga partner för hållbara och kvalitativa resultat. Kontakta oss idag för skräddarsydda lösningar som passar dina behov och bidrar till en tryggare framtid.' />
