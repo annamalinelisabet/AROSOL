@@ -5,7 +5,7 @@ import ServiceInfoImgSection from '../../components/ServiceInfoImgSection/Servic
 import Image from '../../assets/platslag.png'
 import slide1 from '../../assets/plat.png'
 import slide2 from '../../assets/platkruka.png'
-import slide3 from '../../assets/platdörr.png'
+import slide3 from '../../assets/platdorr.png'
 import plattak from '../../assets/plattak.png'
 import ContactSection from '../../components/ContactSection/ContactSection'
 import ImageSlider from '../../components/ImageSlider/ImageSlider'
