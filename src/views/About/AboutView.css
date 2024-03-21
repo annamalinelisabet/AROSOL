@@ -21,7 +21,7 @@
 }
 
 .About .info-section {
-    background: var(--dark-blue-clr);
+    background: var(--black-clr);
     color: #fff;
     padding-block: 2.5rem 3.5rem;
 }

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import PageHero from '../../components/PageHero/PageHero'
 import ServiceInfoSection from '../../components/ServiceInfoSection/ServiceInfoSection'
 import ContactSection from '../../components/ContactSection/ContactSection'
-import HeroImages from '../../assets/snöras.png'
+import HeroImages from '../../assets/snoras.png'
 import safetyVideo from '../../assets/removesnow.mp4'
 
 import { MdOutlineHandyman } from 'react-icons/md';
