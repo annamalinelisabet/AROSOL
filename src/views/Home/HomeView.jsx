@@ -9,12 +9,12 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import HomeHero from '../../components/HomeHero/HomeHero'
 import ServiceCard from '../../components/ServiceCard/ServiceCard'
 import takentreprenad from '../../assets/takentreprenadhome.png'
-import taksäkerhet from '../../assets/snöras.png'
-import plåtslageri from '../../assets/plåt.png'
+import taksäkerhet from '../../assets/snoras.png'
+import plåtslageri from '../../assets/plat.png'
 import solelhome from '../../assets/solelhome.png'
 import CEO from '../../assets/pontus.png'
 import Review2 from '../../assets/review.jpg'
-import solel from '../../assets/plåtsolel.png'
+import solel from '../../assets/platsolel.png'
 import Review1 from '../../assets/lennart.png'
 
 import Button from '../../components/Button/Button'
@@ -67,25 +67,25 @@ const HomeView = () => {
           </div>
         <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och installation av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri' altTxt='Ett svart plåttak.'/>
         <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet' altTxt='Ett svart snörasskydd på ett tak täckt av snö.'/>
-            <ServiceCard title='Solel' text='Monterar och installerar solcellspaneler för en hållbar energiproduktion' imgSrc={solel} linkTo='/solel' altTxt='Solpaneler installerade på ett tak, solnedgång som speglar sig i solpanelerna.'/>
+        <ServiceCard title='Solel' text='Monterar och installerar solcellspaneler för en hållbar energiproduktion' imgSrc={solel} linkTo='/solel' altTxt='Solpaneler installerade på ett tak, solnedgång som speglar sig i solpanelerna.'/>
       </div>
       <div className='container'>
 
         <div className='solar-section'>
           <div className='solar-text-info'>
             <h1 className='solar-title sub-header'>Fördelar med solpaneler</h1>
-            <div className='benefits' data-aos='fade-right' data-aos-duration='1000'>
-              <div className='benefit-container'>
+            <div className='benefits'>
+              <div className='benefit-container' data-aos='fade-right' data-aos-duration='1000'>
                 <div className='icon-title'><FaCheckCircle className='check' />Minska dina energikostnader</div>
                   <p>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser samtidigt som du har möjlighet att sälja överskottselen.</p>
               </div>
 
-              <div className='benefit-container'>
+              <div className='benefit-container' data-aos='fade-right' data-aos-duration='2000'>
                 <div className='icon-title'><FaCheckCircle className='check' />Hållbar energilösning</div>
                 <p>Självproducerad el är ett hållbart alternativ eftersom den utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer hållbar och resurseffektiv energiproduktion.</p>
               </div>
 
-              <div className='benefit-container'>
+              <div className='benefit-container' data-aos='fade-right' data-aos-duration='3000'>
                 <div className='icon-title'><FaCheckCircle className='check' />Ökar värdet på din bostad</div>
                 <p>Genom att investera i solenergi kan du öka din bostads attraktionsvärde. Med lägre elkostnader, miljövänlig image och förbättrad energieffektivitet kan din bostad bli ännu mer attraktiv på marknaden.</p> 
               </div>

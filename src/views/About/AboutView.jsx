@@ -3,8 +3,8 @@ import StaffCard from '../../components/StaffCard/StaffCard'
 import './AboutView.css'
 import { useEffect } from 'react'
 import Image from '../../assets/pontus.png'
-import Michael from '../../assets/Michael.png'
-import Albin from '../../assets/Albin.png'
+import Michael from '../../assets/michael.png'
+import Albin from '../../assets/albin.png'
 import Mikael from '../../assets/mikael.png'
 import Stefan from '../../assets/stefan.png'
 import Hero from '../../assets/group.png'
@@ -30,6 +30,9 @@ const AboutView = () => {
             {/* ÄNDRA STORLEK SAMMA SOM KONTAKT ?  */}
             <h1 className='about-header'>Vi är Arosol</h1> 
             <p>Arosol är din dedikerade partner för hållbara lösningar. Vi erbjuder en mångsidig tjänstepalett inom solel, plåtslageri, taksäkerhet och takentreprenad. Specialiserade inom områdena solel, taksäkerhet, takentreprenad och plåtslageri, strävar vi efter att erbjuda skräddarsydda och högkvalitativa tjänster. Med vår dedikerade och kunniga personal arbetar vi nära våra kunder för att leverera energieffektiva solenergilösningar, säkra takkonstruktioner och läckra plåtarbeten. <span className='new-paragraph'> Vårt fokus på kvalitet och professionalism gör Arosol till det självklara valet för alla dina takrelaterade behov, inklusive specialkompetens inom plåtarbeten. Oavsett om det gäller solpaneler, plåtarbeten eller takprojekt kan du lita på Arosol för professionell och pålitlig service.</span></p>
+            <div className='mt-2'>
+              <a href='/contact'><Button text='Kontakta oss'/></a>
+            </div>
           </div>
         </div>
         
@@ -43,8 +46,8 @@ const AboutView = () => {
             <StaffCard image={Michael} name='Michael Karlsson' text='Vår hyllade plåtveteran har inte bara bemästrat sitt yrke utan förvandlar även sitt sommarställe till en skönhet. På sommaren njuter han av båtturer och naturen.' />
           </div>
         </div>
-        <ContactSection dark header='Hur kan vi hjälpa dig?' text='Välkommen till Arosol! Vi erbjuder expertis inom solel, takentreprenad, plåtslageri och taksäkerhet. Från solenergilösningar till takrenoveringar och säkerhetstjänster – vi är din pålitliga partner för hållbara och kvalitativa resultat. Kontakta oss idag för skräddarsydda lösningar som passar dina behov och bidrar till en tryggare framtid.' />
-        <div className='line'></div>
+        {/* <ContactSection dark header='Hur kan vi hjälpa dig?' text='Välkommen till Arosol! Vi erbjuder expertis inom solel, takentreprenad, plåtslageri och taksäkerhet. Från solenergilösningar till takrenoveringar och säkerhetstjänster – vi är din pålitliga partner för hållbara och kvalitativa resultat. Kontakta oss idag för skräddarsydda lösningar som passar dina behov och bidrar till en tryggare framtid.' />
+        <div className='line'></div> */}
     </div>
   )
 }
