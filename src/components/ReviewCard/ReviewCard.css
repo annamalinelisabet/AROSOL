@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 450px;
 }
 
@@ -13,6 +13,25 @@
     font-size: 2.5rem;
     color: #4494C7;
     display: none;
+}
+
+.ReviewCard .text-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ReviewCard .text {
+    font-style: italic;
+}
+
+.ReviewCard .text-div .contact {
+    text-decoration: underline;
+    font-style: inherit;
+    cursor: pointer;
+    padding: .5rem;
+    color: #fff;
 }
 
 .ReviewCard .person-wrapper {
@@ -59,5 +78,9 @@
 @media(min-width: 768px) {
     .ReviewCard .quote-icon {
         display: inline;
+    }
+
+    .ReviewCard  {
+        justify-content: space-between;
     }
 }
