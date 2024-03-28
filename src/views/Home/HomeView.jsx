@@ -128,7 +128,7 @@ const HomeView = () => {
       <div className='review-section'>
         <h2 className='sub-header'>Vad tycker våra kunder?</h2>
         <swiper-container ref={swiperRef} init='false'>
-          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Lennart Pettersson' text='Med Arosol fick jag toppkvalitet och professionalism utan kompromisser. Resultatet är fantastiskt. Jag har inga tvivel om att jag valde rätt när jag anlitade dem för ett komplett takbyte på altanen.'  instagramLink='https://www.instagram.com/p/CwBVifNNmkS/?img_index=1'/></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Lennart Pettersson' text='"Med Arosol fick jag toppkvalitet och professionalism utan kompromisser. Resultatet är fantastiskt. Jag har inga tvivel på att jag valde rätt när jag anlitade dem för ett komplett takbyte på altanen."'  instagramLink='https://www.instagram.com/p/CwBVifNNmkS/?img_index=1'/></swiper-slide>
           <swiper-slide><ReviewCard company='VD Hallstahem' img={Review2} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
           <swiper-slide><ReviewCard company='Privatperson' img={Review2} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
           <swiper-slide><ReviewCard contact='yes' /></swiper-slide>
