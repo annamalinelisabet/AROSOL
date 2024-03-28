@@ -19,7 +19,7 @@ const TakentreprenadView = () => {
   return (
     <div className='Takentreprenad'>
       <PageHero title='TAKENTREPRENAD' image={takentreprenad} alt='En glad man lägger isolering på ett tak mot en klarblå himmel.' />
-      <ServiceInfoImgSection header='Pålitlig partner för professionella taklösningar' image={Image} alt='Ett gult hus med oranger tegeltak.' text='Arosol är din pålitliga partner för taklösningar. Vi erbjuder skräddarsydda lösningar, inklusive projektplanering, materialval och professionell installation. Vårt dedikerade team säkerställer optimal isolering, effektiva dräneringssystem och en grundlig inspektion för långsiktig hållbarhet. Välj Arosol för pålitliga och professionella taklösningar.' />
+      <ServiceInfoImgSection header='Pålitlig partner för professionella taklösningar' image={Image} alt='Ett gult hus med oranger tegeltak.' text='Arosol erbjuder skräddarsydda lösningar som innefattar projektplanering, materialval och professionell installation. Vårt dedikerade team säkerställer optimal isolering, effektiva dräneringssystem och en grundlig inspektion för långsiktig hållbarhet. Välj Arosol för pålitliga och professionella taklösningar.' />
 
       <div className='container'>
         <div>
@@ -27,11 +27,11 @@ const TakentreprenadView = () => {
         </div>
         <div className='d-flex-column gap-2'>
           <div className='blue-line'></div>
-          <RoofCard number='1' titel='Förlust av takmaterial' text='Observerar du synliga skador eller brist på takmaterial? Det är ett klart tecken på att ditt tak behöver omedelbar uppmärksamhet och möjligen ett utbyte, vilket minskar risken för väderpåverkan och potentiell vattenintrång.' />
-          <RoofCard number='2' titel='Försvagad takstruktur' text='För att säkerställa fastighetens långsiktiga stabilitet och undvika allvarliga skador är regelbundna takinspektioner avgörande. Vid tecken på takproblem, som deformationer, sprickor eller sänkningar, bör man överväga ett takbyte för att undvika potentiella vattenskador och läckor.' />
-          <RoofCard number='3' titel='Läckor och vattenskador' text='Läckor och vattenskador, som ofta uppstår vid takproblem, betonar vikten av regelbundna takinspektioner och eventuellt takbyte. Detta skyddar inte bara mot allvarliga skador utan bevarar även fastighetens stabilitet.' />
-          <RoofCard number='4' titel='Mögel och fukt' text='Mögel och fukt utgör tydliga indikationer på potentiella problem med taket. Vid upptäckt av tecken som läckage, vattenfläckar eller mögel på taket krävs snabb åtgärd för att förhindra fortsatt skada för att bevara en hälsosam inomhusmiljö.' />
-          <RoofCard number='5' titel='Ålder' text='När taket närmar sig eller överskrider den förväntade livslängden på 20-30 år, kan det vara dags att överväga ett byte även om inga akuta problem är synliga. Ålder är avgörande för takets hållbarhet, regelbunden inspektion är nödvändig för att bibehålla prestandan och förebygga potentiella problem.' />
+          <RoofCard number='1' titel='Förlust av takmaterial' text='Observerar du synliga skador eller brist på takmaterial? Det är ett tecken på att ditt tak behöver omedelbar uppmärksamhet och möjligen ett utbyte, för att minskar risken av skador påverkat av väder och potentiellt vattenintrång.' />
+          <RoofCard number='2' titel='Försvagad takstruktur' text='För att säkerställa fastighetens långsiktiga stabilitet och undvika allvarliga skador är regelbundna takinspektioner avgörande. Du bör överväga takbyte vid tecken på takproblem som tillexempel deformationer, sprickor eller sänkningar för att undvika potentiella vattenskador och läckor. ' />
+          <RoofCard number='3' titel='Läckor och vattenskador' text='Läckor och vattenskador, som ofta uppstår vid takproblem, betonar vikten av regelbundna takinspektioner och eventuellt takbyte. Det skyddar inte bara mot allvarliga skador utan bevarar även fastighetens stabilitet.' />
+          <RoofCard number='4' titel='Mögel och fukt' text='Mögel och fukt utgör tydliga indikationer på potentiella problem med taket. Vid upptäckt av läckage, vattenfläckar eller mögel på taket krävs snabb åtgärd för att förhindra fortsatt skada och bevara en hälsosam inomhusmiljö.' />
+          <RoofCard number='5' titel='Ålder' text='När taket närmar sig, eller överskrider, den förväntade livslängden på 20—30 år kan det vara dags att överväga ett byte även om inga akuta problem är synliga. Regelbunden inspektion är nödvändig för att bibehålla prestandan och förebygga potentiella problem.' />
         </div>
       </div>
 
@@ -43,7 +43,7 @@ const TakentreprenadView = () => {
           <img src={after} alt='Efter-bild: Samma hus, men med ett nytt oranger plåttak.' className='roof-img' />
         </div>
       </div>
-      <ContactSection header='Vill ni veta mer?' text='Tveka inte att kontakta oss om ni är nyfikna på våra takentreprenadtjänster eller har några andra funderingar. Vi på Arosol står till ert förfogande att ge bästa möjliga service!' />
+      <ContactSection header='Vill du veta mer?' text='Tveka inte att kontakta oss om du är nyfiken på våra tjänster inom takentreprenad eller har andra funderingar. Vi på Arosol står till ditt förfogande för att erbjuda bästa möjliga service.' />
     </div>
   )
 }

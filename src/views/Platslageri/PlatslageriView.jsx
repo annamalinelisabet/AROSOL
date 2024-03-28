@@ -35,14 +35,14 @@ const smallScreen = windowWidth <= 768
   return (
     <div className='Platslageri'>
       <PageHero title='PLÅTSLAGERI' image={plattak} alt='Ett vitt hus med ett svart plåttak.'/>
-      <ServiceInfoImgSection header='Expertis och kvalitet inom plåtarbeten' image={Image} altTxt='En anställd arbetar på ett plåtarbete med klämmor som håller fast plåten.' text='Vårt erfarna team på Arosol levererar högkvalitativa lösningar för olika projekt, från takrenoveringar till anpassade plåtdetaljer. Vi strävar efter noggrannhet och skicklighet i varje plåtarbete. Oavsett om det gäller plåtbeklädnad, takarbeten eller specialdesignade detaljer, är vi redo att ta itu med dina projekt. Med Arosol får du pålitliga plåttjänster och en partner som värdesätter kvalitet och hållbarhet. Lita på oss för professionella plåtlösningar.' />
+      <ServiceInfoImgSection header='Expertis och kvalitet inom plåtarbeten' image={Image} altTxt='En anställd arbetar på ett plåtarbete med klämmor som håller fast plåten.' text='Vårt erfarna team på Arosol levererar högkvalitativa lösningar för olika projekt, allt från takrenoveringar till anpassade plåtdetaljer. Vi strävar efter noggrannhet och skicklighet i varje plåtarbete. Vi är redo att ta itu med dina projekt oavsett om det gäller plåtbeklädnad, takarbeten eller specialdesignade detaljer. Med Arosol får du pålitliga plåttjänster och en partner som värdesätter kvalitet och hållbarhet.' />
       <div className='slider-text'>
         <div className='line-div'>
           <div className='line1'></div>
           <h2 className='sub-header'>Skräddarsydda plåtlösningar för varje behov</h2>
           <div className='line2'></div>
         </div>
-        <p className='container'>Med expertis inom plåtarbeten täcker vi allt från tak till dörrkarmar, skapar dekorativa detaljer och speciallösningar. Utmana oss – vi är redo att överträffa dina förväntningar.</p>
+        <p className='container'>Med expertis inom plåtarbeten täcker vi allt från tak, dörrkarmar till dekorativa detaljer och speciallösningar. Utmana oss – vi är redo att överträffa dina förväntningar.</p>
         {smallScreen ? (
           <ImageSlider images={images} />
         ) : (
@@ -53,7 +53,7 @@ const smallScreen = windowWidth <= 768
           </div>
         )}
       </div> 
-      <ContactSection header='Vill du veta mer?' text='Kontakta oss så vägleder vi dig genom ditt nästa plåtprojekt. Vi på Arosol finns här för att svara på alla dina frågor och ge dig den information du behöver för att fatta välgrundade beslut om plåtslageri.' />
+      <ContactSection header='Vill du veta mer?' text='Kontakta oss så vägleder vi dig genom ditt nästa plåtprojekt. Vi på Arosol finns här för att svara på frågor och ge dig den information du behöver för att fatta välgrundade beslut om plåtslageri.' />
     </div>
   )
 }
