@@ -62,12 +62,12 @@ const HomeView = () => {
       <HomeHero/>
       <div className='serviceCard-Wrapper'>
           <div className='relative'>
-        <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta eller reparera taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad' altTxt='En glad man lägger isolering på ett tak mot en klarblå himmel.'/>
+        <ServiceCard title='Solel' text='Monterar och installerar solcellspaneler för en hållbar energiproduktion' imgSrc={solel} linkTo='/solel' altTxt='Solpaneler installerade på ett tak, solnedgång som speglar sig i solpanelerna.'/>
             <h4 className='service-title'>Våra tjänster</h4>
           </div>
-        <ServiceCard title='Plåtslageri' text='Tillverkning, reparation och installation av plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri' altTxt='Ett svart plåttak.'/>
-        <ServiceCard title='Taksäkerhet' text='Underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet' altTxt='Ett svart snörasskydd på ett tak täckt av snö.'/>
-        <ServiceCard title='Solel' text='Monterar och installerar solcellspaneler för en hållbar energiproduktion' imgSrc={solel} linkTo='/solel' altTxt='Solpaneler installerade på ett tak, solnedgång som speglar sig i solpanelerna.'/>
+        <ServiceCard title='Plåtslageri' text='Tillverkar, reparerar och monterar plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri' altTxt='Ett svart plåttak.'/>
+        <ServiceCard title='Taksäkerhet' text='Vi utför underhåll och förebyggande åtgärder för ett säkert tak' imgSrc={taksäkerhet} linkTo='/taksakerhet' altTxt='Ett svart snörasskydd på ett tak täckt av snö.'/>
+        <ServiceCard title='Takentreprenad' text='Vi ansvarar för hela processen med att byta, eller reparera, taket på din fastighet' imgSrc={takentreprenad} linkTo='/takentreprenad' altTxt='En glad man lägger isolering på ett tak mot en klarblå himmel.'/>
       </div>
       <div className='container'>
 
@@ -81,13 +81,13 @@ const HomeView = () => {
               </div>
 
               <div className='benefit-container' data-aos='fade-right' data-aos-duration='2000'>
-                <div className='icon-title'><FaCheckCircle className='check' />Hållbar energilösning</div>
-                <p>Självproducerad el är ett hållbart alternativ eftersom den utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer hållbar och resurseffektiv energiproduktion.</p>
+                <div className='icon-title'><FaCheckCircle className='check' />Resurseffektiv energilösning</div>
+                <p>Självproducerad el utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer resurseffektiv energiproduktion.</p>
               </div>
 
               <div className='benefit-container' data-aos='fade-right' data-aos-duration='3000'>
                 <div className='icon-title'><FaCheckCircle className='check' />Ökar värdet på din bostad</div>
-                <p>Genom att investera i solenergi kan du öka din bostads attraktionsvärde. Med lägre elkostnader, miljövänlig image och förbättrad energieffektivitet kan din bostad bli ännu mer attraktiv på marknaden.</p> 
+                <p>Genom att investera i solenergi kan du öka din bostads värde. Enligt Booli ökar värdet på hus med solceller i genomsnitt med 250 000 kr. Med lägre elkostnader, miljövänlig image och förbättrad energieffektivitet kan din bostad bli mer attraktiv på marknaden.</p> 
               </div>
             </div>
 
@@ -113,7 +113,7 @@ const HomeView = () => {
           <div className='CEO-text-wrapper container'>
             <div className='CEO-text container'>
               <FaQuoteLeft className='right-quote' />
-              <p>Vi på Arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på vårt arbete och vår service, och vi strävar alltid efter att överträffa våra kunders förväntningar.</p> 
+              <p>Vi på Arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på arbete och service, och vi strävar alltid efter att överträffa våra kunders förväntningar.</p> 
               <FaQuoteRight className='left-quote' />
             </div>
             <div className='container'>

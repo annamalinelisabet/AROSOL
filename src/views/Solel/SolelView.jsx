@@ -22,8 +22,8 @@ const SolelView = () => {
       <ServiceInfoSection 
         header='En smart investering' 
         text='Arosol installerar högkvalitativa solcellspaneler för optimal avkastning.'
-        infoText1='Att välja solenergilösningar från Arosol innebär inte bara förnuftiga och strategiska ekonomiska beslut, utan också ett steg mot ansvarsfull energiproduktion. Genom att använda våra solpaneler kan du förbättra värdet på ditt hem eller företag och samtidigt visa upp ditt engagemang för ansvarsfull energiproduktion. Detta kan differentiera dig från konkurrenterna och stärka din position på marknaden.' 
-        infoText2='Vidare öppnar investeringen i våra solenergilösningar upp möjligheter till skatteförmåner och deltagande i olika incitamentprogram. Genom att dra nytta av dessa förmåner kan du göra din övergång till solenergi ännu mer gynnsam. Ta det första steget mot en effektivare energianvändning med Arosol.' 
+        infoText1='Solenergilösningar från Arosol innebär inte bara förnuftiga och strategiska ekonomiska beslut, utan också ett steg mot ansvarsfull energiproduktion. Solpaneler förbättrar värdet på ditt hem eller fastighet samtidigt som det visar engagemang för ansvarsfull energiproduktion.' 
+        infoText2='Vidare öppnar investeringen i våra solenergilösningar upp möjligheter till skatteförmåner. Genom att dra nytta av dessa förmåner kan du göra din övergång till solenergi ännu mer gynnsam. Ta det första steget mot en effektivare energianvändning med Arosol.' 
         btnText='Få offert'
         link='https://docs.google.com/forms/d/e/1FAIpQLSem3FDhb0zid2Htz_VQ8obsBP0zJZyj3TZXG4T5tGB0gmA18w/viewform'
         externalLink
@@ -37,21 +37,21 @@ const SolelView = () => {
       <div className='info-box-wrapper'>
         <InfoBox sun text='Solcellsinstallationen genomgår flera steg för att säkerställa effektiv energiproduktion. Det börjar med en platsutvärdering för optimal solljusexponering, sedan design och installationsplan.' />
         <InfoBox lightning text='Ett robust monteringssystem installeras för att säkra solcellerna på plats. Elektriska kablar ansluts till växelriktaren för att omvandla elektriciteten, och tester genomförs för överensstämmelse med standarder.' />
-        <InfoBox coins text='Myndighetsgodkännande krävs om solcellssystemet är konfigurerat för att ansluta överskottsel. Regelbunden övervakning och underhåll är viktigt för långsiktig funktion.' />
+        <InfoBox coins text='Myndighetsgodkännande krävs om solcellssystemet är konfigurerat för att ansluta överskottsel. Regelbunden övervakning och underhåll är viktigt för långsiktig funktion. ÄR DETTA NÅGOT AROSOL ERBJUDER RÅDGIVNING OM?' />
       </div>
 
       <div className='winter-info-wrapper'>
         <div className='winter-info'>
           <h2 className='container sub-header'>Året runt energi: Solpanelernas beständighet i vinterkylan</h2>
-          <p className='container new-paragraph'>Trots kortare dagar och kallt väder under vintern fortsätter solpanelerna att generera värdefull energi. Det är faktiskt så att solcellerna producerar elektricitet även under en molnig vinterdag och fungerar utmärkt i vårt nordliga klimat. Solcellerna vi på Arosol använder oss av är designade för att enkelt släppa ifrån sig snö, vilket gör dem robusta och anpassningsbara till olika väderförhållanden. Detta säkerställer en konstant och pålitlig energiproduktion året runt.
-          <span className='new-paragraph'>Under sommartid ökar solpanelernas energiproduktion vilket kan resultera i överskottsel. Denna överskottsel kan användas för att minska eller helt eliminera elkostnaderna under sommaren. Besparingarna från soliga månader kan agera som en ekonomisk buffert och användas för att täcka de högre elkostnaderna som vanligtvis uppstår under vintermånaderna.</span></p>
+          <p className='container new-paragraph'>Trots kortare dagar och kallt väder under vintern fortsätter solpanelerna att generera värdefull energi. Det är faktiskt så att solcellerna producerar elektricitet även under en molnig vinterdag och fungerar utmärkt i vårt nordliga klimat. Solcellerna vi på Arosol använder oss av är designade för att enkelt släppa ifrån sig snö, vilket gör dem robusta och anpassningsbara till olika väderförhållanden.
+          <span className='new-paragraph'>Under sommartid ökar solpanelernas energiproduktion vilket kan resultera i överskottsel. Denna överskottsel kan användas för att minska elkostnaderna under sommaren. Besparingarna från soliga månader kan agera som en ekonomisk buffert och användas för att täcka de högre elkostnaderna som vanligtvis uppstår under vintermånaderna.</span></p>
         </div>
         <div className='winter-img-wrapper'>
           <img src={WinterImage} alt='Två anställda står med ryggen mot kameran och pekar mot solen, som skiner på en himmel ovanför snötäckta berg i Alperna.' />
         </div>
       </div>
       
-      <ContactSection header='Vill ni veta mer?' text='Är ni nyfikna på solpaneler och vill lära er mer om deras montering, funktion eller andra aspekter? Tveka inte att kontakta oss! Vi på Arosol finns här för att svara på era frågor och erbjuda all information ni behöver för att fatta välgrundade beslut om solenergilösningar. Kontakta oss och låt oss guida er mot en mer hållbar energiframtid.' />
+      <ContactSection header='Vill du veta mer?' text='Är du nyfikna på solpaneler och vill lära dig mer om montering, funktion eller andra aspekter? Tveka inte att kontakta oss. Vi på Arosol finns här för att svara på frågor och erbjuda all information du behöver för att fatta välgrundade beslut om solenergilösningar.' />
 
     </div>
   )
