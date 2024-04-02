@@ -33,7 +33,7 @@ const HomeView = () => {
       navigation: true,
       effect: 'coverflow',
       loop: true,
-      speed: 500,
+      speed: 1000,
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 1,
@@ -48,6 +48,8 @@ const HomeView = () => {
           .swiper-button-next,
           .swiper-button-prev {
             color: #fff;
+            width: 30px;
+            height: 30px;
           }
 
           @media(min-width: 768px) {
