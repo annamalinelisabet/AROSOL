@@ -23,7 +23,7 @@
 
 .ReviewCard .text {
     font-style: italic;
-    padding-inline: 2rem;
+    padding: 1rem 2rem;
 }
 
 .ReviewCard .text-div .contact {
