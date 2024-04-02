@@ -16,9 +16,9 @@ const Menu = ({ setShowMenu }) => {
         <ul>
             <NavLink to='/'><li><FaHouse className='home' />Hem</li></NavLink>
             <NavLink to='/solel'><li>Solel</li></NavLink>
+            <NavLink to='/platslageri'><li>Plåtslageri</li></NavLink>
             <NavLink to='/taksakerhet'><li>Taksäkerhet</li></NavLink>
             <NavLink to='/takentreprenad'><li>Takentreprenad</li></NavLink>
-            <NavLink to='/platslageri'><li>Plåtslageri</li></NavLink>
         </ul>
         <div className='line'></div>
         <ul>

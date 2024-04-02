@@ -1,12 +1,11 @@
 .ReviewCard {
     text-align: center;
     padding-block: 2rem;
-    width: min(90%, 500px);
+    width: min(90%, 900px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
-    height: 450px;
+    height: 500px;
 }
 
 .ReviewCard .quote-icon {
@@ -24,6 +23,7 @@
 
 .ReviewCard .text {
     font-style: italic;
+    padding-inline: 2rem;
 }
 
 .ReviewCard .text-div .contact {
@@ -42,8 +42,8 @@
 }
 
 .ReviewCard .quote-img-wrapper {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     border: 5px solid #4494C7;
 }
@@ -82,5 +82,9 @@
 
     .ReviewCard  {
         justify-content: space-between;
+    }
+
+    .ReviewCard .text {
+        padding: 0;
     }
 }

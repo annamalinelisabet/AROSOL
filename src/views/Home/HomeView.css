@@ -210,8 +210,8 @@ swiper-slide.swiper-slide-active {
     filter: none;
     background: var(--dark-blue-clr);
     color: white;
+    border-radius: 5px;
 }
-
 
 @media(min-width: 768px) {
 

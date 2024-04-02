@@ -13,12 +13,13 @@ import taksäkerhet from '../../assets/snoras.png'
 import plåtslageri from '../../assets/plat.png'
 import solelhome from '../../assets/solelhome.png'
 import CEO from '../../assets/pontus.png'
-import Review2 from '../../assets/review.jpg'
+import Review2 from '../../assets/person.png'
 import solel from '../../assets/platsolel.png'
 import Review1 from '../../assets/lennart.png'
 
 import Button from '../../components/Button/Button'
 import ReviewCard from '../../components/ReviewCard/ReviewCard';
+
 
 
 
@@ -35,7 +36,7 @@ const HomeView = () => {
       speed: 500,
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 2,
+      slidesPerView: 1,
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -46,9 +47,16 @@ const HomeView = () => {
         `
           .swiper-button-next,
           .swiper-button-prev {
-            color: var(--orange-clr);
-            padding: 1rem;
+            color: #fff;
           }
+
+          @media(min-width: 768px) {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+              padding: 1rem;
+            }
+         }
       `,
       ],
     }
@@ -125,12 +133,12 @@ const HomeView = () => {
         </div>
       </div>
 
-      <div className='review-section'>
+      <div className='review-section container'>
         <h2 className='sub-header'>Vad tycker våra kunder?</h2>
         <swiper-container ref={swiperRef} init='false'>
-          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Lennart Pettersson' text='"Med Arosol fick jag toppkvalitet och professionalism utan kompromisser. Resultatet är fantastiskt. Jag har inga tvivel på att jag valde rätt när jag anlitade dem för ett komplett takbyte på altanen."'  instagramLink='https://www.instagram.com/p/CwBVifNNmkS/?img_index=1'/></swiper-slide>
-          <swiper-slide><ReviewCard company='VD Hallstahem' img={Review2} name='Emma Josefsson' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
-          <swiper-slide><ReviewCard company='Privatperson' img={Review2} name='Gunnar Gunnarson Hej' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto.' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Lennart Pettersson' text='"Med Arosol fick jag en pålitlig kombination av kvalitet och professionalism, utan att behöva kompromissa. Resultatet var utmärkt. Jag är helt övertygad om att jag gjorde rätt val när jag anlitade dem för att byta ut taket på altanen."' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review2} name='Fredrik Stenström' text='"Jag anlitade Arosol för att montera solpaneler på vårt nya hus. Offerten var tydlig efter samtal om vilket material jag önskade, och i mitt fall valde jag JA-solar paneler med Solaredge växelriktare, optimerare för varje panel samt startmotorer för att kunna se ”live” vad som händer med produktionen. Resultatet blev över förväntan med egna plåtkanaler för kablar med mera. Kan varmt rekommendera Arosol till vem som helst, och gör det ofta till bekanta som det är idag."' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review2} name='Anders Hellström' text='"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto. Dolor sit amet consectetur adipisicing elit. Aliquid, architecto."' /></swiper-slide>
           <swiper-slide><ReviewCard contact='yes' /></swiper-slide>
         </swiper-container>       
       </div> 
