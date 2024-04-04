@@ -13,9 +13,10 @@ import taksäkerhet from '../../assets/snoras.png'
 import plåtslageri from '../../assets/plat.png'
 import solelhome from '../../assets/solelhome.png'
 import CEO from '../../assets/pontus.png'
-import Review2 from '../../assets/person.png'
 import solel from '../../assets/platsolel.png'
 import Review1 from '../../assets/lennart.png'
+import Review2 from '../../assets/person.png'
+import Review3 from '../../assets/anders.png'
 
 import Button from '../../components/Button/Button'
 import ReviewCard from '../../components/ReviewCard/ReviewCard';
@@ -140,7 +141,7 @@ const HomeView = () => {
         <swiper-container ref={swiperRef} init='false'>
           <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Lennart Pettersson' text='"Med Arosol fick jag en pålitlig kombination av kvalitet och professionalism, utan att behöva kompromissa. Resultatet var utmärkt. Jag är helt övertygad om att jag gjorde rätt val när jag anlitade dem för att byta ut taket på altanen."' /></swiper-slide>
           <swiper-slide><ReviewCard company='Privatperson' img={Review2} name='Fredrik Stenström' text='"Jag anlitade Arosol för att montera solpaneler på vårt nya hus. Offerten var tydlig efter samtal om vilket material jag önskade, och i mitt fall valde jag JA-solar paneler med Solaredge växelriktare, optimerare för varje panel samt startmotorer för att kunna se ”live” vad som händer med produktionen. Resultatet blev över förväntan med egna plåtkanaler för kablar med mera. Kan varmt rekommendera Arosol till vem som helst, och gör det ofta till bekanta som det är idag."' /></swiper-slide>
-          <swiper-slide><ReviewCard company='Privatperson' img={Review2} name='Anders Hellström' text='"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, architecto. Dolor sit amet consectetur adipisicing elit. Aliquid, architecto."' /></swiper-slide>
+          <swiper-slide><ReviewCard company='Privatperson' img={Review3} name='Anders Hellström' text='"Arosol fick uppdraget att installera solpanel på mitt tak. Jag uppskattar den personliga kontakten, den tekniska expertis och erfarenhet de besitter och delar med sig av. Montage och installation skedde på planerat datum, och slutresultatet är väldigt proffsigt. Jag har redan rekommenderat Arosol till min granne, och nu han är lika nöjd med sin anläggning."' /></swiper-slide>
           <swiper-slide><ReviewCard contact='yes' /></swiper-slide>
         </swiper-container>       
       </div> 
