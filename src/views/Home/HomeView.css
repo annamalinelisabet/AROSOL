@@ -1,9 +1,3 @@
-.HomeView {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
 /* --- SERVICE CARD --- */
 
 .HomeView .serviceCard-Wrapper {

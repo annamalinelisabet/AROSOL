@@ -1,15 +1,17 @@
 import './TaksakerhetView.css'
 import { useEffect, useState } from 'react'
+
 import PageHero from '../../components/PageHero/PageHero'
 import ServiceInfoSection from '../../components/ServiceInfoSection/ServiceInfoSection'
 import ContactSection from '../../components/ContactSection/ContactSection'
+
 import HeroImages from '../../assets/snoras.png'
 import safetyVideo from '../../assets/removesnow.mp4'
-
-import { MdOutlineHandyman } from 'react-icons/md';
-import { IoSnowSharp } from 'react-icons/io5';
-import { BsLadder } from 'react-icons/bs';
 import mobileImage from '../../assets/snowfalling.png'
+
+import { BsLadder } from 'react-icons/bs'
+import { IoSnowSharp } from 'react-icons/io5'
+import { MdOutlineHandyman } from 'react-icons/md'
 
 const TaksakerhetView = () => {
 
@@ -35,7 +37,7 @@ const TaksakerhetView = () => {
   }, [])
 
   return (
-    <div className='Taksakerhet'>
+    <div className='Taksakerhet page-gap'>
       <PageHero title='TAKSÄKERHET' image={HeroImages} alt='Ett svart snörasskydd på ett tak täckt av snö.'/>
       <ServiceInfoSection 
         header='Säkert tak med Arosol'
@@ -46,11 +48,10 @@ const TaksakerhetView = () => {
         link='/contact'
       />
 
-    <div className='safety-wrapper'>
       <div className='safety-section container'>
         <h2 className='sub-header'>Taktjänster för varje säsong</h2>
         <div className='safety-card-wrapper'>
-          <div className='safety-card'>
+          <div className='safety-card flex-column'>
             <div><MdOutlineHandyman className='safety-icon' /></div>
             <h3>Snörasskydd och dräneringssystem</h3>
             <p>Installation av snörasskydd för att förhindra snöskador och isbildning. Smarta dräneringssystem för att effektivt leda bort vatten och minska risken för översvämningar.</p>
@@ -67,12 +68,11 @@ const TaksakerhetView = () => {
           </div>
         </div>
       </div>
-    </div>
 
       <div className='safety-video-section'>
       { isMobile ? (     
           <div className='mobile-img'>
-            <img src={mobileImage} alt='En anställd står i en lyft och tar bort snö från taket.' />
+            <img src={mobileImage} alt='En anställd står i en lyft och tar bort snö från taket.' className='img-cover' />
           </div>
         ) : (
         <div className='video-wrapper'>
@@ -81,7 +81,7 @@ const TaksakerhetView = () => {
           </video>
         </div>
         )}
-        <div className='safety-text'>
+        <div className='safety-text d-flex-column'>
           <h2 className='sub-header container'>Välj långsiktig trygghet med Arosol</h2>
           <p className='container'>Bristande taksäkerhet kan skada både tak och människor. Stora mängder snö som faller obehindrat från ett högt tak kan få förödande konsekvenser och är ofta ett resultat av bristande taksäkerhet. Att säkra taket handla om att bygga och underhålla det på ett sätt som minskar riskerna för olyckor. <span className='new-paragraph'>Vi på Arosol strävar efter att inte bara tillgodose dina omedelbara behov, utan även att skapa en hållbar lösning som säkrar ditt tak och din trygghet. När du väljer Arosol får du mer än bara en pålitlig partner för taksäkerhet. Du får en engagerad och professionell partner som behandlar ditt tak som om det vore vårt eget.</span></p>
         </div>

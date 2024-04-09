@@ -66,7 +66,7 @@ const HomeView = () => {
   }, [])
 
   return (
-    <div className='HomeView'>
+    <div className='HomeView page-gap'>
       <HomeHero/>
       <div className='serviceCard-Wrapper'>
           <div className='relative'>

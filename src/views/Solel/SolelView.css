@@ -1,18 +1,9 @@
-.Solel {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
 .Solel .montage-img-wrapper {
     height: 70vh;
     width: 100%;
 }
 
 .Solel .montage-img-wrapper img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
     object-position: 100% 20%;
 }
 
@@ -25,20 +16,12 @@
     flex: 1;
 }
 
-.Solel .winter-img-wrapper img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 .Solel .winter-info {
     background: var(--dark-blue-clr);
     color: white;
     flex: 1;
-    padding-block: 3rem;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    padding-block: 3rem;
 }
 
 @media(min-width: 768px) {

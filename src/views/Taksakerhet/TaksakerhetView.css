@@ -1,47 +1,3 @@
-.Taksakerhet {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.Taksakerhet .safety-text {
-    background-color: var(--dark-blue-clr);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 2rem;
-    height: 100vh;
-    justify-content: center;
-    width: 100%;
-    padding-block: 2rem;
-}
-
-.Taksakerhet .safety-video-section {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.Taksakerhet .video-wrapper, .mobile-img {
-    flex: 1;
-}
-
-.Taksakerhet .mobile-img img {
-    width: 100%;
-    height: 100%;
-}
-
-.Taksakerhet .safety-video {
-    height: 100vh;
-    object-fit: cover;
-    width: 100%;
-}
-
-.Taksakerhet .safety-img {
-    width: 100%;
-    height: 100%;
-}
-
 .Taksakerhet .safety-card-wrapper {
     display: flex;
     flex-direction: column;
@@ -55,8 +11,6 @@
 .Taksakerhet .safety-card {
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
     padding: 2rem;
     width: 100%;
@@ -67,14 +21,30 @@
     height: 30px;
 }
 
-.Taksakerhet .safety-img {
-    height: 70vh;
-    object-fit: contain;
+.Taksakerhet .safety-video-section {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.Taksakerhet .safety-img img {
+.Taksakerhet .safety-text {
+    background-color: var(--dark-blue-clr);
+    color: #fff;
+    flex: 1;
+    gap: 2rem;
+    height: 100vh;
+    justify-content: center;
+    padding-block: 2rem;
     width: 100%;
-    height: 100%;
+}
+
+.Taksakerhet .video-wrapper, .mobile-img {
+    flex: 1;
+}
+
+.Taksakerhet .safety-video {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
 }
 
 @media(min-width: 768px) {
@@ -84,8 +54,7 @@
    }
 
    .Taksakerhet .safety-card-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+        flex-direction: row;
+        gap: 2rem;
 }
 }
