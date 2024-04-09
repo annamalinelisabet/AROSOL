@@ -16,11 +16,11 @@ const PageWrapper = styled.div`
   `;
   
   const FormContainer = styled.div`
-  width: 100%; 
   display: flex;
   flex-direction: row;
   gap: 1rem;
   padding: 3rem 0rem 3rem 0;
+  width: 100%; 
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -44,8 +44,8 @@ const ContactView = () => {
   return (
     <div className='Contact'>
       <div className='img-wrapper'>
-        <div className='overlay'></div>
-        <img src={Cap} alt='En svart keps med Arosols orange logga' />
+        <div className='overlay flex-center'></div>
+        <img src={Cap} alt='En svart keps med Arosols orange logga' className='img-cover' />
       </div>
       <div className='line'></div>
       <div className='d-flex-column gap-3'>
