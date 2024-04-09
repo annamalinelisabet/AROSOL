@@ -1,13 +1,13 @@
 import './HomeView.css'
-import 'animate.css';
-
-import { useEffect, useRef } from 'react'
+import 'animate.css'
 import { Link } from 'react-router-dom'
-import { FaCheckCircle, FaArrowAltCircleRight } from "react-icons/fa";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { useEffect, useRef } from 'react'
 
 import HomeHero from '../../components/HomeHero/HomeHero'
 import ServiceCard from '../../components/ServiceCard/ServiceCard'
+import Button from '../../components/Button/Button'
+import ReviewCard from '../../components/ReviewCard/ReviewCard'
+
 import takentreprenad from '../../assets/takentreprenadhome.png'
 import taksäkerhet from '../../assets/snoras.png'
 import plåtslageri from '../../assets/plat.png'
@@ -18,11 +18,8 @@ import Review1 from '../../assets/lennart.png'
 import Review2 from '../../assets/person.png'
 import Review3 from '../../assets/anders.png'
 
-import Button from '../../components/Button/Button'
-import ReviewCard from '../../components/ReviewCard/ReviewCard';
-
-
-
+import { FaCheckCircle, FaArrowAltCircleRight } from 'react-icons/fa'
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
 
 const HomeView = () => {
 
@@ -73,7 +70,7 @@ const HomeView = () => {
       <HomeHero/>
       <div className='serviceCard-Wrapper'>
           <div className='relative'>
-        <ServiceCard title='Solel' text='Monterar och installerar solcellspaneler för en hållbar energiproduktion' imgSrc={solel} linkTo='/solel' altTxt='Solpaneler installerade på ett tak, solnedgång som speglar sig i solpanelerna.'/>
+            <ServiceCard title='Solel' text='Monterar och installerar solcellspaneler för en hållbar energiproduktion' imgSrc={solel} linkTo='/solel' altTxt='Solpaneler installerade på ett tak, solnedgång som speglar sig i solpanelerna.'/>
             <h4 className='service-title'>Våra tjänster</h4>
           </div>
         <ServiceCard title='Plåtslageri' text='Tillverkar, reparerar och monterar plåttak och byggnadsdetaljer' imgSrc={plåtslageri} linkTo='/platslageri' altTxt='Ett svart plåttak.'/>
@@ -83,26 +80,26 @@ const HomeView = () => {
       <div className='container'>
 
         <div className='solar-section'>
-          <div className='solar-text-info'>
+          <div className='solar-text-info d-flex-column'>
             <h1 className='solar-title sub-header'>Fördelar med solpaneler</h1>
-            <div className='benefits'>
-              <div className='benefit-container' data-aos='fade-right' data-aos-duration='1000'>
-                <div className='icon-title'><FaCheckCircle className='check' />Minska dina energikostnader</div>
+            <div className='benefits d-flex-column'>
+              <div className='benefit-container d-flex-column' data-aos='fade-right' data-aos-duration='1000'>
+                <div className='icon-title flex-center'><FaCheckCircle className='check' />Minska dina energikostnader</div>
                   <p>Genom att producera din egen el blir du inte lika beroende av elproducenter och deras priser samtidigt som du har möjlighet att sälja överskottselen.</p>
               </div>
 
-              <div className='benefit-container' data-aos='fade-right' data-aos-duration='2000'>
-                <div className='icon-title'><FaCheckCircle className='check' />Resurseffektiv energilösning</div>
+              <div className='benefit-container d-flex-column' data-aos='fade-right' data-aos-duration='2000'>
+                <div className='icon-title flex-center'><FaCheckCircle className='check' />Resurseffektiv energilösning</div>
                 <p>Självproducerad el utnyttjar förnybara resurser och minskar behovet av konventionell energi, vilket bidrar till en mer resurseffektiv energiproduktion.</p>
               </div>
 
-              <div className='benefit-container' data-aos='fade-right' data-aos-duration='3000'>
-                <div className='icon-title'><FaCheckCircle className='check' />Ökar värdet på din bostad</div>
+              <div className='benefit-container d-flex-column' data-aos='fade-right' data-aos-duration='3000'>
+                <div className='icon-title flex-center'><FaCheckCircle className='check' />Ökar värdet på din bostad</div>
                 <p>Genom att investera i solenergi kan du öka din bostads värde. Enligt Booli ökar värdet på hus med solceller i genomsnitt med 250 000 kr. Med lägre elkostnader, miljövänlig image och förbättrad energieffektivitet kan din bostad bli mer attraktiv på marknaden.</p> 
               </div>
             </div>
 
-            <div className='solar-CTA-section'>
+            <div className='solar-CTA-section d-flex-column'>
               <a href='https://docs.google.com/forms/d/e/1FAIpQLSem3FDhb0zid2Htz_VQ8obsBP0zJZyj3TZXG4T5tGB0gmA18w/viewform'  target='_blank' aria-label='Länk till offert'>
                 <Button text='Få offert' />
               </a>
@@ -111,18 +108,18 @@ const HomeView = () => {
               </a>
             </div>
           </div>
-          <div className='solar-img'>
-            <img src={solelhome} alt='Två glada anställda installerar solpaneler.' />
+          <div className='solar-img align-justify-center'>
+            <img src={solelhome} alt='Två glada anställda installerar solpaneler.' className='img-cover' />
           </div>
         </div>
 
       </div>          
 
       <div className='CEO-wrapper'>
-        <div className='CEO-section container'>
-          <div className='CEO-img'><img src={CEO} alt='Pontus, företagets VD, ler mot kameran iklädd arbetskläder och håller i ett taksäkerhetsrep.' /></div>
-          <div className='CEO-text-wrapper container'>
-            <div className='CEO-text container'>
+        <div className='CEO-section container d-flex-column align-justify-center'>
+          <div className='CEO-img'><img src={CEO} className='img-cover' alt='Pontus, företagets VD, ler mot kameran iklädd arbetskläder och håller i ett taksäkerhetsrep.' /></div>
+          <div className='CEO-text-wrapper container d-flex-column'>
+            <div className='container relative'>
               <FaQuoteLeft className='right-quote' />
               <p>Vi på Arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på arbete och service, och vi strävar alltid efter att överträffa våra kunders förväntningar.</p> 
               <FaQuoteRight className='left-quote' />
@@ -136,7 +133,7 @@ const HomeView = () => {
         </div>
       </div>
 
-      <div className='review-section container'>
+      <div className='review-section container d-flex-column'>
         <h2 className='sub-header'>Vad tycker våra kunder?</h2>
         <swiper-container ref={swiperRef} init='false'>
           <swiper-slide><ReviewCard company='Privatperson' img={Review1} name='Lennart Pettersson' text='"Med Arosol fick jag en pålitlig kombination av kvalitet och professionalism, utan att behöva kompromissa. Resultatet var utmärkt. Jag är helt övertygad om att jag gjorde rätt val när jag anlitade dem för att byta ut taket på altanen."' /></swiper-slide>
