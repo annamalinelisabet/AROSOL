@@ -10,7 +10,7 @@ const DetailsBar = () => {
     <div className='DetailsBar'>
         <div className='contact-info-wrapper'>
             <div className='contact-head-info'>
-              <h1>Kontakta oss</h1>
+              <h1 className='sub-header'>Kontakta oss</h1>
               <p>Tveka inte att höra av dig om du har några frågor eller funderingar. Vi finns här för att hjälpa dig.</p>
             </div>
             <div className="blue-line"></div>

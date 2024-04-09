@@ -1,11 +1,12 @@
 import './ContactView.css'
 import styled from 'styled-components'
 import { useEffect, useState } from 'react'
-import Cap from '../../assets/cap.png'
+
 import InputSide from '../../components/InputSide/InputSide'
 import DetailsBar from '../../components/DetailsBar/DetailsBar'
 import InputSuccess from '../../components/InputSuccess/InputSuccess'
 
+import Cap from '../../assets/cap.png'
 
 
 const PageWrapper = styled.div`
