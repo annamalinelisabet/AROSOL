@@ -14,9 +14,9 @@ const ReviewCard = ({ text, img, name, company, alt, contact }) => {
           <div className='text-div d-flex-column'>
             <p className='text'>{text}</p>
           </div>
-          <div className='person-wrapper d-flex'>
-            <div className='quote-img-wrapper img-cover'>
-              <img src={img} alt={alt} />
+          <div className='person-wrapper d-flex-column'>
+            <div className='quote-img-wrapper'>
+              <img src={img} alt={alt} className='img-cover' />
             </div>
             <div className='name-company'>
               <p className='name'>{name}</p> 
