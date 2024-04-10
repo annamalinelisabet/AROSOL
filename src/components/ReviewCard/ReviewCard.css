@@ -1,7 +1,5 @@
 .ReviewCard {
     align-items: center;
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
     height: 550px;
     padding-block: 2rem;
@@ -16,9 +14,7 @@
 }
 
 .ReviewCard .text-div {
-    display: flex;
     flex: 1;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -35,10 +31,17 @@
     text-decoration: underline;
 }
 
+.ReviewCard .contact-img {
+    bottom: -4.7rem;
+    content: '';
+    height: 300px;
+    position: absolute;
+    right: 0;
+    width: 300px;
+}
+
 .ReviewCard .person-wrapper {
     align-items: center;
-    display: flex;
-    flex-direction: column;
     gap: .2rem;
 }
 
@@ -51,9 +54,6 @@
 
 .ReviewCard .quote-img-wrapper img{
     border-radius: 50%;
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
 }
 
 .ReviewCard .name,
