@@ -1,0 +1,7 @@
+.NotFound {
+    min-height: 100vh;
+}
+
+.NotFound .text-center {
+    text-align: center;
+}

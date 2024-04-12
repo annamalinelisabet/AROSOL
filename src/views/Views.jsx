@@ -6,6 +6,7 @@ import PlatslageriView from './Platslageri/PlatslageriView'
 import SolelView from './Solel/SolelView'
 import TakentreprenadView from './Takentreprenad/TakentreprenadView'
 import TaksakerhetView from './Taksakerhet/TaksakerhetView'
+import NotFound from './NotFound/NotFound'
 
 const Views = () => {
   return (
@@ -18,6 +19,7 @@ const Views = () => {
           <Route path='/solel' element={ <SolelView/> }/>
           <Route path='/takentreprenad' element={ <TakentreprenadView /> }/>
           <Route path='/taksakerhet' element={ <TaksakerhetView/> }/>
+          <Route path='*' element={ <NotFound /> }/>
       </Routes>
     </div>
   )
