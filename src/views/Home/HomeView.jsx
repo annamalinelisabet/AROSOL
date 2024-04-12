@@ -142,7 +142,6 @@ const HomeView = () => {
           <swiper-slide><ReviewCard contact='yes' /></swiper-slide>
         </swiper-container>       
       </div> 
-      
     </div>
   )
 }

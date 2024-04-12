@@ -1,9 +1,13 @@
 import './Footer.css'
+import { Link, NavLink } from 'react-router-dom'
+
 import lglogo from '../../assets/lglogo.png'
+
 import { IoMdPin, IoMdMail } from 'react-icons/io'
 import { FaPhone, FaFacebookF, FaClock } from 'react-icons/fa6'
 import { BiLogoInstagramAlt } from 'react-icons/bi'
-import { Link, NavLink } from 'react-router-dom'
+import { FaRegCopyright } from "react-icons/fa6";
+
 
 
 
@@ -14,7 +18,7 @@ const Footer = () => {
   }
   return (
     <div className='Footer'>
-      <div className='container footer-wrapper'>
+      <div className='container footer-wrapper d-flex-column'>
         <div className='brand-info-wrapper'>
           <div className='img-wrapper'>
             <Link to='/' onClick={scrollToTop}><img className='logo' src={lglogo} alt='logga'/></Link>
@@ -47,6 +51,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className='stripe'>
+        <div className='container stripe-wrap d-flex'>
+          <p>Alla rättigheter förbehållna av Arosol AB <span><FaRegCopyright className='copyright'/></span> 2024</p>
+          <p>Hemsida designad och skapad av <a href='https://www.linkedin.com/in/anna-elg-bergman-b54228231/' className='linkedin-tag' target='_blank' rel='noopener noreferrer' aria-label='Link to Annas linkedin'>Anna Elg Bergman</a> och <a href='https://www.linkedin.com/in/anna-malin-elisabet-andersson/' className='linkedin-tag' target='_blank' rel='noopener noreferrer' aria-label='Link to Malins linkedin'>Malin Andersson</a></p>
+        </div>
+        </div>
     </div>
   )
 }
