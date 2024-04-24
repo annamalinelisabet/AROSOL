@@ -44,7 +44,7 @@ const SolelView = () => {
       </div>
 
       <div className='winter-info-wrapper'>
-        <div className='winter-info flex-column'>
+        <div className='winter-info d-flex-column'>
           <h2 className='container sub-header'>Året runt energi: Solpanelernas beständighet i vinterkylan</h2>
           <p className='container new-paragraph'>Trots kortare dagar och kallt väder under vintern fortsätter solpanelerna att generera värdefull energi. Det är faktiskt så att solcellerna producerar elektricitet även under en molnig vinterdag och fungerar utmärkt i vårt nordliga klimat. Solcellerna vi på Arosol använder oss av är designade för att enkelt släppa ifrån sig snö, vilket gör dem robusta och anpassningsbara till olika väderförhållanden.
           <span className='new-paragraph'>Under sommartid ökar solpanelernas energiproduktion vilket kan resultera i överskottsel. Denna överskottsel kan användas för att minska elkostnaderna under sommaren. Besparingarna från soliga månader kan agera som en ekonomisk buffert och användas för att täcka de högre elkostnaderna som vanligtvis uppstår under vintermånaderna.</span></p>

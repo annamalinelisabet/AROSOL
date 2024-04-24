@@ -21,7 +21,7 @@ const Menu = ({ setShowMenu }) => {
             <NavLink to='/takentreprenad'><li>Takentreprenad</li></NavLink>
         </ul>
         <div className='line'></div>
-        <ul>
+        <ul className='d-flex-column'>
             <NavLink to='/about'><li>Om oss</li></NavLink>
             <NavLink to='/contact'><li>Kontakt</li></NavLink>
         </ul>
