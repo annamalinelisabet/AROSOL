@@ -13,6 +13,38 @@ import after from '../../assets/after.png'
 
 const TakentreprenadView = () => {
 
+  const cards = [
+    {
+      number: '1',
+      titel: 'Förlust av takmaterial',
+      text: 'Observerar du synliga skador eller brist på takmaterial? Det är ett tecken på att ditt tak behöver omedelbar uppmärksamhet och möjligen ett utbyte, för att minskar risken av skador påverkat av väder och potentiellt vattenintrång.'
+    },
+
+    {
+      number: '2',
+      titel: 'Försvagad takstruktur',
+      text: 'För att säkerställa fastighetens långsiktiga stabilitet och undvika allvarliga skador är regelbundna takinspektioner avgörande. Du bör överväga takbyte vid tecken på takproblem som tillexempel deformationer, sprickor eller sänkningar för att undvika potentiella vattenskador och läckor.'
+    },
+
+    {
+      number: '3',
+      titel: 'Läckor och vattenskador',
+      text: 'Läckor och vattenskador, som ofta uppstår vid takproblem, betonar vikten av regelbundna takinspektioner och eventuellt takbyte. Det skyddar inte bara mot allvarliga skador utan bevarar även fastighetens stabilitet.'
+    },
+
+    {
+      number: '4',
+      titel: 'Mögel och fukt',
+      text: 'Mögel och fukt utgör tydliga indikationer på potentiella problem med taket. Vid upptäckt av läckage, vattenfläckar eller mögel på taket krävs snabb åtgärd för att förhindra fortsatt skada och bevara en hälsosam inomhusmiljö.'
+    },
+
+    {
+      number: '5',
+      titel: 'Ålder',
+      text: 'När taket närmar sig, eller överskrider, den förväntade livslängden på 20—30 år kan det vara dags att överväga ett byte även om inga akuta problem är synliga. Regelbunden inspektion är nödvändig för att bibehålla prestandan och förebygga potentiella problem.'
+    }
+  ]
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -26,11 +58,9 @@ const TakentreprenadView = () => {
         <h2 className='sub-header'>Tecken på att det är dags för ett nytt tak</h2>
         <div className='d-flex-column gap-2'>
           <div className='blue-line'></div>
-          <RoofCard number='1' titel='Förlust av takmaterial' text='Observerar du synliga skador eller brist på takmaterial? Det är ett tecken på att ditt tak behöver omedelbar uppmärksamhet och möjligen ett utbyte, för att minskar risken av skador påverkat av väder och potentiellt vattenintrång.' />
-          <RoofCard number='2' titel='Försvagad takstruktur' text='För att säkerställa fastighetens långsiktiga stabilitet och undvika allvarliga skador är regelbundna takinspektioner avgörande. Du bör överväga takbyte vid tecken på takproblem som tillexempel deformationer, sprickor eller sänkningar för att undvika potentiella vattenskador och läckor. ' />
-          <RoofCard number='3' titel='Läckor och vattenskador' text='Läckor och vattenskador, som ofta uppstår vid takproblem, betonar vikten av regelbundna takinspektioner och eventuellt takbyte. Det skyddar inte bara mot allvarliga skador utan bevarar även fastighetens stabilitet.' />
-          <RoofCard number='4' titel='Mögel och fukt' text='Mögel och fukt utgör tydliga indikationer på potentiella problem med taket. Vid upptäckt av läckage, vattenfläckar eller mögel på taket krävs snabb åtgärd för att förhindra fortsatt skada och bevara en hälsosam inomhusmiljö.' />
-          <RoofCard number='5' titel='Ålder' text='När taket närmar sig, eller överskrider, den förväntade livslängden på 20—30 år kan det vara dags att överväga ett byte även om inga akuta problem är synliga. Regelbunden inspektion är nödvändig för att bibehålla prestandan och förebygga potentiella problem.' />
+          {cards.map(card => (
+            <RoofCard number={card.number} titel={card.titel} text={card.text} key={card.number} />
+          ))}
         </div>
       </div>
 
