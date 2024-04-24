@@ -1,7 +1,4 @@
 .StaffCard img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     object-position: top;
     border-bottom: 5px solid var(--blue-clr);
 }
@@ -12,7 +9,5 @@
 }
 
 .StaffCard .staffTxt {
-    display: flex;
-    flex-direction: column;
     gap: .5rem;
 }

@@ -15,7 +15,7 @@ const ServiceInfoSection = ({ header, infoText1, infoText2, text, btnText, link,
   return (
     <div className='ServiceInfoSection'>
         <div className='container'>
-            <div className='text-box'>
+            <div className='text-box d-flex-column'>
                 <h2 className='sub-header'>{header}</h2>
                 <p className='mobile-text'>{infoText1}<span className='new-paragraph'>{infoText2}</span></p>
                 <p className='text'>{text}</p>

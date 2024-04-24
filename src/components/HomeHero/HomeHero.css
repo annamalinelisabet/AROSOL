@@ -1,18 +1,13 @@
 .HomeHero.bg-img {
-    align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/solelbild.png');
     background-size: cover;
     border-bottom: 4px solid var(--blue-clr);
     background-position: bottom;
-    display: flex;
     height: 100vh;
-    justify-content: center;
 }
 
 .HomeHero .wrapper {
     color: #fff;
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
 }
 
@@ -31,12 +26,12 @@
 }
 
 .HomeHero .cta-section a::after {
-    content: '';
     background-color: var(--blue-clr);
     bottom: -2px;
+    content: '';
     height: 2px;
-    position: absolute;
     left: 0;
+    position: absolute;
     width: 100%;
 }
 

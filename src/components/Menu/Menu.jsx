@@ -12,8 +12,8 @@ const Menu = ({ setShowMenu }) => {
   }
 
   return (
-    <div className='Menu animate__animated animate__fadeIn animate__faster' onClick={closeMenu}>
-        <ul>
+    <div className='Menu animate__animated animate__fadeIn animate__faster d-flex-column align-justify-center' onClick={closeMenu}>
+        <ul className='d-flex-column'>
             <NavLink to='/'><li><FaHouse className='home' />Hem</li></NavLink>
             <NavLink to='/solel'><li>Solel</li></NavLink>
             <NavLink to='/platslageri'><li>Plåtslageri</li></NavLink>

@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className='logo-box'>
                 <Link to='/' onClick={() => setShowMenu(false)}><img src={logo} alt='logga' /></Link>
             </div>
-            <div className={`burger ${showMenu ? `open` : ``}`} onClick={() => setShowMenu(state => !state)}>
+            <div className={`burger d-flex-column ${showMenu ? `open` : ``}`} onClick={() => setShowMenu(state => !state)}>
                 <span></span>
                 <span></span>
                 <span></span>

@@ -1,19 +1,17 @@
 .ServiceInfoSection {
-    color: #fff;
-    width: 100%;
     background: var(--black-clr);
+    color: #fff;
     padding-block: 3rem;
+    width: 100%;
 }
 
 .ServiceInfoSection .container {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 1rem;
 }
 
 .ServiceInfoSection .text-box {
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
 }
 

@@ -4,10 +4,10 @@
 }
 
 .Navbar .wrapper {
-    position: relative;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: relative;
     padding-block: 1rem;
 }
 
@@ -21,23 +21,21 @@
 }
 
 .Navbar .burger {
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50px;
-    height: 45px;
-    padding: 10px;
     cursor: pointer;
+    flex-wrap: wrap;
+    height: 45px;
+    justify-content: space-between;
     overflow: hidden;
+    padding: 10px;
+    width: 50px;
+    z-index: 2;
 }
 
 .Navbar .burger span {
-    width: 100%;
-    height: 3px;
     background: var(--orange-clr);
+    height: 3px;
     transition: all 250ms;
+    width: 100%;
 }
 
 .Navbar .burger.open span {

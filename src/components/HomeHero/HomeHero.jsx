@@ -11,8 +11,8 @@ const HomeHero = () => {
   }
   
   return (
-    <div className='HomeHero bg-img'>
-        <div className='container wrapper'>
+    <div className='HomeHero bg-img flex-center'>
+        <div className='container wrapper d-flex-column'>
             <div className='hero-text'>
                 <h1 className='header'>Tillverka el <span className='line-break'> med solcellspanel</span></h1>
                 <p>Solpaneler, taktrygghet och skräddarsytt plåtslageri i en komplett lösning för ditt tak</p>
