@@ -1,21 +1,42 @@
 import './SolelView.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import PageHero from '../../components/PageHero/PageHero'
 import ContactSection from '../../components/ContactSection/ContactSection'
 import InfoBox from '../../components/InfoBox/InfoBox'
 import ServiceInfoSection from '../../components/ServiceInfoSection/ServiceInfoSection'
+import ImageSlider from '../../components/ImageSlider/ImageSlider'
 
 import HeroImage from '../../assets/solelheader.png'
 import Image from '../../assets/montering.png'
 import WinterImage from '../../assets/alperna.png'
+import slide1 from '../../assets/solel1.png'
+import slide2 from '../../assets/solel4.png'
+import slide3 from '../../assets/solel2.png'
 
 
 const SolelView = () => {
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const images = [slide1, slide2, slide3]
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  useEffect(() => {
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+        window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const smallScreen = windowWidth <= 768
 
   return (
     <div className='Solel page-gap'>
@@ -40,7 +61,7 @@ const SolelView = () => {
       <div className='info-box-wrapper'>
         <InfoBox sun text='Solcellsinstallationen genomgår flera steg för att säkerställa effektiv energiproduktion. Det börjar med en platsutvärdering för optimal solljusexponering, sedan design och installationsplan.' />
         <InfoBox lightning text='Ett robust monteringssystem installeras för att säkra solcellerna på plats. Elektriska kablar ansluts till växelriktaren för att omvandla elektriciteten, och tester genomförs för överensstämmelse med standarder.' />
-        <InfoBox coins text='Myndighetsgodkännande krävs om solcellssystemet är konfigurerat för att ansluta överskottsel. Regelbunden övervakning och underhåll är viktigt för långsiktig funktion. ÄR DETTA NÅGOT AROSOL ERBJUDER RÅDGIVNING OM?' />
+        <InfoBox coins text='Myndighetsgodkännande krävs om solcellssystemet är konfigurerat för att ansluta överskottsel. Regelbunden övervakning och underhåll är viktigt för långsiktig funktion.' />
       </div>
 
       <div className='winter-info-wrapper'>
@@ -53,6 +74,26 @@ const SolelView = () => {
           <img src={WinterImage} alt='Två anställda står med ryggen mot kameran och pekar mot solen, som skiner på en himmel ovanför snötäckta berg i Alperna.' className='img-cover' />
         </div>
       </div>
+
+      <div className='slider-text'>
+        <div className='line-div'>
+          <div className='line1'></div>
+          <h2 className='sub-header'>Utförda arbeten inom solel</h2>
+          <div className='line2'></div>
+      </div>
+
+      <p className='container'>För att se fler bilder relaterade till solel, ta gärna en titt på vår <a href='https://www.instagram.com/arosolab/' target='_blank' rel='noopener noreferrer' className='instagram-link'>instagram</a></p>
+
+        {smallScreen ? (
+          <ImageSlider images={images} />
+        ) : (
+          <div className='images-wrapper'>
+            {images.map((image, index) => (
+              <img src={image} key={index} />
+            ))}
+          </div>
+        )}
+      </div> 
       
       <ContactSection header='Vill du veta mer?' text='Är du nyfikna på solpaneler och vill lära dig mer om montering, funktion eller andra aspekter? Tveka inte att kontakta oss. Vi på Arosol finns här för att svara på frågor och erbjuda all information du behöver för att fatta välgrundade beslut om solenergilösningar.' />
 

@@ -119,3 +119,8 @@ a {
     flex-direction: column;
     gap: 3rem;
 }
+
+.instagram-link {
+    color: var(--blue-clr);
+    font-weight: bold;
+}

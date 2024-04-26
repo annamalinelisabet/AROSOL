@@ -47,6 +47,43 @@
     width: 100%;
 }
 
+.Taksakerhet .images-wrapper {
+    display: flex;
+    height: 70vh;
+    gap: 1rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Taksakerhet .images-wrapper img {
+    height: 100%;
+    width: calc(100% / 3);
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.Taksakerhet .slider-text p {
+    max-width: 700px;
+    padding-bottom: 1rem;
+}
+
+.Taksakerhet .line-div {
+    margin: 0 auto;
+    width: min(90%, 1500px);
+}
+
+.Taksakerhet .line1 {
+    display: none;
+}
+
+.Taksakerhet .line1,
+.Taksakerhet .line2 {
+    background: var(--blue-clr);
+    height: 3px;
+    flex: 1;
+    margin-block: .5rem;
+}
+
 @media(min-width: 768px) {
     
     .Taksakerhet .safety-video-section {
@@ -56,5 +93,30 @@
    .Taksakerhet .safety-card-wrapper {
         flex-direction: row;
         gap: 2rem;
-}
+    }
+
+    .Taksakerhet .slider-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Taksakerhet .slider-text p {
+        text-align: center;
+    }
+
+    .Taksakerhet .line1 {
+        display: inline-block;
+    }
+
+    .Taksakerhet .slider-text .sub-header {
+        text-align: center;
+    }
+
+    .Taksakerhet .line-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }

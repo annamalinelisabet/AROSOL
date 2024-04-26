@@ -1,17 +1,25 @@
 import './TakentreprenadView.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import PageHero from '../../components/PageHero/PageHero'
 import ServiceInfoImgSection from '../../components/ServiceInfoImgSection/ServiceInfoImgSection'
 import ContactSection from '../../components/ContactSection/ContactSection'
 import RoofCard from '../../components/RoofCard/RoofCard'
+import ImageSlider from '../../components/ImageSlider/ImageSlider'
+
 
 import Image from '../../assets/tak.png'
 import takentreprenad from '../../assets/takentreprenadhome.png'
 import before from '../../assets/before.png'
 import after from '../../assets/after.png'
+import slide1 from '../../assets/takentreprenad1.png'
+import slide2 from '../../assets/takentreprenad2.png'
+import slide3 from '../../assets/plat.png'
 
 const TakentreprenadView = () => {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const images = [slide1, slide2, slide3]
 
   const cards = [
     {
@@ -45,6 +53,21 @@ const TakentreprenadView = () => {
     }
   ]
 
+
+  useEffect(() => {
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+        window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const smallScreen = windowWidth <= 768
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -72,6 +95,27 @@ const TakentreprenadView = () => {
           <img src={after} alt='Efter-bild: Samma hus, men med ett nytt oranger plåttak.' className='img-cover' />
         </div>
       </div>
+
+      <div className='slider-text'>
+        <div className='line-div'>
+          <div className='line1'></div>
+          <h2 className='sub-header'>Utförda arbeten inom takentreprenad</h2>
+          <div className='line2'></div>
+      </div>
+
+      <p className='container'>För att se fler bilder relaterade till takentreprenad, ta gärna en titt på vår <a href='https://www.instagram.com/arosolab/' target='_blank' rel='noopener noreferrer' className='instagram-link'>instagram</a></p>
+
+        {smallScreen ? (
+          <ImageSlider images={images} />
+        ) : (
+          <div className='images-wrapper'>
+            {images.map((image, index) => (
+              <img src={image} key={index} />
+            ))}
+          </div>
+        )}
+      </div> 
+
       <ContactSection header='Vill du veta mer?' text='Tveka inte att kontakta oss om du är nyfiken på våra tjänster inom takentreprenad eller har andra funderingar. Vi på Arosol står till ditt förfogande för att erbjuda bästa möjliga service.' />
     </div>
   )

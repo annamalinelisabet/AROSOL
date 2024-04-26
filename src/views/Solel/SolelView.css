@@ -24,6 +24,43 @@
     padding-block: 3rem;
 }
 
+.Solel .slider-text p {
+    max-width: 700px;
+    padding-bottom: 1rem;
+}
+
+.Solel .line-div {
+    margin: 0 auto;
+    width: min(90%, 1500px);
+}
+
+.Solel .line1 {
+    display: none;
+}
+
+.Solel .line1,
+.Solel .line2 {
+    background: var(--blue-clr);
+    height: 3px;
+    flex: 1;
+    margin-block: .5rem;
+}
+
+.Solel .images-wrapper {
+    display: flex;
+    height: 70vh;
+    gap: 1rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Solel .images-wrapper img {
+    height: 100%;
+    width: calc(100% / 3);
+    object-fit: cover;
+    object-position: bottom;
+}
+
 @media(min-width: 768px) {
     .Solel .info-box-wrapper {
         display: flex;
@@ -34,5 +71,24 @@
 
     .Solel .winter-info-wrapper {
         flex-direction: row-reverse;
+    }
+
+    .Solel .slider-text p {
+        text-align: center;
+    }
+
+    .Solel .line1 {
+        display: inline-block;
+    }
+
+    .Solel .slider-text .sub-header {
+        text-align: center;
+    }
+
+    .Solel .line-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 }

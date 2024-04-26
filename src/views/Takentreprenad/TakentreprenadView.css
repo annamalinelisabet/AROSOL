@@ -15,9 +15,71 @@
     width: 100%;
 }
 
+.Takentreprenad .images-wrapper {
+    display: flex;
+    height: 70vh;
+    gap: 1rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Takentreprenad .images-wrapper img {
+    height: 100%;
+    width: calc(100% / 3);
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.Takentreprenad .slider-text p {
+    max-width: 700px;
+    padding-bottom: 1rem;
+}
+
+.Takentreprenad .line-div {
+    margin: 0 auto;
+    width: min(90%, 1500px);
+}
+
+.Takentreprenad .line1 {
+    display: none;
+}
+
+.Takentreprenad .line1,
+.Takentreprenad .line2 {
+    background: var(--blue-clr);
+    height: 3px;
+    flex: 1;
+    margin-block: .5rem;
+}
+
 @media(min-width: 768px) {
     
     .Takentreprenad .roof-imges-wrapper {
         flex-direction: row;
+    }
+
+    .Takentreprenad .slider-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Takentreprenad .slider-text p {
+        text-align: center;
+    }
+
+    .Takentreprenad .line1 {
+        display: inline-block;
+    }
+
+    .Takentreprenad .slider-text .sub-header {
+        text-align: center;
+    }
+
+    .Takentreprenad .line-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 }
