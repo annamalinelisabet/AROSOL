@@ -103,7 +103,7 @@ const TakentreprenadView = () => {
           <div className='line2'></div>
       </div>
 
-      <p className='container'>För att se fler bilder relaterade till takentreprenad, spana gärna in vår <a href='https://www.instagram.com/arosolab/' target='_blank' rel='noopener noreferrer' className='instagram-link'>instagram</a></p>
+      <p className='container'>Spana gärna in vår <a href='https://www.instagram.com/arosolab/' target='_blank' rel='noopener noreferrer' className='instagram-link'>instagram</a> för fler bilder relaterade till takentreprenad.</p>
 
         {smallScreen ? (
           <ImageSlider images={images} />
