@@ -12,6 +12,10 @@ const Navbar = () => {
         if (typeof window !== 'undefined' && window.document) {
           document.body.style.overflow = showMenu ? 'hidden' : 'unset';
         }
+
+        if (showMenu) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
       }, [showMenu])
 
   return (
