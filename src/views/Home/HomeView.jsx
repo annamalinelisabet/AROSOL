@@ -121,7 +121,7 @@ const HomeView = () => {
           <div className='CEO-text-wrapper container d-flex-column'>
             <div className='container relative'>
               <FaQuoteLeft className='right-quote' />
-              <p>Vi på Arosol är stolta över att kunna erbjuda våra kunder en bredd av tjänster. Vi arbetar hårt för att upprätthålla högsta kvalitet på arbete och service, och vi strävar alltid efter att överträffa våra kunders förväntningar.</p> 
+              <p>Vi på Arosol i Hallstahammar är stolta över att erbjuda våra kunder en bredd av tjänster som solceller, plåtslageri, taksäkerhet och takentreprenad i hela Västmanland. Vi arbetar hårt för att upprätthålla högsta kvalitet på arbete och service och strävar alltid efter att överträffa våra kunders förväntningar. Kontakta oss för hållbara taklösningar idag!</p> 
               <FaQuoteRight className='left-quote' />
             </div>
             <div className='container'>
