@@ -15,7 +15,7 @@ const HomeHero = () => {
         <div className='container wrapper d-flex-column'>
             <div className='hero-text'>
                 <h1 className='header'>Tak- och solcellslösningar i Västmanland</h1>
-                <p>Vi på Arosol erbjuder kompletta taklösningar med solpaneler, taktrygghet och skräddarsytt plåtslageri i hela Västmanland. Med fokus på kvalitet och precision levererar vi hållbara lösningar för ditt tak.</p>
+                <p>Vi på Arosol erbjuder kompletta taklösningar med solpaneler, taktrygghet och skräddarsytt plåtslageri i hela Västmanland. Med fokus på kvalitet och precision levererar vi lösningar för ditt tak.</p>
             </div>
             <div className='cta-section'>
                 <Button text='Våra tjänster' onClick={handleButtonClick}/>
